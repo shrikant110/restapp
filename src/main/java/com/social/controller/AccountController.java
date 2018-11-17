@@ -39,7 +39,7 @@ public class AccountController {
 					new CustomErrorType("user with username " + newUser.getUsername() + "already exist "),
 					HttpStatus.CONFLICT);
 		}
-		newUser.setRole("USER");
+		newUser.setRole("ROLE_USER");
 		
 		return new ResponseEntity<User>(userService.save(newUser), HttpStatus.CREATED);
 	}
