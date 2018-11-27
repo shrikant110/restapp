@@ -11,8 +11,8 @@ import org.springframework.security.web.authentication.AuthenticationFailureHand
 import org.springframework.stereotype.Component;
 
 
-@Component("codAuthenticationFailureHandler")
-public class CodAuthenticationFailureHandler implements AuthenticationFailureHandler{ 
+@Component("applicationAuthenticationFailureHandler")
+public class ApplicationAuthenticationFailureHandler implements AuthenticationFailureHandler{ 
 //extends ExceptionMappingAuthenticationFailureHandler{
 	 
 
@@ -22,7 +22,8 @@ public class CodAuthenticationFailureHandler implements AuthenticationFailureHan
 			HttpServletResponse response, AuthenticationException exception)
 			throws IOException, ServletException {
 		 
-		 
+		System.out.println(" User Name "+request.getParameter("username"));
+		System.out.println(" Password "+request.getParameter("password"));
 		System.out.println("Exception (onAuthenticationFailure):"+exception);
 		/*
 		 if(exception instanceof  AccountExpiredException){

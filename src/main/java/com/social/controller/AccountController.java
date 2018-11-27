@@ -44,8 +44,8 @@ public class AccountController {
 		return new ResponseEntity<User>(userService.save(newUser), HttpStatus.CREATED);
 	}
 
-	// this is the login api/service
-	@CrossOrigin
+
+	/*@CrossOrigin
 	@RequestMapping("/login")
 	public Principal user(Principal principal) {
 		logger.info("user logged "+principal);
@@ -53,18 +53,18 @@ public class AccountController {
 		//SecurityContextHolder.getContext().setAuthentication(principal);
 		return principal;
 	}
-	
+	*/
 	@CrossOrigin
 	@RequestMapping(value = "/username", method = RequestMethod.GET)
-	public Principal currentUserName() {
-		return SecurityContextHolder.getContext().getAuthentication();
+	public ResponseEntity<?> currentUserName() {
+		return new ResponseEntity<>(SecurityContextHolder.getContext().getAuthentication(), HttpStatus.OK);
 	}
 	
 	
 	@CrossOrigin
 	@RequestMapping(value = "/cusername", method = RequestMethod.GET)
-	public String currentUserName(Authentication authentication) {
-        return authentication.getName();
+	public ResponseEntity<?> currentUserName(Authentication authentication) {
+		return new ResponseEntity<>(authentication.getName(), HttpStatus.OK);
     }
 	
 	

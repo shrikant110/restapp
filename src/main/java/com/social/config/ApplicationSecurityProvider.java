@@ -9,19 +9,14 @@ import org.springframework.security.crypto.password.NoOpPasswordEncoder;
 import org.springframework.security.crypto.password.StandardPasswordEncoder;
 import org.springframework.stereotype.Component;
 
-
 /**
  * 
- * @author Vinay.Kumar1
+ * @author shrikant.kushwaha
  *
  */
-/**
- * Generic security provider/helper class
- * @author Vinay.Kumar1
- *
- */
-@Component("codSecurityProvider")
-public class CodSecurityProvider {
+
+@Component("applicationSecurityProvider")
+public class ApplicationSecurityProvider {
 
 	/**
 	 * Retunrs logged in user name from Spring Security Context

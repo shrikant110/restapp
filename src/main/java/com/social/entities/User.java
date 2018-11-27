@@ -1,6 +1,8 @@
 package com.social.entities;
 
 
+import java.io.Serializable;
+
 /*******************************************************************************
  * 2017, this is the user entity class ,
  * this class implements users details of the spring security framework
@@ -29,33 +31,20 @@ import com.fasterxml.jackson.annotation.JsonProperty.Access;
 @Entity
 @Table(name="USER_INFO")
 @Scope("session")
-public  class User implements UserDetails{
+public  class User implements UserDetails,Serializable{
 	public static enum Role{ ROLE_USER }
 	
 	@Id
-	//@GeneratedValue(strategy= GenerationType.IDENTITY)
 	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "userid_generator")
 	@SequenceGenerator(name="userid_generator", sequenceName = "userid_seq", allocationSize=50)
 	@Column(name = "id", updatable = false, nullable = false)
 	private Long id ;
-	/**
-	 * Description of the property email.
-	 */
 	@Column(unique = true)
 	private String username ;
-	/**
-	 * Description of the property password.
-	 */
 	@JsonProperty(access = Access.WRITE_ONLY)
 	private String password ;
-	/**
-	 * Description of the property role , to grant authority to the user .
-	 */
-    private String  role;
-    /**
-	 * Description of the property full name.
-	 */
-    private String fullName;
+	  private String  role;
+     private String fullName;
 
     public User(){
     	
@@ -106,13 +95,11 @@ public  class User implements UserDetails{
 
 	@Override
 	public String getPassword() {
-		// TODO Auto-generated method stub
 		return password;
 	}
 
 	@Override
 	public String getUsername() {
-		// TODO Auto-generated method stub
 		return username;
 	}
 	

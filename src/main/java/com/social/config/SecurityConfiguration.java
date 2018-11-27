@@ -29,6 +29,7 @@ import org.springframework.web.servlet.config.annotation.CorsRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
 
+import com.social.config.filter.TransactionFilter;
 import com.social.services.AppUserDetailsService;
 
 
@@ -41,7 +42,7 @@ import com.social.services.AppUserDetailsService;
 
 @PropertySources({
     @PropertySource("classpath:application.properties"),
-    @PropertySource("classpath:applicationclient.properties")
+    @PropertySource("classpath:application_env.properties")
 })
 // Modifying or overriding the default spring boot security.
 public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
@@ -58,8 +59,8 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
 	 * The custom Success-Handler to handle successful authentication event.
 	 */
 	@Autowired
-	@Qualifier("codAuthenticationSuccessHandler")
-	CodAuthenticationSuccessHandler codAuthenticationSuccessHandler;
+	@Qualifier("applicationAuthenticationSuccessHandler")
+	ApplicationAuthenticationSuccessHandler applicationAuthenticationSuccessHandler;
 
 	
 	
@@ -67,13 +68,13 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
 	 * The custom Success-Handler to handle failed authentication event.
 	 */
 	@Autowired
-	@Qualifier("codAuthenticationFailureHandler")
-	CodAuthenticationFailureHandler codAuthenticationFailureHandler;
+	@Qualifier("applicationAuthenticationFailureHandler")
+	ApplicationAuthenticationFailureHandler applicationAuthenticationFailureHandler;
 	
 	
 	@Autowired
-	@Qualifier("codLogOutSuccessHandler")
-	CodLogOutSuccessHandler codLogOutSuccessHandler;
+	@Qualifier("applicationLogOutSuccessHandler")
+	ApplicationLogOutSuccessHandler applicationLogOutSuccessHandler;
 	
 	
 	/**
@@ -125,6 +126,12 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
 		return encoder;
 	}
 	
+	/**
+	 * Rest Entry Point to secure all Un-Authorised requests
+	 */
+	@Autowired
+	private RestAuthenticationEntryPoint restAuthenticationEntryPoint;
+	
 	
 	
 	// This method is for overriding some configuration of the WebSecurity
@@ -148,39 +155,58 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
 		.antMatchers("/dashboard/getmodules").hasAnyRole("USER")
 		.anyRequest().authenticated() 
 		.and()
-        .logout().logoutUrl("/logout").logoutSuccessHandler(codLogOutSuccessHandler)    
+		.logout().logoutUrl("/logout").logoutSuccessHandler(codLogOutSuccessHandler)    
 		.permitAll()
 		 .and()
 		.httpBasic().and()
-		.sessionManagement().sessionCreationPolicy(SessionCreationPolicy.IF_REQUIRED).and()
-		.csrf().disable();
-		//.rememberMe().rememberMeServices(rememberMeServices()); 
-	}*/
-	
+		.sessionManagement().sessionCreationPolicy(SessionCreationPolicy.NEVER).and()
+		.csrf().disable()
+		.rememberMe().rememberMeServices(rememberMeServices()); 
+	}
+	*/
 	// This method is used for override HttpSecurity of the web Application.
 		// We can specify our authorization criteria inside this method.
-		
+	
 	@Override
 		protected void configure(HttpSecurity http) throws Exception {
-			http.cors().and()
-			// starts authorizing configurations
-			.authorizeRequests()
-			// ignoring the guest's urls "
-			.antMatchers("/account/register","/account/login","/logout").permitAll()
-			.antMatchers("/dashboard/getmodules").hasAnyRole("USER")
-			// authenticate all remaining URLS
-			.anyRequest().fullyAuthenticated().and()
-	      /* "/logout" will log the user out by invalidating the HTTP Session,
-	       * cleaning up any {link rememberMe()} authentication that was configured, */
-			.logout().logoutUrl("/logout").logoutSuccessHandler(codLogOutSuccessHandler)    
-	        .and()
-			// enabling the basic authentication
-			.httpBasic().and()
-			// configuring the session on the server
-			.sessionManagement().sessionCreationPolicy(SessionCreationPolicy.IF_REQUIRED).and()
-			// disabling the CSRF - Cross Site Request Forgery
-			.csrf().disable();
-		}
+		http
+		.cors()
+		.and()
+		.csrf()
+	 	.disable() 
+	 		 .exceptionHandling()
+		     .authenticationEntryPoint(restAuthenticationEntryPoint)
+		     .and()
+		     .authorizeRequests() 
+		     	  .antMatchers(env.getProperty("URL.LOGIN")).permitAll()
+			      .antMatchers(env.getProperty("URL_REGISTER")).permitAll()
+			      .antMatchers(env.getProperty("URL.LOGOUT")).permitAll()
+			      .antMatchers("/dashboard/getmodules").hasAnyRole("USER")
+		          .anyRequest().authenticated() 
+		          .and()
+	         
+	         
+	       
+		     	.formLogin()
+		     	 .loginPage(env.getProperty("URL.LOGIN")) 
+		         .loginProcessingUrl(env.getProperty("URL.LOGIN"))
+		         .usernameParameter("username")
+		         .passwordParameter("password")
+		         
+		         .successHandler(applicationAuthenticationSuccessHandler)
+		       
+		         .failureHandler(applicationAuthenticationFailureHandler)
+	         
+	         .and()
+	         	.logout().logoutUrl(env.getProperty("URL.LOGOUT")).logoutSuccessHandler(applicationLogOutSuccessHandler).permitAll()
+	         
+	        		
+	         .and() 
+	         	//.sessionManagement().sessionCreationPolicy(SessionCreationPolicy.NEVER).and()
+	         	.rememberMe().rememberMeServices(rememberMeServices());
+	         	
+	         	
+		} 
 	
 
 	/**
@@ -206,7 +232,7 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
 	 * Returns a persistent token based remember me service instance
 	 * @return
 	 */
-	@Bean(name = "CodRememberMeService")
+	@Bean(name = "applicationRememberMeService")
 	public PersistentTokenBasedRememberMeServices rememberMeServices() {
 		PersistentTokenBasedRememberMeServices rememberMeServices = new PersistentTokenBasedRememberMeServices(env.getProperty("SPRINGKEY"), appUserDetailsService, persistentTokenRepository());
 		rememberMeServices.setAlwaysRemember(true);
@@ -219,7 +245,7 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
 	 * Persistent token repository to add/delete tokens in Database PERSISTENT_LOGINS(default) table. 
 	 * @return
 	 */
-	@Bean(name = "codPersistentTokenRepository")
+	@Bean(name = "applicationPersistentTokenRepository")
 	public PersistentTokenRepository persistentTokenRepository() {
 		JdbcTokenRepositoryImpl db = new JdbcTokenRepositoryImpl();
 		db.setCreateTableOnStartup(false);
