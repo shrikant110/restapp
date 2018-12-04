@@ -28,32 +28,54 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonProperty.Access;
 
+import lombok.Getter;
+import lombok.Setter;
+
 @Entity
 @Table(name="USER_INFO")
 @Scope("session")
 public  class User implements UserDetails,Serializable{
 	public static enum Role{ ROLE_USER }
 	
+	@Getter
 	@Id
 	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "userid_generator")
 	@SequenceGenerator(name="userid_generator", sequenceName = "userid_seq", allocationSize=50)
 	@Column(name = "id", updatable = false, nullable = false)
 	private Long id ;
+	
+	@Getter
+	@Setter
 	@Column(unique = true)
 	private String username ;
+	@Getter
+	@Setter
 	@JsonProperty(access = Access.WRITE_ONLY)
 	private String password ;
-	  private String  role;
-     private String fullName;
+	@Getter
+	@Setter
+	private String  role;
+	@Getter
+	@Setter
+    private String fullName;
+	
+	@Getter
+	@Setter
+    private String mobile_no;
+	
+	@Getter
+	@Setter
+    private String date_created;
 
     public User(){
     	
     }
     
-    public User(String username,String password,String fullName){
+    public User(String username,String password,String fullName,String mobile_no){
     	this.username=username;
     	this.password= password;
     	this.fullName=fullName;
+    	this.mobile_no=mobile_no;
     }
 	@JsonIgnore
 	@Override
@@ -87,51 +109,4 @@ public  class User implements UserDetails,Serializable{
 		return authorities;
 	}
 
-	@Override
-	public String toString() {
-		return "User [id=" + id + ", username=" + username + ", password=" + password + ", role=" + role +
-				 ",]";
-	}
-
-	@Override
-	public String getPassword() {
-		return password;
-	}
-
-	@Override
-	public String getUsername() {
-		return username;
-	}
-	
-
-	public String getRole() {
-		return role;
-	}
-
-	public void setRole(String role) {
-		this.role = role;
-	}
-
-	public void setUsername(String username) {
-		this.username = username;
-	}
-
-	public void setPassword(String password) {
-		this.password = password;
-	}
-
-	public String getFullName() {
-		return fullName;
-	}
-
-	public void setFullName(String fullName) {
-		this.fullName = fullName;
-	}
-
-	public Long getId() {
-		return id;
-	}
-	
-	
-	
 }
