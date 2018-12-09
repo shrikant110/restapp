@@ -181,6 +181,7 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
 		     	  .antMatchers(env.getProperty("URL.LOGIN")).permitAll()
 			      .antMatchers(env.getProperty("URL_REGISTER")).permitAll()
 			      .antMatchers(env.getProperty("URL.LOGOUT")).permitAll()
+			      .antMatchers("/test/*").permitAll()
 			      .antMatchers("/dashboard/getmodules").hasAnyRole("USER")
 		          .anyRequest().authenticated() 
 		          .and()

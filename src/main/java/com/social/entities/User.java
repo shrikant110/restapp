@@ -1,7 +1,7 @@
 package com.social.entities;
 
-
 import java.io.Serializable;
+import java.sql.Timestamp;
 
 /*******************************************************************************
  * 2017, this is the user entity class ,
@@ -19,6 +19,8 @@ import javax.persistence.Id;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
+import org.hibernate.annotations.CreationTimestamp;
+import org.hibernate.annotations.UpdateTimestamp;
 import org.springframework.context.annotation.Scope;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
@@ -32,51 +34,55 @@ import lombok.Getter;
 import lombok.Setter;
 
 @Entity
-@Table(name="USER_INFO")
+@Table(name = "USER_INFO")
 @Scope("session")
-public  class User implements UserDetails,Serializable{
-	public static enum Role{ ROLE_USER }
-	
+@Getter
+@Setter
+public class User implements UserDetails, Serializable {
+	public static enum Role {
+		ROLE_USER
+	}
+
 	@Getter
 	@Id
 	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "userid_generator")
-	@SequenceGenerator(name="userid_generator", sequenceName = "userid_seq", allocationSize=50)
+	@SequenceGenerator(name = "userid_generator", sequenceName = "userid_seq", allocationSize = 50)
 	@Column(name = "id", updatable = false, nullable = false)
-	private Long id ;
-	
-	@Getter
-	@Setter
-	@Column(unique = true)
-	private String username ;
-	@Getter
-	@Setter
-	@JsonProperty(access = Access.WRITE_ONLY)
-	private String password ;
-	@Getter
-	@Setter
-	private String  role;
-	@Getter
-	@Setter
-    private String fullName;
-	
-	@Getter
-	@Setter
-    private String mobile_no;
-	
-	@Getter
-	@Setter
-    private String date_created;
+	private Long id;
 
-    public User(){
-    	
-    }
-    
-    public User(String username,String password,String fullName,String mobile_no){
-    	this.username=username;
-    	this.password= password;
-    	this.fullName=fullName;
-    	this.mobile_no=mobile_no;
-    }
+	@Column(unique = true)
+	private String username;
+	@JsonProperty(access = Access.WRITE_ONLY)
+	private String password;
+	private String role;
+	private String fullName;
+
+	@Column(name = "mobile_no")
+	private String mobileNumber;
+	
+	@Column(name = "date_created")
+	@CreationTimestamp
+	@Getter
+	@Setter
+	private Timestamp dateCreated;
+
+	@Column(name = "date_updated")
+	@UpdateTimestamp
+	@Getter
+	@Setter
+	private Timestamp dateUpdated;
+
+	public User() {
+
+	}
+
+	public User(String username, String password, String fullName, String mobile_no) {
+		this.username = username;
+		this.password = password;
+		this.fullName = fullName;
+		this.mobileNumber = mobileNumber;
+	}
+
 	@JsonIgnore
 	@Override
 	public boolean isEnabled() {
