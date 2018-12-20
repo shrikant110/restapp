@@ -1,0 +1,4244 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<checklist>
+  <texts>
+    <text id="1" lang="de">
+      <short>Kleiner Marktwert</short>
+      <long>
+        Mit einer Marktkapitalisierung von &lt;$1 Mrd., ist <bold>
+          <name />
+        </bold> ein niedrig kapitalisierter Titel.
+      </long>
+    </text>
+    <text id="1" lang="en">
+      <short>Small-cap</short>
+      <long>
+        With a market capitalization &lt;$1bn, <bold>
+          <name />
+        </bold> is considered a small-cap stock.
+      </long>
+    </text>
+    <text id="1" lang="es">
+      <short>Pequeña capitalización</short>
+      <long>
+        Las empresas con una capitalización de mercado &lt;$1 Mrd., como <bold>
+          <name />
+        </bold> son denominadas Small-Caps.
+      </long>
+    </text>
+    <text id="1" lang="fr">
+      <short>Petite capitalisation</short>
+      <long>
+        Avec une capitalisation boursière &lt;1 milliard de $, <bold>
+          <name />
+        </bold> est qualifié de petite capitalisation.
+      </long>
+    </text>
+    <text id="1" lang="it">
+      <short>Bassa capitalizzazione</short>
+      <long>
+        Con una capitalizzazione di mercato di &lt;$1 mrd., <bold>
+          <name />
+        </bold> è da considerarsi un titolo a bassa capitalizzazione.
+      </long>
+    </text>
+    <text id="2" lang="de">
+      <short>Mittlerer Marktwert</short>
+      <long>
+        Mit einer Marktkapitalisierung zwischen $1 &amp; $5 Mrd., ist <bold>
+          <name />
+        </bold> ein mittel kapitalisierter Titel.
+      </long>
+    </text>
+    <text id="2" lang="en">
+      <short>Medium-cap</short>
+      <long>
+        With a market capitalization between $1&amp;$5bn, <bold>
+          <name />
+        </bold> is considered a mid-cap stock.
+      </long>
+    </text>
+    <text id="2" lang="es">
+      <short>Media capitalización</short>
+      <long>
+        Las empresas con una capitalización de mercado entre $1 &amp; $5 Mrd., como <bold>
+          <name />
+        </bold> son denominadas Mid-Caps.
+      </long>
+    </text>
+    <text id="2" lang="fr">
+      <short>Capitalisation moyenne</short>
+      <long>
+        Avec une capitalisation boursière comprise entre 1 &amp; 5 milliards de $, <bold>
+          <name />
+        </bold> est qualifié de capitalisation moyenne.
+      </long>
+    </text>
+    <text id="2" lang="it">
+      <short>Media capitalizzazione</short>
+      <long>
+        Con una capitalizzazione di mercato tra $1 e $5 mrd., <bold>
+          <name />
+        </bold> è da considerarsi un titolo a media capitalizzazione.
+      </long>
+    </text>
+    <text id="3" lang="de">
+      <short>Grosser Marktwert</short>
+      <long>
+        Mit einer Marktkapitalisierung von &gt;$5 Mrd., ist <bold>
+          <name />
+        </bold> ein hoch kapitalisierter Titel.
+      </long>
+    </text>
+    <text id="3" lang="en">
+      <short>Large-cap</short>
+      <long>
+        With a market capitalization &gt;$5bn, <bold>
+          <name />
+        </bold> is considered a large-cap stock.
+      </long>
+    </text>
+    <text id="3" lang="es">
+      <short>Gran capitalización</short>
+      <long>
+        Las empresas con una capitalización de mercado &gt;$5 Mrd., como <bold>
+          <name />
+        </bold> son denominadas Large-Caps.
+      </long>
+    </text>
+    <text id="3" lang="fr">
+      <short>Grande capitalisation</short>
+      <long>
+        Avec une capitalisation boursière &gt;5 milliards de $, <bold>
+          <name />
+        </bold> est qualifié de grande capitalisation.
+      </long>
+    </text>
+    <text id="3" lang="it">
+      <short>Alta capitalizzazione</short>
+      <long>
+        Con una capitalizzazione di mercato di &gt;$5 mrd., <bold>
+          <name />
+        </bold> è da considerarsi un titolo ad alta capitalizzazione.
+      </long>
+    </text>
+    <text id="4" lang="de">
+      <short>
+        Negative Analystenhaltung seit <ertdate />
+      </short>
+      <long>
+        Die Gewinnprognosen pro Aktie sind heute tiefer als vor sieben Wochen. Dieser negative Trend hat am <ertdate /> bei einem Kurs von <bold>
+          <ertprice />
+        </bold> eingesetzt.
+      </long>
+    </text>
+    <text id="4" lang="en">
+      <short>
+        Analysts negative since <ertdate />
+      </short>
+      <long>
+        Compared to seven weeks ago, the analysts have lowered their earnings per share estimates. This negative trend began <ertdate /> at a price of <bold>
+          <ertprice />
+        </bold>.
+      </long>
+    </text>
+    <text id="4" lang="es">
+      <short>
+        Análisis negativo desde <ertdate />
+      </short>
+      <long>
+        Respecto a la anterior estimación de hace 7 semanas, los analistas han revisado a la baja sus expectativas los analistas no han revisado significativamente sus estimación de crecimiento beneficiario. Esta tendencia negativa empezó el <ertdate /> al precio de <bold>
+          <ertprice />
+        </bold>.
+      </long>
+    </text>
+    <text id="4" lang="fr">
+      <short>
+        Analystes négatifs depuis le <ertdate />
+      </short>
+      <long>
+        Les analystes révisent à la baisse leurs prévisions de croissance bénéficiaire par rapport aux précédentes estimations, 7 semaines plus tôt. Cette pression négative est en place depuis le <ertdate /> au prix de <bold>
+          <ertprice />
+        </bold>.
+      </long>
+    </text>
+    <text id="4" lang="it">
+      <short>
+        Atteggiamento negativo degli analisti a partire dal giorno <ertdate />
+      </short>
+      <long>
+        I proventi previsti per ogni singola azione oggi sono inferiori in confronto a 7 settimane fa. Questa tendenza negativa ha avuto inizio il <ertdate /> ad una quotazione di <bold>
+          <ertprice />
+        </bold>.
+      </long>
+    </text>
+    <text id="5" lang="de">
+      <short>
+        Analysten neutral, zuvor negativ (seit <ertdate />)
+      </short>
+      <long>
+        Die Gewinnprognosen pro Aktie haben sich in den letzten 7 Wochen nicht wesentlich verändert (Veränderungen zwischen +1% bis -1% werden als neutral betrachtet). Das letzte signifikante Analystensignal war negativ und hat am <ertdate /> bei einem Kurs von <bold>
+          <ertprice />
+        </bold> eingesetzt.
+      </long>
+    </text>
+    <text id="5" lang="en">
+      <short>
+        Analysts neutral but previously negative (since <ertdate />)
+      </short>
+      <long>
+        Compared to seven weeks ago, the analysts have not significantly revised their earnings per share estimates (changes between +1% and -1% are considered neutral). But the last significant trend is negative since <ertdate /> at a price of <bold>
+          <ertprice />
+        </bold>.
+      </long>
+    </text>
+    <text id="5" lang="es">
+      <short>
+        Análisis neutro (desde <ertdate />), anteriormente negativo
+      </short>
+      <long>
+        Respecto a la anterior estimación de hace 7 semanas, los analistas no han revisado significativamente sus expectativas los analistas no han revisado significativamente sus estimación de crecimiento beneficiario (cambios del +1% al -1% son considerados neutros). Sin embargo, la tendencia es negativa desde el <ertdate /> al precio de <bold>
+          <ertprice />
+        </bold>.
+      </long>
+    </text>
+    <text id="5" lang="fr">
+      <short>
+        Analystes neutres mais précédemment négatifs (depuis le <ertdate />)
+      </short>
+      <long>
+        Les analystes n'ont pas révisé leurs prévisions de croissance bénéficiaire de façon significative par rapport aux précédentes estimations, 7 semaines plus tôt (les révisions situées entre +1% et -1% sont considérées comme neutres). Mais la tendance de fond est négative depuis le <ertdate /> au prix de <bold>
+          <ertprice />
+        </bold>.
+      </long>
+    </text>
+    <text id="5" lang="it">
+      <short>
+        Analisti neutrali, precedentemente negativi (a partire dal giorno <ertdate />)
+      </short>
+      <long>
+        I proventi previsti per ogni singola azione non hanno subito modifiche essenziali (modifiche tra +1% e -1% sono considerate neutre) durante le 7 settimane scorse.  L'ultimo segnale significativo degli analisti era negativo, e si è instaurato il <ertdate /> ad una quotazione di <bold>
+          <ertprice />
+        </bold>.
+      </long>
+    </text>
+    <text id="6" lang="de">
+      <short>
+        Positive Analystenhaltung seit <ertdate />
+      </short>
+      <long>
+        Die Gewinnprognosen pro Aktie sind heute höher als vor sieben Wochen. Dieser positive Trend hat am <ertdate /> bei einem Kurs von <bold>
+          <ertprice />
+        </bold> eingesetzt.
+      </long>
+    </text>
+    <text id="6" lang="en">
+      <short>
+        Analysts positive since <ertdate />
+      </short>
+      <long>
+        Compared to seven weeks ago, the analysts have raised their earnings per share estimates. This positive trend began <ertdate /> at a price of <bold>
+          <ertprice />
+        </bold>.
+      </long>
+    </text>
+    <text id="6" lang="es">
+      <short>
+        Análisis positivo desde <ertdate />
+      </short>
+      <long>
+        Respecto a la anterior estimación de hace 7 semanas, los analistas han revisado al alza sus expectativas para el beneficio por acción. Esta tendencia positiva empezó el <ertdate /> al precio de <bold>
+          <ertprice />
+        </bold>.
+      </long>
+    </text>
+    <text id="6" lang="fr">
+      <short>
+        Analystes positifs depuis le <ertdate />
+      </short>
+      <long>
+        Les analystes révisent à la hausse leurs prévisions de croissance bénéficiaire par rapport aux précédentes estimations, 7 semaines plus tôt. Cette tendance positive est en place depuis le <ertdate /> au prix de <bold>
+          <ertprice />
+        </bold>.
+      </long>
+    </text>
+    <text id="6" lang="it">
+      <short>
+        Atteggiamento positivo degli analisti a partire dal giorno <ertdate />
+      </short>
+      <long>
+        I proventi previsti per ogni singola azione oggi sono superiori in confronto a 7 settimane fa. Questa tendenza positiva ha avuto inizio il <ertdate /> ad una quotazione di <bold>
+          <ertprice />
+        </bold>.
+      </long>
+    </text>
+    <text id="7" lang="de">
+      <short>
+        Analysten neutral, zuvor positiv (seit <ertdate />)
+      </short>
+      <long>
+        Die Gewinnprognosen pro Aktie haben sich in den letzten 7 Wochen nicht wesentlich verändert (Veränderungen zwischen +1% bis -1% werden als neutral betrachtet). Das letzte signifikante Analystensignal war positiv und hat am <ertdate /> bei einem Kurs von <bold>
+          <ertprice />
+        </bold> eingesetzt.
+      </long>
+    </text>
+    <text id="7" lang="en">
+      <short>
+        Analysts neutral but previously positive (since <ertdate />)
+      </short>
+      <long>
+        Compared to seven weeks ago, the analysts have not significantly revised their earnings per share estimates (changes between +1% and -1% are considered neutral). But the last significant trend is positive since <ertdate /> at a price of <bold>
+          <ertprice />
+        </bold>.
+      </long>
+    </text>
+    <text id="7" lang="es">
+      <short>
+        Análisis neutro (desde <ertdate />), anteriormente positivo
+      </short>
+      <long>
+        Respecto a la anterior estimación de hace 7 semanas, los analistas no han revisado significativamente sus estimación de crecimiento beneficiario (cambios del +1% al -1% son considerados neutros). Sin embargo, la tendencia es positiva desde el <ertdate /> al precio de <bold>
+          <ertprice />
+        </bold>.
+      </long>
+    </text>
+    <text id="7" lang="fr">
+      <short>
+        Analystes neutres mais précédemment positifs (depuis le <ertdate />)
+      </short>
+      <long>
+        Les analystes n'ont pas révisé leurs prévisions de croissance bénéficiaire de façon significative par rapport aux précédentes estimations, 7 semaines plus tôt (les révisions situées entre +1% et -1% sont considérées comme neutres). Mais la tendance de fond est positive depuis le <ertdate /> au prix de <bold>
+          <ertprice />
+        </bold>.
+      </long>
+    </text>
+    <text id="7" lang="it">
+      <short>
+        Analisti neutrali, precedentemente positivi (a partire dal giorno <ertdate />)
+      </short>
+      <long>
+        I proventi previsti per ogni singola azione non hanno subito modifiche essenziali (modifiche tra +1% e -1% sono considerate neutre) durante le 7 settimane scorse.  L'ultimo segnale significativo degli analisti era positivo, e si è instaurato il <ertdate /> ad una quotazione di <bold>
+          <ertprice />
+        </bold>.
+      </long>
+    </text>
+    <text id="8" lang="de">
+      <short>Negative Analystenhaltung seit mehr als einem Jahr.</short>
+      <long>Die Gewinnprognosen pro Aktie sind heute tiefer als vor sieben Wochen. Dieser negative Trend hat vor mehr als einem Jahr eingesetzt.</long>
+    </text>
+    <text id="8" lang="en">
+      <short>Analysts negative since more than one year</short>
+      <long>Compared to seven weeks ago, the analysts have lowered their earnings per share estimates. This negative trend active since more than one year</long>
+    </text>
+    <text id="8" lang="es">
+      <short>Análisis negativo desde un año.</short>
+      <long>Respecto a la anterior estimación de hace 7 semanas, los analistas han revisado a la baja sus estimación de crecimiento beneficiario. Esta tendencia negativa está en lugar desde màs de un año.</long>
+    </text>
+    <text id="8" lang="fr">
+      <short>Analystes négatifs depuis plus d'un an</short>
+      <long>Les analystes révisent à la baisse leurs prévisions de croissance bénéficiaire par rapport aux précédentes estimations, 7 semaines plus tôt. Cette pression négative est en place depuis plus d'un an.</long>
+    </text>
+    <text id="8" lang="it">
+      <short>Atteggiamento degli analisti negativo da oltre un anno</short>
+      <long>I proventi previsti per ogni singola azione oggi sono inferiori in confronto a 7 settimane fa. Questa tendenza negativa ha avuto inizio oltre un anno fa.</long>
+    </text>
+    <text id="9" lang="de">
+      <short>Analysten neutral, zuvor negativ (seit mehr als einem Jahr)</short>
+      <long> Die Gewinnprognosen pro Aktie haben sich in den letzten 7 Wochen nicht wesentlich verändert (Veränderungen zwischen +1% bis -1% werden als neutral betrachtet). Das letzte signifikante Analystensignal war negativ und hat vor mehr als einem Jahr eingesetzt.</long>
+    </text>
+    <text id="9" lang="en">
+      <short>Analysts neutral but previously negative (since more than one year)</short>
+      <long>Compared to seven weeks ago, the analysts have not significantly revised their earnings per share estimates (changes between +1% and -1% are considered neutral). But the last significant trend is negative since more than one year.</long>
+    </text>
+    <text id="9" lang="es">
+      <short>Análisis neutro, anteriormente negativo (desde màs de un año).</short>
+      <long>Respecto a la anterior estimación de hace 7 semanas, los analistas no han revisado significativamente sus estimación de crecimiento beneficiario (cambios del +1% al -1% son considerados neutros). Sin embargo, la tendencia es negativa desde màs de un año.</long>
+    </text>
+    <text id="9" lang="fr">
+      <short>Analystes neutres mais précédemment négatifs (depuis plus d'un an)</short>
+      <long>Les analystes n'ont pas révisé leurs prévisions de croissance bénéficiaire de façon significative par rapport aux précédentes estimations, 7 semaines plus tôt (les révisions situées entre +1% et -1% sont considérées comme neutres). Mais la tendance de fond est négative depuis plus d'un an.</long>
+    </text>
+    <text id="9" lang="it">
+      <short>Analisti neutrali, precedentemente negativi (da oltre un anno)</short>
+      <long>I proventi previsti per ogni singola azione non hanno subito modifiche essenziali (modifiche tra +1% e -1% sono considerate neutre) durante le 7 settimane scorse.  L'ultimo segnale significativo degli analisti era negativo, e si è instaurato oltre un anno fa.</long>
+    </text>
+    <text id="10" lang="de">
+      <short>Positive Analystenhaltung seit mehr als einem Jahr</short>
+      <long>Die Gewinnprognosen pro Aktie sind heute höher als vor sieben Wochen. Dieser positive Trend hat vor mehr als einem Jahr eingesetzt.</long>
+    </text>
+    <text id="10" lang="en">
+      <short>Analysts positive since more than one year</short>
+      <long>Compared to seven weeks ago, the analysts have raised their earnings per share estimates. This positive trend is active since more than one year.</long>
+    </text>
+    <text id="10" lang="es">
+      <short>Análisis positivo desde màs de un año.</short>
+      <long>Respecto a la anterior estimación de hace 7 semanas, los analistas han revisado al alza sus estimación de crecimiento beneficiario. Esta tendencia positiva empezó desde màs de un año.</long>
+    </text>
+    <text id="10" lang="fr">
+      <short>Analystes positifs depuis plus d'un an</short>
+      <long>Les analystes révisent à la hausse leurs prévisions de croissance bénéficiaire par rapport aux précédentes estimations, 7 semaines plus tôt. Cette tendance positive est en place depuis plus d'un  an.</long>
+    </text>
+    <text id="10" lang="it">
+      <short>Atteggiamento degli analisti positivo da oltre un anno</short>
+      <long>I proventi previsti per ogni singola azione oggi sono superiori in confronto a 7 settimane fa. Questa tendenza positiva ha avuto inizio oltre un anno fa.</long>
+    </text>
+    <text id="11" lang="de">
+      <short>Analysten neutral, zuvor positiv (seit mehr als einem Jahr)</short>
+      <long> Die Gewinnprognosen pro Aktie haben sich in den letzten 7 Wochen nicht wesentlich verändert (Veränderungen zwischen +1% bis -1% werden als neutral betrachtet). Das letzte signifikante Analystensignal war positiv und hat vor mehr als einem Jahr eingesetzt.</long>
+    </text>
+    <text id="11" lang="en">
+      <short>Analysts neutral but previously positive (since more than one year)</short>
+      <long>Compared to seven weeks ago, the analysts have not significantly revised their earnings per share estimates (changes between +1% and -1% are considered neutral). But the last significant trend is positive since since more than one year.</long>
+    </text>
+    <text id="11" lang="es">
+      <short>Análisis neutro, anteriormente positivo (desde màs de un año).</short>
+      <long>Respecto a la anterior estimación de hace 7 semanas, los analistas no han revisado significativamente sus estimación de crecimiento beneficiario (cambios del +1% al -1% son considerados neutros). Sin embargo, la tendencia es positiva desde màs de un año.</long>
+    </text>
+    <text id="11" lang="fr">
+      <short>Analystes neutres mais précédemment positifs (depuis plus d'un an)</short>
+      <long>Les analystes n'ont pas révisé leurs prévisions de croissance bénéficiaire de façon significative par rapport aux précédentes estimations, 7 semaines plus tôt (les révisions situées entre +1% et -1% sont considérées comme neutres). Mais la tendance de fond est positive depuis plus d'un an.</long>
+    </text>
+    <text id="11" lang="it">
+      <short>Analisti neutrali, precedentemente positivi (da oltre un anno)</short>
+      <long>I proventi previsti per ogni singola azione non hanno subito modifiche essenziali (modifiche tra +1% e -1% sono considerate neutre) durante le 7 settimane scorse.  L'ultimo segnale significativo degli analisti era positivo, e si è instaurato oltre un anno fa.</long>
+    </text>
+    <text id="12" lang="de">
+      <short>Stark überbewertet</short>
+      <long>Auf Basis des Wachstumspotentials und anderer Messwerte erscheint der Kurs zur Zeit wesentlich zu hoch.</long>
+    </text>
+    <text id="12" lang="en">
+      <short>Strongly overvalued</short>
+      <long>Based on its growth potential and our own criteria, at its current price the stock is strongly overvalued.</long>
+    </text>
+    <text id="12" lang="es">
+      <short>Muy sobrevaluado</short>
+      <long>Basándonos en su crecimiento potencial y en nuestro propio criterio, este valor, a su precio actual, está muy sobrevaluado.</long>
+    </text>
+    <text id="12" lang="fr">
+      <short>Fortement surévalué</short>
+      <long>Sur la base de son potentiel de croissance et de nos propres mesures, le titre se négocie à un prix fortement surévalué.</long>
+    </text>
+    <text id="12" lang="it">
+      <short>Fortemente sopravvalutato </short>
+      <long>In base a potenziale di crescita e ulteriori valori di misura, la quotazione attualmente pare sostanzialmente troppo alta.</long>
+    </text>
+    <text id="13" lang="de">
+      <short>Leicht überbewertet</short>
+      <long>Auf Basis des Wachstumspotentials und anderer Messwerte erscheint der Kurs zur Zeit leicht überhöht.</long>
+    </text>
+    <text id="13" lang="en">
+      <short>Moderately overvalued</short>
+      <long>Based on its growth potential and our own criteria, at its current price the stock is moderately overvalued.</long>
+    </text>
+    <text id="13" lang="es">
+      <short>Moderadamente sobrevaluado</short>
+      <long>Basándonos en su crecimiento potencial y en nuestro propio criterio, este valor, a su precio actual, está moderadamente sobrevaluado.</long>
+    </text>
+    <text id="13" lang="fr">
+      <short>Légèrement surévalué</short>
+      <long>Sur la base de son potentiel de croissance et de nos propres mesures, le titre se négocie à un prix légèrement surévalué.</long>
+    </text>
+    <text id="13" lang="it">
+      <short>Moderatamente sopravvalutato</short>
+      <long>In base a potenziale di crescita e ulteriori valori di misura, la quotazione attualmente pare lievemente troppo alta.</long>
+    </text>
+    <text id="14" lang="de">
+      <short>Fairer Preis</short>
+      <long>Auf Basis des Wachstumspotentials und anderer Messwerte erscheint der Kurs angemessen.</long>
+    </text>
+    <text id="14" lang="en">
+      <short>Fairly priced</short>
+      <long>Based on its growth potential and our own criteria, at its current price the stock is fairly valued.</long>
+    </text>
+    <text id="14" lang="es">
+      <short>Correctamente valorado</short>
+      <long>Basándonos en su crecimiento potencial y en nuestro propio criterio, este valor, a su precio actual, está correctamente valorado.</long>
+    </text>
+    <text id="14" lang="fr">
+      <short>Correctement évalué</short>
+      <long>Sur la base de son potentiel de croissance et de nos propres mesures, le titre se négocie à un prix correctement évalué.</long>
+    </text>
+    <text id="14" lang="it">
+      <short>A prezzo ragionevole</short>
+      <long>In base a potenziale di crescita e ulteriori valori di misura, la quotazione attualmente pare appropriato.</long>
+    </text>
+    <text id="15" lang="de">
+      <short>Stark unterbewertet</short>
+      <long>Auf Basis des Wachstumspotentials und anderer Messwerte erscheint die Aktie stark unterbewertet.</long>
+    </text>
+    <text id="15" lang="en">
+      <short>Strongly undervalued</short>
+      <long>Based on its growth potential and our own criteria, at its current price the stock is strongly undervalued.</long>
+    </text>
+    <text id="15" lang="es">
+      <short>Muy infravaluado</short>
+      <long>Basándonos en su crecimiento potencial y en nuestro propio criterio, este valor, a su precio actual, está muy infravaluado.</long>
+    </text>
+    <text id="15" lang="fr">
+      <short>Fortement sous-évalué</short>
+      <long>Sur la base de son potentiel de croissance et de nos propres mesures, le titre se négocie à un prix fortement sous-évalué.</long>
+    </text>
+    <text id="15" lang="it">
+      <short>Fortemente sottovalutato </short>
+      <long>In base a potenziale di crescita e ulteriori valori di misura, il titolo attualmente pare largamente sottovalutato.</long>
+    </text>
+    <text id="16" lang="de">
+      <short>Leicht unterbewertet</short>
+      <long>Auf Basis des Wachstumspotentials und anderer Messwerte erscheint die Aktie leicht unterbewertet.</long>
+    </text>
+    <text id="16" lang="en">
+      <short>Moderately undervalued</short>
+      <long>Based on its growth potential and our own criteria, at its current price the stock is moderately undervalued.</long>
+    </text>
+    <text id="16" lang="es">
+      <short>Moderadamente infravaluado</short>
+      <long>Basándonos en su crecimiento potencial y en nuestro propio criterio, este valor, a su precio actual, está moderadamente infravaluado.</long>
+    </text>
+    <text id="16" lang="fr">
+      <short>Légèrement sous-évalué</short>
+      <long>Sur la base de son potentiel de croissance et de nos propres mesures, le titre se négocie à un prix légèrement sous-évalué.</long>
+    </text>
+    <text id="16" lang="it">
+      <short>Moderatamente sottovalutato</short>
+      <long>In base a potenziale di crescita e ulteriori valori di misura, il titolo attualmente pare lievemente sottovalutato.</long>
+    </text>
+    <text id="17" lang="de">
+      <short>
+        <warnsign /> Unternehmen in Schwierigkeiten
+      </short>
+      <long>
+        Ein <bold>negatives</bold> "Verhältnis zwischen Wachstum plus geschätzte Dividende und Kurs-Gewinn Zahl" zeigt an, dass sich entweder das vorhergesagte Wachstum verlangsamt (negatives jährliches Wachstum) oder die Finanzanalysten einen Verlust (negatives PE) erwarten.
+      </long>
+    </text>
+    <text id="17" lang="en">
+      <short>
+        <warnsign /> Difficult situation
+      </short>
+      <long>
+        A <bold>negative</bold> "Forecasted Growth + Estimated Dividend Yield/ Estimated Price Earnings" ratio indicates that either the forecasted growth is decelerating (negative annualized growth estimate) or the financial analysts are expecting a loss (negative estimated PE).
+      </long>
+    </text>
+    <text id="17" lang="es">
+      <short>
+        <warnsign /> Sociedad con dificultades
+      </short>
+      <long>
+        Un ratio "Crecimiento Esperado + Rentabilidad Estimada por Dividendo / PE Estimado" <bold>negativo</bold> indica una desaceleración del crecimiento previsto (Crecimiento Esperado anualizado negativo) o que los analistas esperan perdidas (PE negativo).
+      </long>
+    </text>
+    <text id="17" lang="fr">
+      <short>
+        <warnsign /> Société en difficulté
+      </short>
+      <long>
+        Un ratio "Croissance attendue + rendement estimé du dividende/ PE estimé" <bold>négatif</bold> indique que la croissance attendue est en perte de vitesse (estimation de croissance annualisée négative) ou qu'une perte est anticipée par les analystes financiers (PE estimé négatif).
+      </long>
+    </text>
+    <text id="17" lang="it">
+      <short>
+        <warnsign /> Società in difficoltà
+      </short>
+      <long>
+        Un rapporto <bold>negativo</bold> di  "Crescita più Dividendo stimato e Guadagno sul prezzo (PE)", indica o una decelerazione della crescita pronosticata (crescita annualizzata negativa) o l'aspettativa di perdite (PE negativo) da parte degli analisti.
+      </long>
+    </text>
+    <text id="18" lang="de">
+      <short>&gt;50% Premium relativ zur Wachstumserwartung</short>
+      <long>
+        Liegt das "Verhältnis zwischen Wachstum plus geschätzte Dividende und Kurs-Gewinn Zahl" <bold>unter 0.6</bold>, so beinhaltet der Kurs bereits einen <bold>starken Aufschlag</bold> gegenüber dem normalen Preis für das Wachstumspotential. Hier: 50% Aufschlag.
+      </long>
+    </text>
+    <text id="18" lang="en">
+      <short>&gt;50% premium to expected growth</short>
+      <long>
+        A "Forecasted Growth + Estimated Dividend Yield/ Estimated Price Earnings" ratio <bold>below 0.6</bold> indicates that investors must pay a <bold>substantial premium</bold> for the estimated growth potential: &gt;50% premium.
+      </long>
+    </text>
+    <text id="18" lang="es">
+      <short>&gt;50% de prima debido al crecimiento esperado</short>
+      <long>
+        Un ratio "Crecimiento Esperado + Rentabilidad Estimada por Dividendo / PE Estimado" <bold>inferior a 0.6</bold> indica que los inversores deben pagar una <bold>elevada prima</bold> &gt;50% por el crecimiento potencial estimado.
+      </long>
+    </text>
+    <text id="18" lang="fr">
+      <short>&gt;50% de prime à la croissance</short>
+      <long>
+        Un ratio "Croissance attendue + rendement estimé du dividende/ PE estimé" <bold>inférieur à 0.6</bold> indique que les investisseurs doivent payer une <bold>prime substantielle</bold> pour le potentiel de croissance escompté: &gt;50% dans notre cas.
+      </long>
+    </text>
+    <text id="18" lang="it">
+      <short>&gt;50% di premio sulle aspettative di crescita </short>
+      <long>
+        Se il rapporto "Crescita più Dividendo stimato e Guadagno sul prezzo (PE)" è <bold>inferiore a 0.6</bold>, significa che la quotazione di per sè comprende già una <bold>forte maggiorazione</bold> rispetto al prezzo abituale del potenziale di crescita. In questo caso: un aumento del 50%.
+      </long>
+    </text>
+    <text id="19" lang="de">
+      <short>
+        <premium pct="yes" /> Premium relativ zur Wachstumserwartung
+      </short>
+      <long>
+        Liegt das "Verhältnis zwischen Wachstum plus geschätzte Dividende und Kurs-Gewinn Zahl" <bold>unter 0.9</bold>, so beinhaltet der Kurs bereits einen <bold>Aufschlag</bold> gegenüber dem normalen Preis für das Wachstumspotential. Hier: <premium pct="yes" /> Aufschlag.
+      </long>
+    </text>
+    <text id="19" lang="en">
+      <short>
+        <premium pct="yes" /> premium to expected growth
+      </short>
+      <long>
+        A "Forecasted Growth + Estimated Dividend Yield/ Estimated Price Earnings" ratio <bold>below 0.9</bold> indicates that investors must pay a <bold>premium</bold> for the estimated growth potential: <premium pct="yes" /> premium.
+      </long>
+    </text>
+    <text id="19" lang="es">
+      <short>
+        <premium pct="yes" /> de prima debido al crecimiento esperado
+      </short>
+      <long>
+        Un ratio "Crecimiento Esperado + Rentabilidad Estimada por Dividendo / PE Estimado" <bold>inferior a 0.9</bold> indica que los inversores deben pagar una <bold>prima</bold> del <premium pct="yes" /> por el crecimiento potencial estimado.
+      </long>
+    </text>
+    <text id="19" lang="fr">
+      <short>
+        <premium pct="yes" /> de prime à la croissance
+      </short>
+      <long>
+        Un ratio "Croissance attendue + rendement estimé du dividende/ PE estimé" <bold>inférieur à 0.9</bold> indique que les investisseurs doivent payer une <bold>prime</bold> pour le potentiel de croissance escompté: <premium pct="yes" /> dans notre cas.
+      </long>
+    </text>
+    <text id="19" lang="it">
+      <short>
+        <premium pct="yes" /> di premio sulle aspettative di crescita
+      </short>
+      <long>
+        Se il rapporto "Crescita più Dividendo stimato e Guadagno sul prezzo (PE)" è <bold>inferiore a 0.9</bold>, significa che la quotazione di per sè comprende già una <bold>maggiorazione</bold> rispetto al prezzo abituale del potenziale di crescita. In questo caso: un aumento del <premium pct="yes" />.
+      </long>
+    </text>
+    <text id="20" lang="de">
+      <short>
+        <premium pct="yes" /> Discount relativ zur Wachstumserwartung
+      </short>
+      <long>
+        Ein "Verhältnis zwischen Wachstum plus geschätzte Dividende und Kurs-Gewinn Zahl" <bold>von über 0.9</bold> weist auf einen <bold>Preisabschlag</bold> gegenüber dem normalen Preis für das Wachstumspotential hin, von in diesem Fall <premium pct="yes" />.
+      </long>
+    </text>
+    <text id="20" lang="en">
+      <short>
+        <premium pct="yes" /> discount to expected growth
+      </short>
+      <long>
+        A "Forecasted Growth + Estimated Dividend Yield/ Estimated Price Earnings" ratio <bold>higher than 0.9</bold> indicates that the stock's price presents a discount to growth of <premium pct="yes" />.
+      </long>
+    </text>
+    <text id="20" lang="es">
+      <short>
+        <premium pct="yes" /> de descuento respecto al crecimiento esperado
+      </short>
+      <long>
+        Un ratio"Crecimiento Esperado + Rentabilidad Estimada por Dividendo / PE Estimado" <bold>superior a 0.9</bold> indica que el valor presenta un <bold>descuento</bold> del <premium pct="yes" /> respecto al crecimiento potencial estimado.
+      </long>
+    </text>
+    <text id="20" lang="fr">
+      <short>
+        <premium pct="yes" /> de discount à la croissance
+      </short>
+      <long>
+        Un ratio "Croissance attendue + rendement estimé du dividende/ PE estimé" <bold>supérieur à 0.9</bold> indique que le prix du titre intègre un discount à la croissance: <premium pct="yes" /> dans notre cas.
+      </long>
+    </text>
+    <text id="20" lang="it">
+      <short>
+        <premium pct="yes" /> di sconto sulle aspettative di crescita
+      </short>
+      <long>
+        Un rapporto "Crescita più Dividendo stimato e Guadagno sul prezzo (PE)" <bold>superiore a 0.9</bold>, indica uno <bold>sconto</bold> rispetto al prezzo abituale del potenziale di crescita, che in questo caso è del <premium pct="yes" />.
+      </long>
+    </text>
+    <text id="21" lang="de">
+      <short>&gt;40% Discount relativ zur Wachstumserwartung</short>
+      <long>
+        Ein "Verhältnis zwischen Wachstum plus geschätzte Dividende und Kurs-Gewinn Zahl" <bold>von über 0.9</bold> weist auf einen <bold>Preisabschlag</bold> gegenüber dem normalen Preis für das Wachstumspotential hin, von in diesem Fall über 40%.
+      </long>
+    </text>
+    <text id="21" lang="en">
+      <short>&gt;40% discount to expected growth</short>
+      <long>
+        A "Forecasted Growth + Estimated Dividend Yield/ Estimated Price Earnings" ratio <bold>higher than 0.9</bold> indicates that the stock's price presents a discount to growth &gt;40% in this case.
+      </long>
+    </text>
+    <text id="21" lang="es">
+      <short>&gt;40% de descuento respecto al crecimiento esperado</short>
+      <long>
+        Un ratio "Crecimiento Esperado + Rentabilidad Estimada por Dividendo / PE Estimado" <bold>superior a 0.9</bold> indica que el valor presenta un <bold>descuento</bold> del &gt;40% respecto al crecimiento potencial estimado.
+      </long>
+    </text>
+    <text id="21" lang="fr">
+      <short>&gt;40% de discount à la croissance</short>
+      <long>
+        Un ratio "Croissance attendue + rendement estimé du dividende/ PE estimé" <bold>supérieur à 0.9</bold> indique que le prix du titre intègre un discount à la croissance: &gt;40% dans notre cas.
+      </long>
+    </text>
+    <text id="21" lang="it">
+      <short>&gt;40% di sconto sulle aspettative di crescita </short>
+      <long>
+        Un rapporto "Crescita più Dividendo stimato e Guadagno sul prezzo (PE)" <bold>superiore a 0.9</bold>, indica uno <bold>sconto</bold> rispetto al prezzo abituale del potenziale di crescita, che in questo caso è di oltre 40%.
+      </long>
+    </text>
+    <text id="22" lang="de">
+      <short>
+        <warnsign /> Hoher Abschlag zur Wachstumserwartung basiert auf einer Ausnahmesituation
+      </short>
+      <long>
+        Liegt das "Verhältnis zwischen Wachstum plus geschätzte Dividende und Kurs-Gewinn Zahl" <bold>über 1.6</bold>, so befindet sich das Unternehmen in der Regel in einer <bold>Ausnahmesituation</bold>. In diesem Fall ist das erwartete PE (Kurs-Gewinn-Verhältnis) ein besserer Indikator für das nachhaltige Wachstum, als der prozentuale Wachstumswert (LT Growth).
+      </long>
+    </text>
+    <text id="22" lang="en">
+      <short>
+        <warnsign /> High discount to expected growth due to base effect
+      </short>
+      <long>
+        A "Forecasted Growth + Estimated Dividend Yield/ Estimated Price Earnings" ratio <bold>higher than 1.6</bold> often suggests the projected growth is a result of a <bold>base effect</bold>, meaning the company can often be in a turn around situation. In this case, the estimated PE is a better indicator of a stock's expected growth than the Long Term Growth (LT Growth).
+      </long>
+    </text>
+    <text id="22" lang="es">
+      <short>
+        <warnsign /> Muy descontado debido a una causa fundamental
+      </short>
+      <long>
+        Un ratio "Crecimiento Esperado + Rentabilidad Estimada por Dividendo / PE Estimado" <bold>superior a 1,6</bold> a menudo sugiere que el Crecimiento Esperado es resultado de <bold> una causa fundamental</bold> lo que indica que el valor podría invertir su tendencia. En este caso el PE estimado es mejor indicador para la estimación de crecimiento del valor de la acción que el Crecimiento a Largo Plazo.
+      </long>
+    </text>
+    <text id="22" lang="fr">
+      <short>
+        <warnsign /> Discount à la croissance élevé en raison d'un effet de base
+      </short>
+      <long>
+        Un ratio "Croissance attendue + rendement estimé du dividende/ PE estimé" <bold>supérieur à 1.6</bold> indique souvent que la croissance projetée résulte d'un <bold>effet de base</bold>, c'est-à-dire que l'entreprise est susceptible de traverser une situation de renversement. Dans ce cas, le PE estimé constitue un indicateur plus pertinent de la croissance attendue d'un titre que la Croissance à Long Terme (LT Growth).
+      </long>
+    </text>
+    <text id="22" lang="it">
+      <short>
+        <warnsign /> Forte sconto sulle aspettative di crescita dovtuo ad una situazione d'eccezione
+      </short>
+      <long>
+        Se il rapporto "Crescita più Dividendo stimato e Guadagno sul prezzo (PE)" è <bold>superiore a 1.6</bold>, significa che l'azienda si ritrova in una <bold>situazione d'eccezione</bold>. In tal caso il PE (rapporto quotazione-guadagno) atteso è più attendibile come indicatore di una crescita persistente rispetto al valore di crescita percentuale (LT Growth).
+      </long>
+    </text>
+    <text id="23" lang="de">
+      <short>
+        Erwartetes PE für <ltgyear />
+      </short>
+      <long>
+        Der erwartete PE-Wert (Kurs-Gewinn-Verhältnis) gilt für das Jahr <ltgyear />.
+      </long>
+    </text>
+    <text id="23" lang="en">
+      <short>
+        Estimated PE for <ltgyear />
+      </short>
+      <long>
+        The estimated PE is for the year <ltgyear />.
+      </long>
+    </text>
+    <text id="23" lang="es">
+      <short>
+        PE estimado para el <ltgyear />
+      </short>
+      <long>
+        PE estimado para el año <ltgyear />.
+      </long>
+    </text>
+    <text id="23" lang="fr">
+      <short>
+        PE estimé pour <ltgyear />
+      </short>
+      <long>
+        L'estimation du PE est calculée pour l'année <ltgyear />.
+      </long>
+    </text>
+    <text id="23" lang="it">
+      <short>
+        PE atteso per il <ltgyear />
+      </short>
+      <long>
+        Il valore PE (rapporto quotazione-guadagno) atteso vale per l'anno <ltgyear />.
+      </long>
+    </text>
+    <text id="24" lang="de">
+      <short>
+        <warnsign /> Verlust vorhergesagt
+      </short>
+      <long>Der erwartete PE-Wert (Kurs-Gewinn-Verhältnis) ist negativ: Die Finanzanalysten erwarten einen Verlust. </long>
+    </text>
+    <text id="24" lang="en">
+      <short>
+        <warnsign /> Loss forecasts
+      </short>
+      <long>The estimated PE is negative: the financial analysts' earnings estimates forecast a loss.</long>
+    </text>
+    <text id="24" lang="es">
+      <short>
+        <warnsign /> Previsión de perdidas
+      </short>
+      <long>El PE estimado es negativo, los analistas preven que la sociedad tendrá pérdidas.</long>
+    </text>
+    <text id="24" lang="fr">
+      <short>
+        <warnsign /> Prévisions de perte
+      </short>
+      <long>Le PE estimé est négatif: les analystes financiers prévoient que la société réalisera une perte.</long>
+    </text>
+    <text id="24" lang="it">
+      <short>
+        <warnsign /> Pronostici di perdita
+      </short>
+      <long>Il valore PE (rapporto quotazione-guadagno) atteso, è negativo: gli analisti si aspettano una perdita.</long>
+    </text>
+    <text id="25" lang="de">
+      <short>
+        Wachstum heute bis <ltgyear /> p.a.
+      </short>
+      <long>
+        Die durchschnittlichen jährlichen Wachstumsraten gelten für die Gewinne von heute bis <ltgyear />
+      </long>
+    </text>
+    <text id="25" lang="en">
+      <short>
+        Current year to <ltgyear /> annualized estimate
+      </short>
+      <long>
+        The annualized growth estimate is for the current year to <ltgyear />.
+      </long>
+    </text>
+    <text id="25" lang="es">
+      <short>
+        Estimación anualizada de crecimiento para el <ltgyear />
+      </short>
+      <long>
+        La estimación anualizada de crecimiento está calculada desde el año actual hasta el año <ltgyear />.
+      </long>
+    </text>
+    <text id="25" lang="fr">
+      <short>
+        Estimation annualisée pour l'année en cours à <ltgyear />
+      </short>
+      <long>
+        L'estimation de croissance annualisée est calculée sur la base de l'année en cours à <ltgyear />.
+      </long>
+    </text>
+    <text id="25" lang="it">
+      <short>
+        Crescita annuale da oggi al <ltgyear />
+      </short>
+      <long>
+        Le quote medie di crescita annualizzata valgono da oggi al <ltgyear />.
+      </long>
+    </text>
+    <text id="26" lang="de">
+      <short>
+        <stop>
+          Stop: <bold>
+            <stprice />
+          </bold>
+        </stop>
+        <to>
+          Typ: <bold>
+            <tradeoptype />
+          </bold>
+        </to>
+        <start>
+          Start Datum: <bold>
+            <tddate />
+          </bold>
+        </start>
+        <opprice>
+          Start Preis: <bold>
+            <tdprice />
+          </bold>
+        </opprice>
+      </short>
+      <long>
+        Als dieser Titel am <startdate /> zum Kurs von <tdprice /> als mögliche Handels-Gelegenheit ausgewiesen wurde, erfüllte er unsere qualitativen Kriterien und setzte ein technisches Kaufsignal. Unser Stopp-System zeigt jetzt an: Gewinnmitnahme / Stopp-Loss.
+      </long>
+    </text>
+    <text id="26" lang="en">
+      <short>
+        <stop>
+          Stop: <bold>
+            <stprice />
+          </bold>
+        </stop>
+        <to>
+          Type: <bold>
+            <tradeoptype />
+          </bold>
+        </to>
+        <start>
+          Start Date: <bold>
+            <tddate />
+          </bold>
+        </start>
+        <opprice>
+          Start Price: <bold>
+            <tdprice />
+          </bold>
+        </opprice>
+      </short>
+      <long>
+        When this stock was highlighted as a possible trading opportunity on <startdate /> at <tdprice />, it satisfied our qualitative criteria and gave a technical buy signal. Our stop system now signals: take profit / stop-loss.
+      </long>
+    </text>
+    <text id="26" lang="es">
+      <short>
+        <stop>
+          Stop: <bold>
+            <stprice />
+          </bold>
+        </stop>
+        <to>
+          Type: <bold>
+            <tradeoptype />
+          </bold>
+        </to>
+        <start>
+          Posición del: <bold>
+            <tddate />
+          </bold>
+        </start>
+        <opprice>
+          Precio: <bold>
+            <tdprice />
+          </bold>
+        </opprice>
+      </short>
+      <long>
+        Cuando un título se identifica como oportunidad de trading en la fecha <startdate />, al precio de <tdprice /> quiere decir que satisface nuestros criterios de calidad y que da una señal técnica de compra. Hoy nuestro sistema de Stops envía la siguiente señal: Vender con beneficio/Ejecutar el Stop-Loss.
+      </long>
+    </text>
+    <text id="26" lang="fr">
+      <short>
+        <stop>
+          Stop: <bold>
+            <stprice />
+          </bold>
+        </stop>
+        <to>
+          Type: <bold>
+            <tradeoptype />
+          </bold>
+        </to>
+        <start>
+          Ouverte le: <bold>
+            <tddate />
+          </bold>
+        </start>
+        <opprice>
+          Cours: <bold>
+            <tdprice />
+          </bold>
+        </opprice>
+      </short>
+      <long>
+        Lorsque ce titre a été identifié comme une possible opportunité de trading en date du <startdate />, au cours de <tdprice />, il remplissait nos critères qualitatifs et donnait un signal technique d'achat. Aujourd'hui, notre système de stop nous donne le signal suivant: prise de profit / couper la perte.
+      </long>
+    </text>
+    <text id="26" lang="it">
+      <short>
+        <stop>
+          Stop: <bold>
+            <stprice />
+          </bold>
+        </stop>
+        <to>
+          Tipo: <bold>
+            <tradeoptype />
+          </bold>
+        </to>
+        <start>
+          Data d'apertura: <bold>
+            <tddate />
+          </bold>
+        </start>
+        <opprice>
+          Quotazione d'apertura:  <bold>
+            <tdprice />
+          </bold>
+        </opprice>
+      </short>
+      <long>
+        Il titolo in questione, allorché il <startdate /> a quotazione <tdprice /> fu indicato come possibile opportunità di scambio, adempiva i nostri criteri qualitativi, costituendo  un segnale tecnico per l'acquisto. Ora il nostro stop system indica: Vendita con gli utili / Stop-Loss.
+      </long>
+    </text>
+    <text id="27" lang="de">
+      <short>
+        <to>
+          Typ: <bold>
+            <tradeoptype />
+          </bold>
+        </to>
+        <start>
+          Start Datum: <bold>
+            <tddate />
+          </bold>
+        </start>
+        <opprice>
+          Start Preis: <bold>
+            <tdprice />
+          </bold>
+        </opprice>
+        <stop>
+          Stop: <bold>
+            <stprice />
+          </bold>
+        </stop>
+      </short>
+      <long>
+        Dieser Titel wurde am <startdate /> zum Kurs von <tdprice /> als mögliche Handels-Gelegenheit ausgewiesen. Zum aktuellen Kurs stuft unser Stopp-System diesen Titel weiterhin als offene Handels-Gelegenheit ein. Beachten Sie bitte, dass der Stopp gegenwärtig bei <stprice /> liegt.
+      </long>
+    </text>
+    <text id="27" lang="en">
+      <short>
+        <to>
+          Type: <bold>
+            <tradeoptype />
+          </bold>
+        </to>
+        <start>
+          Start Date: <bold>
+            <tddate />
+          </bold>
+        </start>
+        <opprice>
+          Start Price: <bold>
+            <tdprice />
+          </bold>
+        </opprice>
+        <stop>
+          Stop: <bold>
+            <stprice />
+          </bold>
+        </stop>
+      </short>
+      <long>
+        This stock was highlighted as a possible trading opportunity on <startdate /> at <tdprice />. At its current price of <price /> our stop system maintains this stock as an open trading opportunity. Keep in mind that the stop is currently set at <stprice />.
+      </long>
+    </text>
+    <text id="27" lang="es">
+      <short>
+        <to>
+          Type: <bold>
+            <tradeoptype />
+          </bold>
+        </to>
+        <start>
+          Posicion del: <bold>
+            <tddate />
+          </bold>
+        </start>
+        <opprice>
+          Precio: <bold>
+            <tdprice />
+          </bold>
+        </opprice>
+        <stop>
+          Stop: <bold>
+            <stprice />
+          </bold>
+        </stop>
+      </short>
+      <long>
+        Este valor está identificado como oportunidad de trading en la fecha <startdate /> al precio de <tdprice />. Al precio actual de <price /> nuestro sistema de Stops todavía mantiene está acción como una oportunidad de trading. Sin embargo, no olvide que el Stop está fijado al precio de <stprice />.
+      </long>
+    </text>
+    <text id="27" lang="fr">
+      <short>
+        <to>
+          Type: <bold>
+            <tradeoptype />
+          </bold>
+        </to>
+        <start>
+          Ouverte le: <bold>
+            <tddate />
+          </bold>
+        </start>
+        <opprice>
+          Cours: <bold>
+            <tdprice />
+          </bold>
+        </opprice>
+        <stop>
+          Stop: <bold>
+            <stprice />
+          </bold>
+        </stop>
+      </short>
+      <long>
+        Ce titre a été identifié comme une possible opportunité de trading le <startdate /> à <tdprice />. Au cours actuel de <price />, notre système de stop maintient ce titre comme une opportunité de trading ouverte. Gardez à l'esprit que le stop est actuellement fixé à <stprice />.
+      </long>
+    </text>
+    <text id="27" lang="it">
+      <short>
+        <to>
+          Tipo: <bold>
+            <tradeoptype />
+          </bold>
+        </to>
+        <start>
+          Data d'apertura: <bold>
+            <tddate />
+          </bold>
+        </start>
+        <opprice>
+          Quotazione d'apertura: <bold>
+            <tdprice />
+          </bold>
+        </opprice>
+        <stop>
+          Stop: <bold>
+            <stprice />
+          </bold>
+        </stop>
+      </short>
+      <long>
+        Il <startdate /> a quotazione <tdprice /> il titolo in questione fu indicato come possibile opportunità di scambio. Alla quotazione attuale il nostro stop system seguita ad valutare lo stesso titolo come opportunità di scambio aperta. Si prega di tener conto che lo Stop fissato attualmente è a <stprice />.
+      </long>
+    </text>
+    <text id="28" lang="de">
+      <short>
+        <to>
+          Typ: <bold>
+            <tradeoptype />
+          </bold>
+        </to>
+        <start>
+          Start Datum: <bold>
+            <tddate />
+          </bold>
+        </start>
+        <opprice>
+          Start Preis: <bold>
+            <tdprice />
+          </bold>
+        </opprice>
+        <stop>
+          Stopp: <bold>
+            <stprice />
+          </bold>
+        </stop>
+      </short>
+      <long>
+        Unsere Indikatoren weisen diese Aktie bei einem Kurs von <tdprice /> als Handels-Gelegenheit aus, wobei der Stopp von <stprice /> berücksichtigt werden sollte.
+      </long>
+    </text>
+    <text id="28" lang="en">
+      <short>
+        <to>
+          Type: <bold>
+            <tradeoptype />
+          </bold>
+        </to>
+        <start>
+          Start Date: <bold>
+            <tddate />
+          </bold>
+        </start>
+        <opprice>
+          Start Price: <bold>
+            <tdprice />
+          </bold>
+        </opprice>
+        <stop>
+          Stop: <bold>
+            <stprice />
+          </bold>
+        </stop>
+      </short>
+      <long>
+        All indicators suggest that at <tdprice /> this stock could provide a trading opportunity, but keep in mind that the stop has been set at <stprice />.
+      </long>
+    </text>
+    <text id="28" lang="es">
+      <short>
+        <to>
+          Type: <bold>
+            <tradeoptype />
+          </bold>
+        </to>
+        <start>
+          Posición dell: <bold>
+            <tddate />
+          </bold>
+        </start>
+        <opprice>
+          Precio: <bold>
+            <tdprice />
+          </bold>
+        </opprice>
+        <stop>
+          Stop: <bold>
+            <stprice />
+          </bold>
+        </stop>
+      </short>
+      <long>
+        Todos los indicadores sugieren que al precio de <tdprice /> este valor podría ofrecernos una oportunidad de trading. Sin embargo, no olvide que el Stop está fijado al precio de <stprice />.
+      </long>
+    </text>
+    <text id="28" lang="fr">
+      <short>
+        <to>
+          Type: <bold>
+            <tradeoptype />
+          </bold>
+        </to>
+        <start>
+          Ouverte le: <bold>
+            <tddate />
+          </bold>
+        </start>
+        <opprice>
+          Cours: <bold>
+            <tdprice />
+          </bold>
+        </opprice>
+        <stop>
+          Stop: <bold>
+            <stprice />
+          </bold>
+        </stop>
+      </short>
+      <long>
+        Tous les indicateurs suggèrent qu'à <tdprice /> ce titre pourrait constituer une opportunité de trading, mais gardez à l'esprit que le stop a été fixé à <stprice />.
+      </long>
+    </text>
+    <text id="28" lang="it">
+      <short>
+        <to>
+          Tipo: <bold>
+            <tradeoptype />
+          </bold>
+        </to>
+        <start>
+          Data d'apertura: <bold>
+            <tddate />
+          </bold>
+        </start>
+        <opprice>
+          Quotazione d'apertura: <bold>
+            <tdprice />
+          </bold>
+        </opprice>
+        <stop>
+          Stop: <bold>
+            <stprice />
+          </bold>
+        </stop>
+      </short>
+      <long>
+        I nostri indicatori evidenziano come il titolo in questione ad una quotazione di <tdprice /> costituisca un'opportunità di scambio, tenendo conto però dello Stop fissato a <stprice />.
+      </long>
+    </text>
+    <text id="29" lang="de">
+      <short>Nicht anwendbar</short>
+      <long>Dieser Titel verfügt nicht über die notwendigen Kriterien für eine Einstufung als Handels-Gelegenheit.</long>
+    </text>
+    <text id="29" lang="en">
+      <short>Not Applicable</short>
+      <long>This stock is currently not identified as a trading opportunity.</long>
+    </text>
+    <text id="29" lang="es">
+      <short>No aplicable</short>
+      <long>Este valor actualmente no está identificado como oportunidad de trading.</long>
+    </text>
+    <text id="29" lang="fr">
+      <short>Non applicable</short>
+      <long>Le titre n'est actuellement pas identifié comme une opportunité de trading.</long>
+    </text>
+    <text id="29" lang="it">
+      <short>Inapplicabile</short>
+      <long>Il titolo in questione non vanta i criteri necessari per essere classificato un'opportunità di scambio.</long>
+    </text>
+    <text id="30" lang="de">
+      <short>Nicht anwendbar</short>
+      <long>Dieser Titel verfügt nicht über die notwendige minimale Börsenkapitalisierung von $1 Mia für die Empfehlung als Handels-Gelegenheit.</long>
+    </text>
+    <text id="30" lang="en">
+      <short>Not Applicable</short>
+      <long>This stock does not possess the minimum market capitalization of $1bn necessary to be considered for a trading opportunity.</long>
+    </text>
+    <text id="30" lang="es">
+      <short>No aplicable</short>
+      <long>Este valor no presenta la capitalización mínima bursatil (equivalente a $1Mrd..) para ser considerado como una oportunidad de trading.</long>
+    </text>
+    <text id="30" lang="fr">
+      <short>Non applicable</short>
+      <long>Le titre ne possède pas la capitalisation boursière minimale (1 milliard de $) pour être considéré pour une opportunité de trading. </long>
+    </text>
+    <text id="30" lang="it">
+      <short>Inapplicabile</short>
+      <long>Il titolo in questione non vanta la capitalizzazione minima necessaria di $1 mrd. per essere consigliato come opportunità di scambio. </long>
+    </text>
+    <text id="31" lang="de">
+      <short>Starkes Analysteninteresse</short>
+      <long>
+        In den zurückliegenden sieben Wochen haben durchschnittlich <nbranl /> Analysten eine Schätzung des Gewinns pro Aktie für diesen Titel abgegeben.
+      </long>
+    </text>
+    <text id="31" lang="en">
+      <short>Strongly followed by financial analysts</short>
+      <long>
+        Over the last seven weeks, an average of <nbranl /> analysts provided earnings per share estimates.
+      </long>
+    </text>
+    <text id="31" lang="es">
+      <short>Valor muy seguido por los analistas</short>
+      <long>
+        En las últimas 7 semanas una media de <nbranl /> analistas han publicado sus previsiones de Beneficio por Acción para este valor.
+      </long>
+    </text>
+    <text id="31" lang="fr">
+      <short>Très suivi par les analystes financiers</short>
+      <long>
+        Sur les 7 dernières semaines, <nbranl /> analystes en moyenne ont publié des estimations de bénéfice par action.
+      </long>
+    </text>
+    <text id="31" lang="it">
+      <short>Forte interesse da parte degli analisti </short>
+      <long>
+        Nelle scorse 7 settimane, una stima degli utili per ogni singola azione del titolo in questione, è stata pronunciata da una media di <nbranl /> analisti.
+      </long>
+    </text>
+    <text id="32" lang="de">
+      <short>Bei den Analysten von mittlerem Interesse</short>
+      <long>
+        In den zurückliegenden sieben Wochen haben durchschnittlich <nbranl /> Analysten eine Schätzung des Gewinns pro Aktie für diesen Titel abgegeben.
+      </long>
+    </text>
+    <text id="32" lang="en">
+      <short>Fairly followed by financial analysts</short>
+      <long>
+        Over the last seven weeks, an average of <nbranl /> analysts provided earnings per share estimates.
+      </long>
+    </text>
+    <text id="32" lang="es">
+      <short>Valor moderadamente seguido por los analistas</short>
+      <long>
+        En las últimas 7 semanas una media de <nbranl /> analistas han publicado sus previsiones de Beneficio por Acción para este valor.
+      </long>
+    </text>
+    <text id="32" lang="fr">
+      <short>Correctement suivi par les analystes financiers</short>
+      <long>
+        Sur les 7 dernières semaines, <nbranl /> analystes en moyenne ont publié des estimations de bénéfice par action.
+      </long>
+    </text>
+    <text id="32" lang="it">
+      <short>Di medio interesse per gli analisti</short>
+      <long>
+        Nelle scorse 7 settimane, una stima degli utili per ogni singola azione del titolo in questione, è stata pronunciata da una media di <nbranl /> analisti.
+      </long>
+    </text>
+    <text id="33" lang="de">
+      <short>Nur von wenigen Analysten verfolgt</short>
+      <long>
+        In den zurückliegenden sieben Wochen haben durchschnittlich <nbranl /> Analysten eine Schätzung des Gewinns pro Aktie für diesen Titel abgegeben.
+      </long>
+    </text>
+    <text id="33" lang="en">
+      <short>Weakly followed by financial analysts</short>
+      <long>
+        Over the last seven weeks, an average of <nbranl /> analysts provided earnings per share estimates.
+      </long>
+    </text>
+    <text id="33" lang="es">
+      <short>Valor poco seguido por los analistas</short>
+      <long>
+        En las últimas 7 semanas una media de <nbranl /> analistas han publicado sus previsiones de Beneficio por Acción para este valor.
+      </long>
+    </text>
+    <text id="33" lang="fr">
+      <short>Peu suivi par les analystes financiers</short>
+      <long>
+        Sur les 7 dernières semaines, <nbranl /> analystes en moyenne ont publié des estimations de bénéfice par action.
+      </long>
+    </text>
+    <text id="33" lang="it">
+      <short>Seguito solo da pochi analisti</short>
+      <long>
+        Nelle scorse 7 settimane, una stima degli utili per ogni singola azione del titolo in questione, è stata pronunciata da una media di <nbranl /> analisti.
+      </long>
+    </text>
+    <text id="34" lang="de">
+      <short>Dividende durch Gewinn gut gedeckt</short>
+      <long>
+        Für die während den nächsten 12 Monaten erwartete Dividende müssen voraussichtlich <bold>
+          <payout pct="yes" />
+        </bold> des Gewinns verwendet werden.
+      </long>
+    </text>
+    <text id="34" lang="en">
+      <short>Dividend is largely covered by profits</short>
+      <long>
+        The twelve month estimated dividend yield represents <bold>
+          <payout pct="yes" />
+        </bold> of earnings forecasts.
+      </long>
+    </text>
+    <text id="34" lang="es">
+      <short>El dividendo está ampliamente cubierto por los beneficios</short>
+      <long>
+        Las previsiones de dividendos para los próximos 12 meses corresponden al <bold>
+          <payout pct="yes" />
+        </bold> de los beneficios estimados.
+      </long>
+    </text>
+    <text id="34" lang="fr">
+      <short>Dividende largement couvert par les bénéfices</short>
+      <long>
+        Le dividende estimé pour les 12 prochains mois représente <bold>
+          <payout pct="yes" />
+        </bold> des estimations bénéficiaires.
+      </long>
+    </text>
+    <text id="34" lang="it">
+      <short>Dividendo ben coperto dagli utili</short>
+      <long>
+        Per il dividendo atteso nei prossimi 12 mesi, è presumibile che si debba impiegare un <bold>
+          <payout pct="yes" />
+        </bold> degli utili.
+      </long>
+    </text>
+    <text id="35" lang="de">
+      <short>Dividende durch Gewinn gedeckt</short>
+      <long>
+        Für die während den nächsten 12 Monaten erwartete Dividende müssen voraussichtlich <bold>
+          <payout pct="yes" />
+        </bold> des Gewinns verwendet werden.
+      </long>
+    </text>
+    <text id="35" lang="en">
+      <short>Dividend is covered by profits, but not strongly</short>
+      <long>
+        The twelve month estimated dividend yield represents <bold>
+          <payout pct="yes" />
+        </bold> of earnings forecasts.
+      </long>
+    </text>
+    <text id="35" lang="es">
+      <short>El dividendo está cubierto por los beneficios, pero sin demasiado margen</short>
+      <long>
+        Las previsiones de dividendos para los próximos 12 meses corresponden al <bold>
+          <payout pct="yes" />
+        </bold> de los beneficios estimados.
+      </long>
+    </text>
+    <text id="35" lang="fr">
+      <short>Dividende couvert par les bénéfices mais moyennement</short>
+      <long>
+        Le dividende estimé pour les 12 prochains mois représente <bold>
+          <payout pct="yes" />
+        </bold> des estimations bénéficiaires.
+      </long>
+    </text>
+    <text id="35" lang="it">
+      <short>Dividendo coperto dagli utili</short>
+      <long>
+        Per il dividendo atteso nei prossimi 12 mesi, è presumibile che si debba impiegare un <bold>
+          <payout pct="yes" />
+        </bold> degli utili.
+      </long>
+    </text>
+    <text id="36" lang="de">
+      <short>
+        <warnsign /> Dividende ist nur unzureichend durch Gewinne gedeckt
+      </short>
+      <long>
+        Für die während den nächsten 12 Monaten erwartete Dividende müssen voraussichtlich <bold>
+          <payout pct="yes" />
+        </bold> des Gewinns verwendet werden.
+      </long>
+    </text>
+    <text id="36" lang="en">
+      <short>
+        <warnsign /> Dividend is not sufficiently covered by profits
+      </short>
+      <long>
+        The twelve month estimated dividend yield represents <bold>
+          <payout pct="yes" />
+        </bold> of earnings forecasts.
+      </long>
+    </text>
+    <text id="36" lang="es">
+      <short>
+        <warnsign /> El dividendo no está suficientemente cubierto por los beneficios
+      </short>
+      <long>
+        Las previsiones de dividendos para los próximos 12 meses corresponden al <bold>
+          <payout pct="yes" />
+        </bold> de los beneficios estimados.
+      </long>
+    </text>
+    <text id="36" lang="fr">
+      <short>
+        <warnsign /> Dividende insuffisamment couvert par les bénéfices
+      </short>
+      <long>
+        Le dividende estimé pour les 12 prochains mois représente <bold>
+          <payout pct="yes" />
+        </bold> des estimations bénéficiaires.
+      </long>
+    </text>
+    <text id="36" lang="it">
+      <short>
+        <warnsign /> Dividendo non sufficientemente coperto dagli utili
+      </short>
+      <long>
+        Per il dividendo atteso nei prossimi 12 mesi, è presumibile che si debba impiegare un <bold>
+          <payout pct="yes" />
+        </bold> degli utili.
+      </long>
+    </text>
+    <text id="37" lang="de">
+      <short>
+        <warnsign /> Dividende ist durch den Gewinn nicht gedeckt
+      </short>
+      <long>Die während den nächsten 12 Monaten erwartete Dividende ist durch den Unternehmensgewinn voraussichtlich nicht gedeckt.</long>
+    </text>
+    <text id="37" lang="en">
+      <short>
+        <warnsign /> Dividend is not covered by profits
+      </short>
+      <long>The earnings forecasts are not sufficient to cover the twelve month estimated dividend.</long>
+    </text>
+    <text id="37" lang="es">
+      <short>
+        <warnsign /> El dividendo no está cubierto por los beneficios
+      </short>
+      <long>Los beneficios estimados no son suficientes para cubrir adecuadamente los dividendos previstos para los próximos 12 meses.</long>
+    </text>
+    <text id="37" lang="fr">
+      <short>Dividende non couvert par les bénéfices</short>
+      <long>Les prévisions bénéficiaires sont insuffisantes pour couvrir le dividende estimé pour les 12 prochains mois.</long>
+    </text>
+    <text id="37" lang="it">
+      <short>
+        <warnsign /> Dividendo non coperto dagli utili
+      </short>
+      <long>Il dividendo atteso nei prossimi 12 mesi, presumibilmente non è coperto dal ricavato societario.</long>
+    </text>
+    <text id="38" lang="de">
+      <short>Keine Dividende</short>
+      <long>Die Gesellschaft bezahlt keine Dividende.</long>
+    </text>
+    <text id="38" lang="en">
+      <short>No dividend</short>
+      <long>The company is not paying a dividend.</long>
+    </text>
+    <text id="38" lang="es">
+      <short>Sin dividendo</short>
+      <long>La compañía no paga dividendos.</long>
+    </text>
+    <text id="38" lang="fr">
+      <short>Pas de dividende</short>
+      <long>La société ne verse pas de dividende.</long>
+    </text>
+    <text id="38" lang="it">
+      <short>Nessun dividendo</short>
+      <long>La società non versa alcun dividendo.</long>
+    </text>
+    <text id="39" lang="de">
+      <short>
+        Negativer Markttrend seit dem <ttdate />
+      </short>
+      <long>
+        Der mittelfristige technische 40-Tage Trend ist seit dem <ttdate /> negativ. Der bestätigte technische Trendwendepunkt (Tech Reverse + 1.75%) liegt bei <bold>
+          <tr-max />
+        </bold>.
+      </long>
+    </text>
+    <text id="39" lang="en">
+      <short>
+        Market negative since <ttdate />
+      </short>
+      <long>
+        The forty day Medium Term Technical Trend is negative since <ttdate />. The confirmed Technical Reverse point (Tech Reverse + 1.75%) is <bold>
+          <tr-max />
+        </bold>.
+      </long>
+    </text>
+    <text id="39" lang="es">
+      <short>
+        Tendencia técnica negativa desde el <ttdate />
+      </short>
+      <long>
+        La tendencia técnica a medio plazo (40 días) es negativa desde el <ttdate />. El punto confirmado de inversión de la tendencia (Tech Reverse + 1.75%) se encuentra actualmente en <bold>
+          <tr-max />
+        </bold>.
+      </long>
+    </text>
+    <text id="39" lang="fr">
+      <short>
+        Marché négatif depuis le <ttdate />
+      </short>
+      <long>
+        La tendance technique à moyen terme (40 jours) est négative depuis le <ttdate />. Le point de renversement technique confirmé (Tech Reverse + 1.75%) est actuellement fixé à <bold>
+          <tr-max />
+        </bold>.
+      </long>
+    </text>
+    <text id="39" lang="it">
+      <short>
+        Tendenza di mercato negativa a partire dal giorno <ttdate />
+      </short>
+      <long>
+        La tendenza tecnica a un medio termine di 40 giorni, dal giorno <ttdate /> risulta negativa. Il punto tecnico di inversione di tendenza (Tech Reverse + 1.75%) è confermato a <bold>
+          <tr-max />
+        </bold>.
+      </long>
+    </text>
+    <text id="40" lang="de">
+      <short>
+        Neutraler Markttrend nach vorgängig (seit dem <ttdate /> anhaltender) negativer Phase
+      </short>
+      <long>
+        Die Aktie wird in der Nähe ihres 40-Tage Durchschnitts gehandelt (in einer Bandbreite von +1.75% bis -1.75%). Zuvor unterlag der Wert einem negativen Trend und dies seit dem <ttdate />. Der bestätigte technische Trendwendepunkt (Tech Reverse + 1.75%) liegt bei <bold>
+          <tr-max />
+        </bold>.
+      </long>
+    </text>
+    <text id="40" lang="en">
+      <short>
+        Market neutral but previously negative (since <ttdate />)
+      </short>
+      <long>
+        The stock is currently trading close to its forty day moving average (changes between +1.75% and -1.75% are considered neutral). Prior to this (since <ttdate />), the stock traded below its moving average. The confirmed Technical Reverse (Tech Reverse + 1.75%) point is <bold>
+          <tr-max />
+        </bold>.
+      </long>
+    </text>
+    <text id="40" lang="es">
+      <short>
+        Tendencia técnica neutral, anteriormente negativa (desde el <ttdate />)
+      </short>
+      <long>
+        La acción está actualmente cotizando muy cerca de su media móvil de 40 días (cambios entre +1,75% y - 1,75% son considerardos neutros). Anteriormente (desde <ttdate />) la acción cotizaba por debajo de la media de 40 días. El punto confirmado de inversión de la tendencia (Tech Reverse + 1.75%) se encuentra en <bold>
+          <tr-max />
+        </bold>.
+      </long>
+    </text>
+    <text id="40" lang="fr">
+      <short>
+        Marché neutre mais précédemment négatif (depuis le <ttdate />)
+      </short>
+      <long>
+        Le titre s'échange à un prix proche de sa moyenne mobile à 40 jours (les changements compris entre +1.75% et -1.75% sont considérés comme neutres). Auparavant (depuis le <ttdate />), le titre s'échangeait à un prix situé en-dessous de sa moyenne mobile à 40 jours. Le point de renversement technique confirmé (Tech Reverse + 1.75%) est actuellement fixé à <bold>
+          <tr-max />
+        </bold>.
+      </long>
+    </text>
+    <text id="40" lang="it">
+      <short>
+        Tendenza di mercato neutra, a seguito di una fase negativa precedente (a partire dal giorno <ttdate />)
+      </short>
+      <long>
+        L'azione viene quotata pressapoco sulla propria media di 40 giorni (con un'estensione compresa tra +1.75% e -1.75%). In precedenza, il valore veniva influenzato da una tendenza negativa iniziata il <ttdate />. Il punto tecnico di inversione di tendenza (Tech Reverse + 1.75%) è confermato a <bold>
+          <tr-max />
+        </bold>.
+      </long>
+    </text>
+    <text id="41" lang="de">
+      <short>
+        Positiver Markttrend seit dem <ttdate />
+      </short>
+      <long>
+        Der mittelfristige technische 40-Tage Trend ist seit dem <ttdate /> positiv. Der bestätigte technische Trendwendepunkt (Tech Reverse + 1.75%) ist <bold>
+          <tr-min />
+        </bold>.
+      </long>
+    </text>
+    <text id="41" lang="en">
+      <short>
+        Market positive since <ttdate />
+      </short>
+      <long>
+        The forty day Medium Term Technical Trend is positive since <ttdate />. The confirmed Technical Reverse point (Tech Reverse - 1.75%) is <bold>
+          <tr-min />
+        </bold>.
+      </long>
+    </text>
+    <text id="41" lang="es">
+      <short>
+        Tendencia técnica positiva desde el <ttdate />
+      </short>
+      <long>
+        La tendencia técnica a medio plazo (40 días) es positiva desde el <ttdate />. El punto confirmado de inversión de la tendencia (Tech Reverse - 1.75%) se encuentra actualmente en <bold>
+          <tr-max />
+        </bold>.
+      </long>
+    </text>
+    <text id="41" lang="fr">
+      <short>
+        Marché positif depuis le <ttdate />
+      </short>
+      <long>
+        La tendance technique à moyen terme (40 jours) est positive depuis le <ttdate />. Le point de renversement technique confirmé (Tech Reverse - 1.75%)  est actuellement fixé à <bold>
+          <tr-min />
+        </bold>.
+      </long>
+    </text>
+    <text id="41" lang="it">
+      <short>
+        Tendenza di mercato positiva a partire dal giorno <ttdate />
+      </short>
+      <long>
+        La tendenza tecnica a un medio termine di 40 giorni, dal giorno <ttdate /> risulta positiva. Il punto tecnico di inversione di tendenza (Tech Reverse + 1.75%) è confermato a <bold>
+          <tr-min />
+        </bold>.
+      </long>
+    </text>
+    <text id="42" lang="de">
+      <short>
+        Neutraler Markttrend nach vorgängig (seit dem <ttdate /> anhaltender) positiver Phase
+      </short>
+      <long>
+        Die Aktie wird in der Nähe ihres 40-Tage Durchschnitts gehandelt (in einer Bandbreite von +1.75% bis -1.75%). Zuvor unterlag der Wert einem positiven Trend und dies seit dem <ttdate />. Der bestätigte technische Trendwendepunkt (Tech Reverse + 1.75%) liegt bei <bold>
+          <tr-min />
+        </bold>.
+      </long>
+    </text>
+    <text id="42" lang="en">
+      <short>
+        Market neutral but previously positive (since <ttdate />)
+      </short>
+      <long>
+        The stock is currently trading close to its forty day moving average (changes between +1.75% and -1.75% are considered neutral). Prior to this (since <ttdate />), the stock traded above its moving average. The confirmed Technical Reverse point (Tech Reverse - 1.75%) is <bold>
+          <tr-min />
+        </bold>.
+      </long>
+    </text>
+    <text id="42" lang="es">
+      <short>
+        Tendencia técnica neutral, anteriormente positiva (desde el <ttdate />)
+      </short>
+      <long>
+        La acción está actualmente cotizando muy cerca de su media móvil de 40 días (cambios entre +1,75% y - 1,75% son considerardos neutros). Anteriormente (desde <ttdate />) la acción cotizaba por encima de la media de 40 días. El punto confirmado de inversión de la tendencia (Tech Reverse - 1.75%) se encuentra en <bold>
+          <tr-max />
+        </bold>.
+      </long>
+    </text>
+    <text id="42" lang="fr">
+      <short>
+        Marché neutre mais précédemment positif (depuis le <ttdate />)
+      </short>
+      <long>
+        Le titre s'échange à un prix proche de sa moyenne mobile à 40 jours (les changements compris entre +1.75% et -1.75% sont considérés comme neutres). Auparavant (depuis le <ttdate />), le titre s'échangeait à un prix situé au-dessus de sa moyenne mobile à 40 jours. Le point de renversement technique confirmé (Tech Reverse - 1.75%) est actuellement fixé à <bold>
+          <tr-min />
+        </bold>.
+      </long>
+    </text>
+    <text id="42" lang="it">
+      <short>
+        Tendenza di mercato neutra,  a seguito di una fase positiva precedente (a partire dal giorno <ttdate />)
+      </short>
+      <long>
+        L'azione viene quotata pressapoco sulla propria media di 40 giorni (con un'estensione compresa tra +1.75% e -1.75%). In precedenza, il valore veniva influenzato da una tendenza positiva iniziata il <ttdate />. Il punto tecnico di inversione di tendenza (Tech Reverse + 1.75%) è confermato a <bold>
+          <trmin />
+        </bold>.
+      </long>
+    </text>
+    <text id="43" lang="de">
+      <short>
+        Negativer Markttrend seit dem <ttdate />
+      </short>
+      <long>
+        Der mittelfristige technische 40-Tage Trend ist seit dem <ttdate /> negativ. Der bestätigte technische Trendwendepunkt (Tech Reverse + 1.75%) liegt bei <bold>
+          <tr-max />
+        </bold>.
+      </long>
+    </text>
+    <text id="43" lang="en">
+      <short>
+        Market negative since <ttdate />
+      </short>
+      <long>
+        The forty day Medium Term Technical Trend is negative since <ttdate />. The confirmed Technical Reverse point (Tech Reverse + 1.75%) is <bold>
+          <tr-max />
+        </bold>.
+      </long>
+    </text>
+    <text id="43" lang="es">
+      <short>
+        Tendencia técnica negativa desde el <ttdate />
+      </short>
+      <long>
+        La tendencia técnica a medio plazo (40 días) es negativa desde el <ttdate />. El punto confirmado de inversión de la tendencia (Tech Reverse + 1.75%) se encuentra actualmente en <bold>
+          <tr-max />
+        </bold>.
+      </long>
+    </text>
+    <text id="43" lang="fr">
+      <short>Marché négatif depuis plus d'un an</short>
+      <long>
+        La tendance technique à moyen terme (40 jours) est négative depuis le <ttdate />. Le point de renversement technique confirmé (Tech Reverse + 1.75%) est actuellement fixé à <bold>
+          <tr-max />
+        </bold>.
+      </long>
+    </text>
+    <text id="43" lang="it">
+      <short>
+        Tendenza di mercato negativa a partire dal giorno <ttdate />
+      </short>
+      <long>
+        La tendenza tecnica a un medio termine di 40 giorni, dal giorno <ttdate /> risulta negativa. Il punto tecnico di inversione di tendenza (Tech Reverse + 1.75%) è confermato a <bold>
+          <tr-max />
+        </bold>.
+      </long>
+    </text>
+    <text id="44" lang="de">
+      <short>
+        Neutraler Markttrend nach vorgängig (seit dem <ttdate /> anhaltender) negativer Phase
+      </short>
+      <long>
+        Die Aktie wird in der Nähe ihres 40-Tage Durchschnitts gehandelt (in einer Bandbreite von +1.75% bis -1.75%). Zuvor unterlag der Wert einem negativen Trend und dies seit dem <ttdate />. Der bestätigte technische Trendwendepunkt (Tech Reverse + 1.75%) liegt bei <bold>
+          <tr-max />
+        </bold>.
+      </long>
+    </text>
+    <text id="44" lang="en">
+      <short>
+        Market neutral but previously negative (since <ttdate />)
+      </short>
+      <long>
+        The stock is currently trading close to its forty day moving average (changes between +1.75% and -1.75% are considered neutral). Prior to this (since <ttdate />), the stock traded below its moving average. The confirmed Technical Reverse (Tech Reverse + 1.75%) point is <bold>
+          <tr-max />
+        </bold>.
+      </long>
+    </text>
+    <text id="44" lang="es">
+      <short>
+        Tendencia técnica neutral, anteriormente negativa (desde el <ttdate />)
+      </short>
+      <long>
+        La acción está actualmente cotizando muy cerca de su media móvil de 40 días (cambios entre +1,75% y - 1,75% son considerardos neutros). Anteriormente (desde <ttdate />) la acción cotizaba por debajo de la media de 40 días. El punto confirmado de inversión de la tendencia (Tech Reverse + 1.75%) se encuentra en <bold>
+          <tr-max />
+        </bold>.
+      </long>
+    </text>
+    <text id="44" lang="fr">
+      <short>Marché neutre mais précédemment négatif (depuisplus d'un an)</short>
+      <long>
+        Le titre s'échange à un prix proche de sa moyenne mobile à 40 jours (les changements compris entre +1.75% et -1.75% sont considérés comme neutres). Auparavant (depuis plus d'un an), le titre s'échangeait à un prix situé en-dessous de sa moyenne mobile à 40 jours. Le point de renversement technique confirmé (Tech Reverse + 1.75%) est actuellement fixé à <bold>
+          <tr-max />
+        </bold>.
+      </long>
+    </text>
+    <text id="44" lang="it">
+      <short>
+        Tendenza di mercato neutra, a seguito di una fase negativa (persistente dal giorno <ttdate />)
+      </short>
+      <long>
+        L'azione viene quotata pressapoco sulla propria media di 40 giorni (con un'estensione compresa tra +1.75% e -1.75%). In precedenza, il valore veniva influenzato da una tendenza negativa iniziata il <ttdate />. Il punto tecnico di inversione di tendenza (Tech Reverse + 1.75%) è confermato a  <bold>
+          <trmax />
+        </bold>.
+      </long>
+    </text>
+    <text id="45" lang="de">
+      <short>
+        Positiver Markttrend seit dem <ttdate />
+      </short>
+      <long>
+        Der mittelfristige technische 40-Tage Trend ist seit dem <ttdate /> positiv. Der bestätigte technische Trendwendepunkt (Tech Reverse + 1.75%) ist <bold>
+          <tr-min />
+        </bold>.
+      </long>
+    </text>
+    <text id="45" lang="en">
+      <short>
+        Market positive since <ttdate />
+      </short>
+      <long>
+        The forty day Medium Term Technical Trend is positive since <ttdate />. The confirmed Technical Reverse point (Tech Reverse - 1.75%) is <bold>
+          <tr-min />
+        </bold>.
+      </long>
+    </text>
+    <text id="45" lang="es">
+      <short>
+        Tendencia técnica positiva desde el <ttdate />
+      </short>
+      <long>
+        La tendencia técnica a medio plazo (40 días) es positiva desde el <ttdate />. El punto confirmado de inversión de la tendencia (Tech Reverse - 1.75%) se encuentra actualmente en <bold>
+          <tr-max />
+        </bold>.
+      </long>
+    </text>
+    <text id="45" lang="fr">
+      <short>Marché positif depuis plus d'un an</short>
+      <long>
+        La tendance technique à moyen terme (40 jours) est positive depuis plus d'un an. Le point de renversement technique confirmé (Tech Reverse - 1.75%)  est actuellement fixé à <bold>
+          <tr-min />
+        </bold>.
+      </long>
+    </text>
+    <text id="45" lang="it">
+      <short>
+        Tendenza di mercato positiva a partire dal giorno <ttdate />
+      </short>
+      <long>
+        La tendenza tecnica a un medio termine di 40 giorni, dal giorno <ttdate /> risulta positiva. Il punto tecnico di inversione di tendenza (Tech Reverse + 1.75%) è confermato a <bold>
+          <tr-min />
+        </bold>.
+      </long>
+    </text>
+    <text id="46" lang="de">
+      <short>
+        Neutraler Markttrend nach vorgängig (seit dem <ttdate /> anhaltender) positiver Phase
+      </short>
+      <long>
+        Die Aktie wird in der Nähe ihres 40-Tage Durchschnitts gehandelt (in einer Bandbreite von +1.75% bis -1.75%). Zuvor unterlag der Wert einem positiven Trend und dies seit dem <ttdate />. Der bestätigte technische Trendwendepunkt (Tech Reverse + 1.75%) liegt bei <bold>
+          <tr-min />
+        </bold>.
+      </long>
+    </text>
+    <text id="46" lang="en">
+      <short>
+        Market neutral but previously positive (since <ttdate />)
+      </short>
+      <long>
+        The stock is currently trading close to its forty day moving average (changes between +1.75% and -1.75% are considered neutral). Prior to this (since <ttdate />), the stock traded above its moving average. The confirmed Technical Reverse point (Tech Reverse - 1.75%) is <bold>
+          <tr-min />
+        </bold>.
+      </long>
+    </text>
+    <text id="46" lang="es">
+      <short>
+        Tendencia técnica neutral, anteriormente positiva (desde el <ttdate />)
+      </short>
+      <long>
+        La acción está actualmente cotizando muy cerca de su media móvil de 40 días (cambios entre +1,75% y - 1,75% son considerardos neutros). Anteriormente (desde <ttdate />) la acción cotizaba por encima de la media de 40 días. El punto confirmado de inversión de la tendencia (Tech Reverse - 1.75%) se encuentra en <bold>
+          <tr-max />
+        </bold>.
+      </long>
+    </text>
+    <text id="46" lang="fr">
+      <short>Marché neutre mais précédemment positif (depuis plus d'un an)</short>
+      <long>
+        Le titre s'échange à un prix proche de sa moyenne mobile à 40 jours (les changements compris entre +1.75% et -1.75% sont considérés comme neutres). Auparavant (depuis plus d'un an), le titre s'échangeait à un prix situé au-dessus de sa moyenne mobile à 40 jours. Le point de renversement technique confirmé (Tech Reverse - 1.75%) est actuellement fixé à <bold>
+          <tr-min />
+        </bold>.
+      </long>
+    </text>
+    <text id="46" lang="it">
+      <short>
+        Tendenza di mercato neutra, a seguito di una fase positiva (persistente dal giorno <ttdate />)
+      </short>
+      <long>
+        L'azione viene quotata pressapoco sulla propria media di 40 giorni (con un'estensione compresa tra +1.75% e -1.75%). In precedenza, il valore veniva influenzato da una tendenza positiva iniziata il <ttdate />. Il punto tecnico di inversione di tendenza (Tech Reverse + 1.75%) è confermato a   <bold>
+          <trmin />
+        </bold>.
+      </long>
+    </text>
+    <text id="47" lang="de">
+      <short>
+        vs. <idx />
+      </short>
+      <long>
+        Die relative "Outperformance" der letzten vier Wochen im Vergleich zum <idx /> beträgt <rp abs="yes"/>.
+      </long>
+    </text>
+    <text id="47" lang="en">
+      <short>
+        vs. <idx />
+      </short>
+      <long>
+        The four week relative overperformance versus <idx /> is <rp abs="yes"/>.
+      </long>
+    </text>
+    <text id="47" lang="es">
+      <short>
+        vs. <idx />
+      </short>
+      <long>
+        En las últimas 4 semanas el valor ha tenido un comportamiento positivo respecto al índice <idx /> del <bold>
+          <rp abs="yes"/>
+        </bold>.
+      </long>
+    </text>
+    <text id="47" lang="fr">
+      <short>
+        vs. <idx />
+      </short>
+      <long>
+        La surperformance sur quatre semaines vis-à-vis de l'indice <idx /> est de <rp abs="yes"/>.
+      </long>
+    </text>
+    <text id="47" lang="it">
+      <short>
+        Verso <idx />
+      </short>
+      <long>
+        L'"Outperformance" relativa alle quattro settimane scorse, in rapporto a <idx /> è di <rp abs="yes"/>.
+      </long>
+    </text>
+    <text id="48" lang="de">
+      <short>
+        vs. <idx />
+      </short>
+      <long>
+        Die relative Performance der letzten vier Wochen im Vergleich zum <idx /> beträgt <rp abs="yes"/>.
+      </long>
+    </text>
+    <text id="48" lang="en">
+      <short>
+        vs. <idx />
+      </short>
+      <long>
+        The four week relative performance versus <idx /> is <rp abs="yes"/>.
+      </long>
+    </text>
+    <text id="48" lang="es">
+      <short>
+        vs. <idx />
+      </short>
+      <long>
+        En las últimas 4 semanas el valor ha tenido un comportamiento respecto al índice <idx /> del <bold>
+          <rp abs="yes"/>
+        </bold>.
+      </long>
+    </text>
+    <text id="48" lang="fr">
+      <short>
+        vs. <idx />
+      </short>
+      <long>
+        La performance relative sur quatre semaines vis-à-vis de l'indice <idx /> est de <rp abs="yes"/>.
+      </long>
+    </text>
+    <text id="48" lang="it">
+      <short>
+        Verso <idx />
+      </short>
+      <long>
+        La performance relativa alle quattro settimane scorse, in rapporto a <idx /> è di <rp abs="yes"/>.
+      </long>
+    </text>
+    <text id="49" lang="de">
+      <short>
+        <warnsign /> Unter Druck (vs. <idx />)
+      </short>
+      <long>
+        Die relative "Underperformance" der letzten vier Wochen im Vergleich zum <idx /> beträgt <rp abs="yes"/>.
+      </long>
+    </text>
+    <text id="49" lang="en">
+      <short>
+        <warnsign /> Under pressure (vs. <idx />)
+      </short>
+      <long>
+        The four week relative underperformance versus <idx /> is <rp abs="yes"/>.
+      </long>
+    </text>
+    <text id="49" lang="es">
+      <short>
+        <warnsign /> Bajo presión (vs.<idx />)
+      </short>
+      <long>
+        En las últimas 4 semanas el valor ha tenido un comportamiento negativo respecto al índice <idx /> del <bold>
+          <rp abs="yes"/>
+        </bold>.
+      </long>
+    </text>
+    <text id="49" lang="fr">
+      <short>
+        <warnsign /> Sous pression (vs. <idx />)
+      </short>
+      <long>
+        La sous-performance sur quatre semaines vis-à-vis de l'indice <idx /> est de <rp abs="yes"/>.
+      </long>
+    </text>
+    <text id="49" lang="it">
+      <short>
+        <warnsign /> Sotto pressione (verso <idx />)
+      </short>
+      <long>
+        L'"Underperformance" relativa alle quattro settimane scorse, in rapporto a <idx /> è di <rp abs="yes"/>.
+      </long>
+    </text>
+    <text id="50" lang="de">
+      <short>Tief</short>
+      <long>
+        Die Aktie ist seit dem <riskdate /> als niedrig riskanter Titel eingestuft.
+      </long>
+    </text>
+    <text id="50" lang="en">
+      <short>Low</short>
+      <long>
+        The stock is classified in the low-risk zone since <riskdate />.
+      </long>
+    </text>
+    <text id="50" lang="es">
+      <short>Bajo</short>
+      <long>
+        El valor es clasificado de bajo riesgo desde el <riskdate />.
+      </long>
+    </text>
+    <text id="50" lang="fr">
+      <short>Faible</short>
+      <long>
+        Le titre figure dans la zone "risque faible" depuis le <riskdate />.
+      </long>
+    </text>
+    <text id="50" lang="it">
+      <short>Basso</short>
+      <long>
+        A partire dal giorno <riskdate /> l'azione è classificata come titolo a basso rischio.
+      </long>
+    </text>
+    <text id="51" lang="de">
+      <short>Mittel</short>
+      <long>
+        Die Aktie ist seit dem <riskdate /> als mittel riskanter Titel eingestuft.
+      </long>
+    </text>
+    <text id="51" lang="en">
+      <short>Medium</short>
+      <long>
+        The stock is classified in the medium-risk zone since <riskdate />.
+      </long>
+    </text>
+    <text id="51" lang="es">
+      <short>Medio</short>
+      <long>
+        El valor es clasificado de riesgo medio desde el <riskdate />.
+      </long>
+    </text>
+    <text id="51" lang="fr">
+      <short>Moyen</short>
+      <long>
+        Le titre figure dans la zone "risque moyen" depuis le <riskdate />.
+      </long>
+    </text>
+    <text id="51" lang="it">
+      <short>Medio</short>
+      <long>
+        A partire dal giorno <riskdate /> l'azione è classificata come titolo a medio rischio.
+      </long>
+    </text>
+    <text id="52" lang="de">
+      <short>Hoch</short>
+      <long>
+        Die Aktie ist seit dem <riskdate /> als hoch riskanter Titel eingestuft.
+      </long>
+    </text>
+    <text id="52" lang="en">
+      <short>High</short>
+      <long>
+        The stock is classified in the high-risk zone since <riskdate />.
+      </long>
+    </text>
+    <text id="52" lang="es">
+      <short>Alto</short>
+      <long>
+        El valor es clasificado de alto riesgo desde el <riskdate />.
+      </long>
+    </text>
+    <text id="52" lang="fr">
+      <short>Elevé</short>
+      <long>
+        Le titre figure dans la zone "risque élevé" depuis le <riskdate />.
+      </long>
+    </text>
+    <text id="52" lang="it">
+      <short>Alto </short>
+      <long>
+        A partire dal giorno <riskdate /> l'azione è classificata come titolo ad alto rischio.
+      </long>
+    </text>
+    <text id="53" lang="de">
+      <short>Tief</short>
+      <long>Tief, keine Veränderung im letzten Jahr. </long>
+    </text>
+    <text id="53" lang="en">
+      <short>Low</short>
+      <long>Low, no change over 1 year.</long>
+    </text>
+    <text id="53" lang="es">
+      <short>Bajo</short>
+      <long>Ningún cambio durante un año.</long>
+    </text>
+    <text id="53" lang="fr">
+      <short>Faible</short>
+      <long>Faible, aucun changement sur 1 an</long>
+    </text>
+    <text id="53" lang="it">
+      <short>Basso</short>
+      <long>Basso, nessun cambiamento durante l'anno scorso.</long>
+    </text>
+    <text id="54" lang="de">
+      <short>Mittel</short>
+      <long>Mittel, keine Veränderung im letzten Jahr. </long>
+    </text>
+    <text id="54" lang="en">
+      <short>Medium</short>
+      <long>Medium, no change over 1 year.</long>
+    </text>
+    <text id="54" lang="es">
+      <short>Medio</short>
+      <long>Ningún cambio durante un año.</long>
+    </text>
+    <text id="54" lang="fr">
+      <short>Moyen</short>
+      <long>Moyen, aucun changement sur 1 an</long>
+    </text>
+    <text id="54" lang="it">
+      <short>Medio</short>
+      <long>Medio, nessun cambiamento durante l'anno scorso.</long>
+    </text>
+    <text id="55" lang="de">
+      <short>Hoch</short>
+      <long>Hoch, keine Veränderung im letzten Jahr. </long>
+    </text>
+    <text id="55" lang="en">
+      <short>High</short>
+      <long>High, no change over 1 year.</long>
+    </text>
+    <text id="55" lang="es">
+      <short>Alto</short>
+      <long>Ningún cambio durante un año.</long>
+    </text>
+    <text id="55" lang="fr">
+      <short>Elevé</short>
+      <long>Elevé, aucun changement sur 1 an</long>
+    </text>
+    <text id="55" lang="it">
+      <short>Alto </short>
+      <long>Alto, nessun cambiamento durante l'anno scorso.</long>
+    </text>
+    <text id="56" lang="de">
+      <short>Sehr defensiver Charakter bei sinkendem Index</short>
+      <long>
+        Die Aktie tendiert dazu, Indexrückgänge um durchschnittlich <bear pct="yes" abs="yes"/> abzuschwächen.
+      </long>
+    </text>
+    <text id="56" lang="en">
+      <short>Very defensive positioning during market declines</short>
+      <long>
+        On average, the stock has a tendency to minimize the drops in the index by <bear pct="yes" abs="yes"/>.
+      </long>
+    </text>
+    <text id="56" lang="es">
+      <short>Valor defensivo</short>
+      <long>
+        En términos generales, la acción tiende a minimizar las correcciones del índice en un <bear pct="yes" abs="yes"/>.
+      </long>
+    </text>
+    <text id="56" lang="fr">
+      <short>Très défensif dans des corrections de marché</short>
+      <long>
+        Le titre tend en moyenne à minimiser les baisses de l'indice de <bear pct="yes" abs="yes"/>.
+      </long>
+    </text>
+    <text id="56" lang="it">
+      <short>Carattere assai difensivo in casi di indice a ribasso </short>
+      <long>
+        L'azione tende a minimizzare i regressi d'indice di mediamente <bear pct="yes" abs="yes"/>.
+      </long>
+    </text>
+    <text id="57" lang="de">
+      <short>Mittleres Risiko bei Indexrückgängen</short>
+      <long>Die Aktie tendiert dazu, Indexrückgänge in etwa gleichem Mass mitzuvollziehen.</long>
+    </text>
+    <text id="57" lang="en">
+      <short>Average risk positioning during market declines</short>
+      <long>On average, the stock is likely to decline with the index.</long>
+    </text>
+    <text id="57" lang="es">
+      <short>Valor de riesgo medio</short>
+      <long>En términos generales, la acción tiene el mismo comportamiento que el índice.</long>
+    </text>
+    <text id="57" lang="fr">
+      <short>Moyennement risqué dans des corrections de marché</short>
+      <long>Le titre enregistre en moyenne une dépréciation comparable à celle de l'indice.</long>
+    </text>
+    <text id="57" lang="it">
+      <short>A medio rischio in casi di indice a ribasso</short>
+      <long>L'azione tende a conseguire i pressappoco nella stessa misura regressi d'indice.</long>
+    </text>
+    <text id="58" lang="de">
+      <short>Hohes Risiko bei sinkendem Index</short>
+      <long>
+        Die Aktie tendiert dazu, Indexrückgänge um durchschnittlich <bear pct="yes" abs="yes"/> zu verstärken.
+      </long>
+    </text>
+    <text id="58" lang="en">
+      <short>Risky positioning during market declines</short>
+      <long>
+        On average, the stock has a tendency to amplify the drops in the index by <bear pct="yes" abs="yes"/>.
+      </long>
+    </text>
+    <text id="58" lang="es">
+      <short>Valor de alto riesgo</short>
+      <long>
+        En términos generales, la acción tiende a maximizar las correcciones del índice en un <bear pct="yes" abs="yes"/>.
+      </long>
+    </text>
+    <text id="58" lang="fr">
+      <short>Risqué dans des corrections de marché</short>
+      <long>
+        Le titre tend en moyenne à amplifier les baisses de l'indice de <bear pct="yes" abs="yes"/>.
+      </long>
+    </text>
+    <text id="58" lang="it">
+      <short>Rischio elevato in casi di indice a ribasso </short>
+      <long>
+        L'azione tende ad incrementera i regressi d'indice di mediamente <bear pct="yes" abs="yes"/>.
+      </long>
+    </text>
+    <text id="59" lang="de">
+      <short>Geringe Kursrückgänge bei spezifischen Problemen </short>
+      <long>
+        Der Titel verzeichnet bei unternehmensspezifischen Problemen i.d. R. geringe Kursabschläge in Höhe von durchschnittlich <badnews pct="yes" />.
+      </long>
+    </text>
+    <text id="59" lang="en">
+      <short>Slight market sanction in case of specific pressure</short>
+      <long>
+        When the stock's pressure is specific, the market sanction on average is <badnews pct="yes" />.
+      </long>
+    </text>
+    <text id="59" lang="es">
+      <short>Penalización del mercado baja</short>
+      <long>
+        En caso de presiones del mercado por riesgos específicos del valor, la penalización del mercado es aproximadamente del <badnews pct="yes" />.
+      </long>
+    </text>
+    <text id="59" lang="fr">
+      <short>Sanction faible du marché en cas de pressions spécifiques</short>
+      <long>
+        Lorsque la valeur subit des pressions spécifiques, la sanction du marché est en moyenne de <badnews pct="yes" />.
+      </long>
+    </text>
+    <text id="59" lang="it">
+      <short>Deprezzamenti lievi in casi di problemi specifici</short>
+      <long>
+        Di fronte a problemi specificamente societari, il titolo di norma subisce lievi ribassi di quotazione di misura media del <badnews pct="yes" />.
+      </long>
+    </text>
+    <text id="60" lang="de">
+      <short>Durchschnittliche Kursrückgänge bei spezifischen Problemen</short>
+      <long>
+        Der Titel verzeichnet bei unternehmensspezifischen Problemen i.d. R. mittlere Kursabschläge in Höhe von durchschnittlich <badnews pct="yes" />.
+      </long>
+    </text>
+    <text id="60" lang="en">
+      <short>Fair market sanction in case of specific pressure</short>
+      <long>
+        When the stock's pressure is specific, the market sanction on average is <badnews pct="yes" />.
+      </long>
+    </text>
+    <text id="60" lang="es">
+      <short>Penalización del mercado media</short>
+      <long>
+        En caso de presiones del mercado por riesgos específicos del valor, la penalización del mercado es aproximadamente del <badnews pct="yes" />.
+      </long>
+    </text>
+    <text id="60" lang="fr">
+      <short>Sanction normale du marché en cas de pressions spécifiques</short>
+      <long>
+        Lorsque la valeur subit des pressions spécifiques, la sanction du marché est en moyenne de <badnews pct="yes" />.
+      </long>
+    </text>
+    <text id="60" lang="it">
+      <short>Deprezzamenti medi in casi di problemi specifici</short>
+      <long>
+        Di fronte a problemi specificamente societari, il titolo di norma subisce  ribassi di quotazione moderati di misura media del <badnews pct="yes" />.
+      </long>
+    </text>
+    <text id="61" lang="de">
+      <short>Starke Kursrückgänge bei spezifischen Problemen</short>
+      <long>
+        Der Titel verzeichnet bei unternehmensspezifischen Problemen i.d. R. grosse Kursabschläge in Höhe von durchschnittlich <badnews pct="yes" />.
+      </long>
+    </text>
+    <text id="61" lang="en">
+      <short>Strong market sanction in case of specific pressure</short>
+      <long>
+        When the stock's pressure is specific, the market sanction on average is <badnews pct="yes" />.
+      </long>
+    </text>
+    <text id="61" lang="es">
+      <short>Penalización del mercado alta</short>
+      <long>
+        En caso de presiones del mercado por riesgos específicos del valor, la penalización del mercado es aproximadamente del <badnews pct="yes" />.
+      </long>
+    </text>
+    <text id="61" lang="fr">
+      <short>Sanction sévère du marché en cas de pressions spécifiques</short>
+      <long>
+        Lorsque la valeur subit des pressions spécifiques, la sanction du marché est en moyenne de <badnews pct="yes" />.
+      </long>
+    </text>
+    <text id="61" lang="it">
+      <short>Deprezzamenti elevati in casi di problemi specificii</short>
+      <long>
+        Di fronte a problemi specificamente societari, il titolo di norma subisce  ribassi di quotazione elevati di misura media del <badnews pct="yes" />.
+      </long>
+    </text>
+    <text id="62" lang="de">
+      <short>
+        Hohe Anfälligkeit vs. <idx />
+      </short>
+      <long>
+        Die Aktie tendiert dazu, pro 1% Indexbewegung mit einem Ausschlag von <beta pct="yes" /> zu reagieren.
+      </long>
+    </text>
+    <text id="62" lang="en">
+      <short>
+        High sensitivity to <idx />
+      </short>
+      <long>
+        For 1% of index variation, the stock varies on average by <beta pct="yes" />.
+      </long>
+    </text>
+    <text id="62" lang="es">
+      <short>
+        Elevada sensibilidad respecto al índice <idx />
+      </short>
+      <long>
+        Para una variación del 1% en el índice, la variación media del precio del valor es del <beta pct="yes" />.
+      </long>
+    </text>
+    <text id="62" lang="fr">
+      <short>
+        Sensibilité élevée vis-à-vis du <idx />
+      </short>
+      <long>
+        Pour 1% de variation de l'indice, le titre varie en moyenne de <beta pct="yes" />.
+      </long>
+    </text>
+    <text id="62" lang="it">
+      <short>
+        Molto incline a <idx />
+      </short>
+      <long>
+        Per ogni 1% di variazione dell'indice, il titolo tende a reagire con uno sbalzo del <beta pct="yes" />.
+      </long>
+    </text>
+    <text id="63" lang="de">
+      <short>
+        Mittlere Anfälligkeit vs. <idx />
+      </short>
+      <long>
+        Die Aktie tendiert dazu, pro 1% Indexbewegung mit einem Ausschlag von <beta pct="yes" /> zu reagieren.
+      </long>
+    </text>
+    <text id="63" lang="en">
+      <short>
+        Average sensitivity to <idx />
+      </short>
+      <long>
+        For 1% of index variation, the stock varies on average by <beta pct="yes" />.
+      </long>
+    </text>
+    <text id="63" lang="es">
+      <short>
+        Moderada sensibilidad respecto al índice <idx />
+      </short>
+      <long>
+        Para una variación del 1% en el índice, la variación media del precio del valor es del <beta pct="yes" />.
+      </long>
+    </text>
+    <text id="63" lang="fr">
+      <short>
+        Sensibilité dans la moyenne vis-à-vis du <idx />
+      </short>
+      <long>
+        Pour 1% de variation de l'indice, le titre varie en moyenne de <beta pct="yes" />.
+      </long>
+    </text>
+    <text id="63" lang="it">
+      <short>
+        Mediamente incline a <idx />
+      </short>
+      <long>
+        Per ogni 1% di variazione dell'indice, il titolo tende a reagire con uno sbalzo del <beta pct="yes" />.
+      </long>
+    </text>
+    <text id="64" lang="de">
+      <short>
+        Geringe Anfälligkeit vs. <idx />
+      </short>
+      <long>
+        Die Aktie tendiert dazu, pro 1% Indexbewegung mit einem Ausschlag von <beta pct="yes" /> zu reagieren.
+      </long>
+    </text>
+    <text id="64" lang="en">
+      <short>
+        Low sensitivity to <idx />
+      </short>
+      <long>
+        For 1% of index variation, the stock varies on average by <beta pct="yes" />.
+      </long>
+    </text>
+    <text id="64" lang="es">
+      <short>
+        Baja sensibilidad respecto al índice <idx />
+      </short>
+      <long>
+        Para una variación del 1% en el índice, la variación media del precio del valor es del <beta pct="yes" />.
+      </long>
+    </text>
+    <text id="64" lang="fr">
+      <short>
+        Sensibilité faible vis-à-vis du <idx />
+      </short>
+      <long>
+        Pour 1% de variation de l'indice, le titre varie en moyenne de <beta pct="yes" />.
+      </long>
+    </text>
+    <text id="64" lang="it">
+      <short>
+        Poco incline a <idx />
+      </short>
+      <long>
+        Per ogni 1% di variazione dell'indice, il titolo tende a reagire con uno sbalzo del <beta pct="yes" />.
+      </long>
+    </text>
+    <text id="65" lang="de">
+      <short>
+        Schwache Korrelation mit dem <idx />
+      </short>
+      <long>Die Kursschwankungen sind nahezu unabhängig von den Indexbewegungen.</long>
+    </text>
+    <text id="65" lang="en">
+      <short>
+        Weak correlation to <idx />
+      </short>
+      <long>Stock movements are totally independent of index variations.</long>
+    </text>
+    <text id="65" lang="es">
+      <short>
+        Correlación débil en relación al índice <idx />
+      </short>
+      <long>La variación del precio del valor es totalmente independiente de los movimientos del índice.</long>
+    </text>
+    <text id="65" lang="fr">
+      <short>
+        Faiblement corrélé au <idx />
+      </short>
+      <long>Les mouvements du titre sont totalement indépendants des variations de l'indice.</long>
+    </text>
+    <text id="65" lang="it">
+      <short>
+        Lieve correlazione con <idx />
+      </short>
+      <long>Le oscillazioni di quotazione sono pressocché indipendenti dalle variazioni d'indice.</long>
+    </text>
+    <text id="66" lang="de">
+      <short>
+        Schwache Korrelation mit dem <idx />
+      </short>
+      <long>Die Kursschwankungen sind nahezu unabhängig von den Indexbewegungen. Des Weiteren sind im Verhalten dieses Wertes überdurchschnittlich häufig gegenläufige Bewegungen zum Index zu erkennen.</long>
+    </text>
+    <text id="66" lang="en">
+      <short>
+        Weak correlation to <idx />
+      </short>
+      <long>Stock movements are strongly independent of index variations, with an even divergent trend.</long>
+    </text>
+    <text id="66" lang="es">
+      <short>
+        Correlación débil en relación al índice <idx />
+      </short>
+      <long>La variación del precio del valor es fuertemente independiente de los movimientos del índice, incluso llegandose a detectar una tendencia opuesta.</long>
+    </text>
+    <text id="66" lang="fr">
+      <short>
+        Faiblement corrélé au <idx />
+      </short>
+      <long>Les mouvements du titre sont fortement indépendants des variations de l'indice, et ont même tendance à en diverger.</long>
+    </text>
+    <text id="66" lang="it">
+      <short>
+        Lieve correlazione con <idx />
+      </short>
+      <long>Le oscillazioni di quotazione sono pressocché indipendenti dalle variazioni d'indice. Anzi, nell'atteggiamento del valore in questione sono riscontrabili, con frequenza molto al di sopra della media, oscillazioni diametralmente opposte.</long>
+    </text>
+    <text id="67" lang="de">
+      <short>
+        Schwache Korrelation mit dem <idx />
+      </short>
+      <long>Die Kursschwankungen sind wenig abhängig von den Indexbewegungen.</long>
+    </text>
+    <text id="67" lang="en">
+      <short>
+        Weak correlation to <idx />
+      </short>
+      <long>Stock movements are strongly independent of index variations.</long>
+    </text>
+    <text id="67" lang="es">
+      <short>
+        Correlación débil en relación al índice <idx />
+      </short>
+      <long>La variación del precio del valor es fuertemente independiente de los movimientos del índice.</long>
+    </text>
+    <text id="67" lang="fr">
+      <short>
+        Faiblement corrélé au <idx />
+      </short>
+      <long>Les mouvements du titre sont fortement indépendants des variations de l'indice.</long>
+    </text>
+    <text id="67" lang="it">
+      <short>
+        Lieve correlazione con <idx />
+      </short>
+      <long>Le oscillazioni di quotazione dipendono poco dalle variazioni d'indice.</long>
+    </text>
+    <text id="68" lang="de">
+      <short>
+        Starke Korrelation mit dem <idx />
+      </short>
+      <long>
+        <corr2 pct="yes" /> der Kursschwankungen werden durch Indexbewegungen verursacht.
+      </long>
+    </text>
+    <text id="68" lang="en">
+      <short>
+        Strong correlation to <idx />
+      </short>
+      <long>
+        <corr2 pct="yes" /> of stock movements are explained by index variations.
+      </long>
+    </text>
+    <text id="68" lang="es">
+      <short>
+        Correlación muy fuerte en relación al índice <idx />
+      </short>
+      <long>
+        El <corr2 pct="yes" /> de las variaciones del valor se explican por los movimientos del índice.
+      </long>
+    </text>
+    <text id="68" lang="fr">
+      <short>
+        Fortement corrélé au <idx />
+      </short>
+      <long>
+        <corr2 pct="yes" /> des mouvements du titre s'expliquent par les variations de l'indice.
+      </long>
+    </text>
+    <text id="68" lang="it">
+      <short>
+        Forte correlazione con <idx />
+      </short>
+      <long>
+        <corr2 pct="yes" /> delle oscillazioni di quotazione sono causate da variazioni d'indice.
+      </long>
+    </text>
+    <text id="69" lang="de">
+      <short>
+        Mittelstarke Korrelation mit dem <idx />
+      </short>
+      <long>
+        <corr2 pct="yes" /> der Kursschwankungen werden durch Indexbewegungen verursacht.
+      </long>
+    </text>
+    <text id="69" lang="en">
+      <short>
+        Fair correlation to <idx />
+      </short>
+      <long>
+        <corr2 pct="yes" /> of stock movements are explained by index variations.
+      </long>
+    </text>
+    <text id="69" lang="es">
+      <short>
+        Correlación moderada en relación al índice <idx />
+      </short>
+      <long>
+        El <corr2 pct="yes" /> de las variaciones del valor se explican por los movimientos del índice.
+      </long>
+    </text>
+    <text id="69" lang="fr">
+      <short>
+        Normalement corrélé au <idx />
+      </short>
+      <long>
+        <corr2 pct="yes" /> des mouvements du titre s'expliquent par les variations de l'indice.
+      </long>
+    </text>
+    <text id="69" lang="it">
+      <short>
+        Normale correlazione con <idx />
+      </short>
+      <long>
+        <corr2 pct="yes" /> delle oscillazioni di quotazione sono causate da variazioni d'indice.
+      </long>
+    </text>
+    <text id="70" lang="de">
+      <short>F</short>
+    </text>
+    <text id="70" lang="en">
+      <short>H</short>
+    </text>
+    <text id="70" lang="es">
+      <short>A</short>
+    </text>
+    <text id="70" lang="fr">
+      <short>E</short>
+    </text>
+    <text id="70" lang="it">
+      <short>A</short>
+    </text>
+    <text id="71" lang="de">
+      <short>M</short>
+    </text>
+    <text id="71" lang="en">
+      <short>M</short>
+    </text>
+    <text id="71" lang="es">
+      <short>M</short>
+    </text>
+    <text id="71" lang="fr">
+      <short>M</short>
+    </text>
+    <text id="71" lang="it">
+      <short>M</short>
+    </text>
+    <text id="72" lang="de">
+      <short>T</short>
+    </text>
+    <text id="72" lang="en">
+      <short>L</short>
+    </text>
+    <text id="72" lang="es">
+      <short>B </short>
+    </text>
+    <text id="72" lang="fr">
+      <short>F</short>
+    </text>
+    <text id="72" lang="it">
+      <short>B </short>
+    </text>
+    <text id="73" lang="de">
+      <short>F</short>
+    </text>
+    <text id="73" lang="en">
+      <short>H</short>
+    </text>
+    <text id="73" lang="es">
+      <short>A</short>
+    </text>
+    <text id="73" lang="fr">
+      <short>E</short>
+    </text>
+    <text id="73" lang="it">
+      <short>A</short>
+    </text>
+    <text id="74" lang="de">
+      <short>M</short>
+    </text>
+    <text id="74" lang="en">
+      <short>M</short>
+    </text>
+    <text id="74" lang="es">
+      <short>M</short>
+    </text>
+    <text id="74" lang="fr">
+      <short>M</short>
+    </text>
+    <text id="74" lang="it">
+      <short>M</short>
+    </text>
+    <text id="75" lang="de">
+      <short>T</short>
+    </text>
+    <text id="75" lang="en">
+      <short>L</short>
+    </text>
+    <text id="75" lang="es">
+      <short>B</short>
+    </text>
+    <text id="75" lang="fr">
+      <short>F</short>
+    </text>
+    <text id="75" lang="it">
+      <short>B</short>
+    </text>
+    <text id="76" lang="de">
+      <short>F</short>
+    </text>
+    <text id="76" lang="en">
+      <short>H</short>
+    </text>
+    <text id="76" lang="es">
+      <short>A</short>
+    </text>
+    <text id="76" lang="fr">
+      <short>E</short>
+    </text>
+    <text id="76" lang="it">
+      <short>A</short>
+    </text>
+    <text id="77" lang="de">
+      <short>M</short>
+    </text>
+    <text id="77" lang="en">
+      <short>M</short>
+    </text>
+    <text id="77" lang="es">
+      <short>M</short>
+    </text>
+    <text id="77" lang="fr">
+      <short>M</short>
+    </text>
+    <text id="77" lang="it">
+      <short>M</short>
+    </text>
+    <text id="78" lang="de">
+      <short>T</short>
+    </text>
+    <text id="78" lang="en">
+      <short>L</short>
+    </text>
+    <text id="78" lang="es">
+      <short>B</short>
+    </text>
+    <text id="78" lang="fr">
+      <short>F</short>
+    </text>
+    <text id="78" lang="it">
+      <short>B</short>
+    </text>
+    <text id="79" lang="de">
+      <short>Trend Follower</short>
+      <long>Trend Follower</long>
+    </text>
+    <text id="79" lang="en">
+      <short>Trend Follower</short>
+      <long>Trend Follower</long>
+    </text>
+    <text id="79" lang="es">
+      <short>Seguidor de tendencia</short>
+      <long>Seguidor de tendencia</long>
+    </text>
+    <text id="79" lang="fr">
+      <short>Trend Follower</short>
+      <long>Trend Follower</long>
+    </text>
+    <text id="79" lang="it">
+      <short>Trend follower</short>
+      <long>Trend follower</long>
+    </text>
+    <text id="80" lang="de">
+      <short>Contrarian25</short>
+      <long>Contrarian25</long>
+    </text>
+    <text id="80" lang="en">
+      <short>Contrarian25</short>
+      <long>Contrarian25</long>
+    </text>
+    <text id="80" lang="es">
+      <short>Contrarian 25</short>
+      <long>Contrarian 25</long>
+    </text>
+    <text id="80" lang="fr">
+      <short>Contrarian25</short>
+      <long>Contrarian25</long>
+    </text>
+    <text id="80" lang="it">
+      <short>Contrarian25</short>
+      <long>Contrarian25</long>
+    </text>
+    <text id="81" lang="de">
+      <short>Contrarian5</short>
+      <long>Contrarian5</long>
+    </text>
+    <text id="81" lang="en">
+      <short>Contrarian5</short>
+      <long>Contrarian5</long>
+    </text>
+    <text id="81" lang="es">
+      <short>Contrarian5</short>
+      <long>Contrarian5</long>
+    </text>
+    <text id="81" lang="fr">
+      <short>Contrarian5</short>
+      <long>Contrarian5</long>
+    </text>
+    <text id="81" lang="it">
+      <short>Contrarian25</short>
+      <long>Contrarian25</long>
+    </text>
+    <text id="82" lang="de">
+      <short>
+        Das geschätzte mittelfristige Value at Risk beträgt <varval /> oder <varpct pct="yes" />
+      </short>
+      <long>
+        Das geschätzte Value at Risk beträgt <varval />. Das Risiko liegt deshalb bei <varpct pct="yes" />. Dieser Wert basiert auf dermittelfristigen historischen Volatilität.
+      </long>
+    </text>
+    <text id="82" lang="en">
+      <short>
+        The medium term value at risk is estimated at <varval /> or <varpct pct="yes" />
+      </short>
+      <long>
+        The value at risk is estimated at <varval />. The risk is therefore <varpct pct="yes" />. This value is based on the historical volatility for a medium time period.
+      </long>
+    </text>
+    <text id="82" lang="es">
+      <short>
+        El valor del riesgo estimado a medio plazo es de <varval /> o <varpct pct="yes" />
+      </short>
+      <long>
+        El valor del riesgo estimado es de <varval />. Por tanto el riesgo es del <varpct pct="yes" />. Este valor se basa en la volatilidad historica del título a medio plazo.
+      </long>
+    </text>
+    <text id="82" lang="fr">
+      <short>
+        La valeur de risque à moyen terme est estimée à <varval /> ou <varpct pct="yes" />
+      </short>
+      <long>
+        La valeur de risque est estimée à <varval />. Le risque est donc de <varpct pct="yes" />. Cette valeur se base sur la volatilité historique pour une période à moyen terme.
+      </long>
+    </text>
+    <text id="82" lang="it">
+      <short>
+        Il valore a rischio stimato a medio termine ammonta a <varval /> o <varpct pct="yes" />
+      </short>
+      <long>
+        Il valore a rischio stimato ammonta a <varval />. Il rischio si colloca perciò a <varpct pct="yes" />. Il  valore in questione si basa sulla volatilità storica a medio termine.
+      </long>
+    </text>
+    <text id="83" lang="de">
+      <short>
+        <firstdate />
+      </short>
+    </text>
+    <text id="83" lang="en">
+      <short>
+        <firstdate />
+      </short>
+    </text>
+    <text id="83" lang="es">
+      <short>
+        <firstdate />
+      </short>
+    </text>
+    <text id="83" lang="fr">
+      <short>
+        <firstdate />
+      </short>
+    </text>
+    <text id="83" lang="it">
+      <short>
+        <firstdate />
+      </short>
+    </text>
+    <text id="84" lang="de">
+      <short>Positiv</short>
+      <long>
+        Die Aktie ist seit dem <gldate /> als positiv eingestuft.
+      </long>
+    </text>
+    <text id="84" lang="en">
+      <short>Positive</short>
+      <long>
+        The stock is classified in the positive zone since <gldate />.
+      </long>
+    </text>
+    <text id="84" lang="es">
+      <short>Positivo</short>
+      <long>
+        El título figura en la zona "positiva" desde el <gldate />.
+      </long>
+    </text>
+    <text id="84" lang="fr">
+      <short>Positive</short>
+      <long>
+        Le titre figure dans la zone "positive" depuis le <gldate />.
+      </long>
+    </text>
+    <text id="84" lang="it">
+      <short>Positivo</short>
+      <long>
+        Il titolo, dal giorno <gldate /> è classificato come positivo.
+      </long>
+    </text>
+    <text id="85" lang="de">
+      <short>Eher positiv</short>
+      <long>
+        Die Aktie ist seit dem <gldate /> als eher positiv eingestuft.
+      </long>
+    </text>
+    <text id="85" lang="en">
+      <short>Slightly positive</short>
+      <long>
+        The stock is classified in the slightly positive zone since <gldate />.
+      </long>
+    </text>
+    <text id="85" lang="es">
+      <short>Màs bien positivo</short>
+      <long>
+        El título figura en la zona "Màs bien positivo" desde el <gldate />.
+      </long>
+    </text>
+    <text id="85" lang="fr">
+      <short>Plutôt positive</short>
+      <long>
+        Le titre figure dans la zone "plutôt positive" depuis le <gldate />.
+      </long>
+    </text>
+    <text id="85" lang="it">
+      <short>Piuttosto positivo</short>
+      <long>
+        Il titolo, dal giorno <gldate /> è classificato come piuttosto positivo.
+      </long>
+    </text>
+    <text id="86" lang="de">
+      <short>Neutral</short>
+      <long>
+        Die Aktie ist seit dem <gldate /> als neutral eingestuft.
+      </long>
+    </text>
+    <text id="86" lang="en">
+      <short>Neutral</short>
+      <long>
+        The stock is classified in the neutral zone since <gldate />.
+      </long>
+    </text>
+    <text id="86" lang="es">
+      <short>Neutro</short>
+      <long>
+        El título figura en la zona "neutro" desde el <gldate />.
+      </long>
+    </text>
+    <text id="86" lang="fr">
+      <short>Neutre</short>
+      <long>
+        Le titre figure dans la zone "neutre" depuis le <gldate />.
+      </long>
+    </text>
+    <text id="86" lang="it">
+      <short>Neutro</short>
+      <long>
+        Il titolo, dal giorno <gldate /> è classificato come neutro.
+      </long>
+    </text>
+    <text id="87" lang="de">
+      <short>Eher negativ</short>
+      <long>
+        Die Aktie ist seit dem <gldate /> als eher negativ eingestuft.
+      </long>
+    </text>
+    <text id="87" lang="en">
+      <short>Slightly negative</short>
+      <long>
+        The stock is classified in the slightly negative zone since <gldate />.
+      </long>
+    </text>
+    <text id="87" lang="es">
+      <short>Màs bien negativo</short>
+      <long>
+        El título figura en la zona "Màs bien negativo" desde el <gldate />.
+      </long>
+    </text>
+    <text id="87" lang="fr">
+      <short>Plutôt négative</short>
+      <long>
+        Le titre figure dans la zone "plutôt négative" depuis le <gldate />.
+      </long>
+    </text>
+    <text id="87" lang="it">
+      <short>Piuottosto negativo</short>
+      <long>
+        Il titolo, dal giorno <gldate /> è classificato come piuttosto negativo.
+      </long>
+    </text>
+    <text id="88" lang="de">
+      <short>Negativ</short>
+      <long>
+        Die Aktie ist seit dem <gldate /> als negativ eingestuft.
+      </long>
+    </text>
+    <text id="88" lang="en">
+      <short>Negative</short>
+      <long>
+        The stock is classified in the negative zone since <gldate />.
+      </long>
+    </text>
+    <text id="88" lang="es">
+      <short>Negativo</short>
+      <long>
+        El título figura en la zona "negativo" desde el <gldate />.
+      </long>
+    </text>
+    <text id="88" lang="fr">
+      <short>Négative</short>
+      <long>
+        Le titre figure dans la zone "négative" depuis le <gldate />.
+      </long>
+    </text>
+    <text id="88" lang="it">
+      <short>Negativo</short>
+      <long>
+        Il titolo, dal giorno <gldate /> è classificato come negativo.
+      </long>
+    </text>
+    <text id="89" lang="de">
+      <short>Positiv</short>
+      <long>Keine Veränderung im letzten Jahr. </long>
+    </text>
+    <text id="89" lang="en">
+      <short>Positive</short>
+      <long>No change over 1 year.</long>
+    </text>
+    <text id="89" lang="es">
+      <short>Positivo</short>
+      <long>Ningún cambio durante un año.</long>
+    </text>
+    <text id="89" lang="fr">
+      <short>Positive</short>
+      <long>Aucun changement sur 1 an</long>
+    </text>
+    <text id="89" lang="it">
+      <short>Positivo</short>
+      <long>Nessun cambiamento durante l'anno scorso.</long>
+    </text>
+    <text id="90" lang="de">
+      <short>Eher positiv</short>
+      <long>Keine Veränderung im letzten Jahr. </long>
+    </text>
+    <text id="90" lang="en">
+      <short>Slightly positive</short>
+      <long>No change over 1 year.</long>
+    </text>
+    <text id="90" lang="es">
+      <short>Màs bien positivo</short>
+      <long>Ningún cambio durante un año.</long>
+    </text>
+    <text id="90" lang="fr">
+      <short>Plutôt positive</short>
+      <long>Aucun changement sur 1 an</long>
+    </text>
+    <text id="90" lang="it">
+      <short>Piuttosto positivo</short>
+      <long>Nessun cambiamento durante l'anno scorso.</long>
+    </text>
+    <text id="91" lang="de">
+      <short>Neutral</short>
+      <long>Keine Veränderung im letzten Jahr. </long>
+    </text>
+    <text id="91" lang="en">
+      <short>Neutral</short>
+      <long>No change over 1 year.</long>
+    </text>
+    <text id="91" lang="es">
+      <short>Neutro</short>
+      <long>Ningún cambio durante un año.</long>
+    </text>
+    <text id="91" lang="fr">
+      <short>Neutre</short>
+      <long>Aucun changement sur 1 an</long>
+    </text>
+    <text id="91" lang="it">
+      <short>Neutro</short>
+      <long>Nessun cambiamento durante l'anno scorso.</long>
+    </text>
+    <text id="92" lang="de">
+      <short>Eher negativ</short>
+      <long>Keine Veränderung im letzten Jahr. </long>
+    </text>
+    <text id="92" lang="en">
+      <short>Slightly negative</short>
+      <long>No change over 1 year.</long>
+    </text>
+    <text id="92" lang="es">
+      <short>Slightly negativo</short>
+      <long>Ningún cambio durante un año.</long>
+    </text>
+    <text id="92" lang="fr">
+      <short>Plutôt négative</short>
+      <long>Aucun changement sur 1 an</long>
+    </text>
+    <text id="92" lang="it">
+      <short>Piuottosto negativo</short>
+      <long>Nessun cambiamento durante l'anno scorso.</long>
+    </text>
+    <text id="93" lang="de">
+      <short>Negativ</short>
+      <long>Keine Veränderung im letzten Jahr. </long>
+    </text>
+    <text id="93" lang="en">
+      <short>Negative</short>
+      <long>No change over 1 year.</long>
+    </text>
+    <text id="93" lang="es">
+      <short>Negativo</short>
+      <long>Ningún cambio durante un año.</long>
+    </text>
+    <text id="93" lang="fr">
+      <short>Négative</short>
+      <long>Aucun changement sur 1 an</long>
+    </text>
+    <text id="93" lang="it">
+      <short>Negativo</short>
+      <long>Nessun cambiamento durante l'anno scorso.</long>
+    </text>
+    <text id="94" lang="de">
+      <short>Kein</short>
+      <long>
+        Kein Interesse seit <irstdate />.
+      </long>
+    </text>
+    <text id="94" lang="en">
+      <short>None</short>
+      <long>
+        No interest since <irstdate />.
+      </long>
+    </text>
+    <text id="94" lang="es">
+      <short>Ningún</short>
+      <long>
+        Ningún interés desde el <irstdate />.
+      </long>
+    </text>
+    <text id="94" lang="fr">
+      <short>Aucun</short>
+      <long>
+        Aucun intérêt depuis <irstdate />.
+      </long>
+    </text>
+    <text id="94" lang="it">
+      <short>Nessun</short>
+      <long>
+        Nessun interesse dal giorno <irstdate /> in poi.
+      </long>
+    </text>
+    <text id="95" lang="de">
+      <short>Sehr mässig</short>
+      <long>
+        Sehr geringes Interesse seit <irstdate />.
+      </long>
+    </text>
+    <text id="95" lang="en">
+      <short>Very Weak</short>
+      <long>
+        Very weak interest since <irstdate />.
+      </long>
+    </text>
+    <text id="95" lang="es">
+      <short>Muy poco</short>
+      <long>
+        Muy poco interés desde el <irstdate />.
+      </long>
+    </text>
+    <text id="95" lang="fr">
+      <short>Très faible</short>
+      <long>
+        Très faible intérêt depuis <irstdate />.
+      </long>
+    </text>
+    <text id="95" lang="it">
+      <short>Assai scarso</short>
+      <long>
+        Assai scarso interesse dal giorno <irstdate /> in poi.
+      </long>
+    </text>
+    <text id="96" lang="de">
+      <short>Mässig</short>
+      <long>
+        Geringes Interesse seit <irstdate />.
+      </long>
+    </text>
+    <text id="96" lang="en">
+      <short>Weak</short>
+      <long>
+        Weak interest since <irstdate />.
+      </long>
+    </text>
+    <text id="96" lang="es">
+      <short>Poco</short>
+      <long>
+        Poco interés desde el <irstdate />.
+      </long>
+    </text>
+    <text id="96" lang="fr">
+      <short>Faible</short>
+      <long>
+        Faible intérêt depuis <irstdate />.
+      </long>
+    </text>
+    <text id="96" lang="it">
+      <short>Scarso</short>
+      <long>
+        Scarso interesse dal giorno <irstdate /> in poi.
+      </long>
+    </text>
+    <text id="97" lang="de">
+      <short>Gross</short>
+      <long>
+        Grosses Interesse seit <irstdate />.
+      </long>
+    </text>
+    <text id="97" lang="en">
+      <short>Strong</short>
+      <long>
+        Strong interest since <irstdate />.
+      </long>
+    </text>
+    <text id="97" lang="es">
+      <short>Fuerte</short>
+      <long>
+        Fuerte interés desde el <irstdate />.
+      </long>
+    </text>
+    <text id="97" lang="fr">
+      <short>Fort</short>
+      <long>
+        Fort intérêt depuis <irstdate />.
+      </long>
+    </text>
+    <text id="97" lang="it">
+      <short>Forte</short>
+      <long>
+        Forte interesse dal giorno <irstdate /> in poi.
+      </long>
+    </text>
+    <text id="98" lang="de">
+      <short>Sehr gross</short>
+      <long>
+        Sehr grosses Interesse seit <irstdate />.
+      </long>
+    </text>
+    <text id="98" lang="en">
+      <short>Very Strong</short>
+      <long>
+        Very strong interest since <irstdate />.
+      </long>
+    </text>
+    <text id="98" lang="es">
+      <short>Muy fuerte</short>
+      <long>
+        Muy fuerte interés desde el <irstdate />.
+      </long>
+    </text>
+    <text id="98" lang="fr">
+      <short>Très fort</short>
+      <long>
+        Très fort intérêt depuis <irstdate />.
+      </long>
+    </text>
+    <text id="98" lang="it">
+      <short>Assai forte</short>
+      <long>
+        Assai forte interesse dal giorno <irstdate /> in poi.
+      </long>
+    </text>
+    <text id="99" lang="de">
+      <short>Kein</short>
+      <long>Keine Veränderung im letzten Jahr. </long>
+    </text>
+    <text id="99" lang="en">
+      <short>None</short>
+      <long>No change over 1 year.</long>
+    </text>
+    <text id="99" lang="es">
+      <short>Ningún</short>
+      <long>Ningún cambio durante un año.</long>
+    </text>
+    <text id="99" lang="fr">
+      <short>Aucun</short>
+      <long>Aucun changement sur 1 an</long>
+    </text>
+    <text id="99" lang="it">
+      <short>Nessun</short>
+      <long>Nessun cambiamento durante l'anno scorso.</long>
+    </text>
+    <text id="100" lang="de">
+      <short>Sehr mässig</short>
+      <long>Keine Veränderung im letzten Jahr. </long>
+    </text>
+    <text id="100" lang="en">
+      <short>Very Weak</short>
+      <long>No change over 1 year.</long>
+    </text>
+    <text id="100" lang="es">
+      <short>Muy poco</short>
+      <long>Ningún cambio durante un año.</long>
+    </text>
+    <text id="100" lang="fr">
+      <short>Très faible</short>
+      <long>Aucun changement sur 1 an</long>
+    </text>
+    <text id="100" lang="it">
+      <short>Assai scarso</short>
+      <long>Nessun cambiamento durante l'anno scorso.</long>
+    </text>
+    <text id="101" lang="de">
+      <short>Mässig</short>
+      <long>Keine Veränderung im letzten Jahr. </long>
+    </text>
+    <text id="101" lang="en">
+      <short>Weak</short>
+      <long>No change over 1 year.</long>
+    </text>
+    <text id="101" lang="es">
+      <short>Poco</short>
+      <long>Ningún cambio durante un año.</long>
+    </text>
+    <text id="101" lang="fr">
+      <short>Faible</short>
+      <long>Aucun changement sur 1 an</long>
+    </text>
+    <text id="101" lang="it">
+      <short>Scarso</short>
+      <long>Nessun cambiamento durante l'anno scorso.</long>
+    </text>
+    <text id="102" lang="de">
+      <short>Gross</short>
+      <long>Keine Veränderung im letzten Jahr. </long>
+    </text>
+    <text id="102" lang="en">
+      <short>Strong</short>
+      <long>No change over 1 year.</long>
+    </text>
+    <text id="102" lang="es">
+      <short>Fuerte</short>
+      <long>Ningún cambio durante un año.</long>
+    </text>
+    <text id="102" lang="fr">
+      <short>Fort</short>
+      <long>Aucun changement sur 1 an</long>
+    </text>
+    <text id="102" lang="it">
+      <short>Forte</short>
+      <long>Nessun cambiamento durante l'anno scorso.</long>
+    </text>
+    <text id="103" lang="de">
+      <short>Sehr gross</short>
+      <long>Keine Veränderung im letzten Jahr. </long>
+    </text>
+    <text id="103" lang="en">
+      <short>Very Strong</short>
+      <long>No change over 1 year.</long>
+    </text>
+    <text id="103" lang="es">
+      <short>Muy fuerte</short>
+      <long>Ningún cambio durante un año.</long>
+    </text>
+    <text id="103" lang="fr">
+      <short>Très fort</short>
+      <long>Aucun changement sur 1 an</long>
+    </text>
+    <text id="103" lang="it">
+      <short>Assai forte</short>
+      <long>Nessun cambiamento durante l'anno scorso.</long>
+    </text>
+  </texts>
+  <items>
+    <item tag="alpha" lang="de">Alpha</item>
+    <item tag="alpha" lang="en">Alpha</item>
+    <item tag="alpha" lang="es">Alpha</item>
+    <item tag="alpha" lang="fr">Alpha</item>
+    <item tag="alpha" lang="it">Alpha</item>
+    <item tag="asset" lang="de">Verm. in $Mn</item>
+    <item tag="asset" lang="en">Asset in $Mn</item>
+    <item tag="asset" lang="es">Asset in $Mn</item>
+    <item tag="asset" lang="fr">Fortune en $Mn</item>
+    <item tag="asset" lang="it">Asset in $Mn</item>
+    <item tag="beta" lang="de">Beta</item>
+    <item tag="beta" lang="en">Beta</item>
+    <item tag="beta" lang="es">Beta</item>
+    <item tag="beta" lang="fr">Beta</item>
+    <item tag="beta" lang="it">Beta</item>
+    <item tag="bear" lang="de">Bear Market Factor</item>
+    <item tag="bear" lang="en">Bear Market</item>
+    <item tag="bear" lang="es">Bear Market</item>
+    <item tag="bear" lang="fr">Bear Market Factor</item>
+    <item tag="bear" lang="it">Bear Market</item>
+    <item tag="badnews" lang="de">Bad News Factor</item>
+    <item tag="badnews" lang="en">Bad News</item>
+    <item tag="badnews" lang="es">Bad News</item>
+    <item tag="badnews" lang="fr">Bad News Factor</item>
+    <item tag="badnews" lang="it">Bad News</item>
+    <item tag="corr2" lang="de">Korrelation</item>
+    <item tag="corr2" lang="en">Correlation</item>
+    <item tag="corr2" lang="es">Correlation</item>
+    <item tag="corr2" lang="fr">Corrélation</item>
+    <item tag="corr2" lang="it">Correlazione</item>
+    <item tag="dividend" lang="de">Dividenden Rendite</item>
+    <item tag="dividend" lang="en">Dividend Yield</item>
+    <item tag="dividend" lang="es">Dividend Yield</item>
+    <item tag="dividend" lang="fr">Dividende</item>
+    <item tag="dividend" lang="it">Rendita dei dividendi</item>
+    <item tag="ert" lang="de">Gewinn-revisionen</item>
+    <item tag="ert" lang="en">Earnings Rev Trend</item>
+    <item tag="ert" lang="es">Earnings Rev Trend</item>
+    <item tag="ert" lang="fr">Tend. Rev. Bén.</item>
+    <item tag="ert" lang="it">Earnings Rev Trend</item>
+    <item tag="firstdate" lang="de">Erste Analyse</item>
+    <item tag="firstdate" lang="en">First Analysis Date</item>
+    <item tag="firstdate" lang="es">First Analysis Date</item>
+    <item tag="firstdate" lang="fr">Première date d'analyse</item>
+    <item tag="firstdate" lang="it">Data della prima analisi</item>
+    <item tag="gleval" lang="de">Gesamteindruck</item>
+    <item tag="gleval" lang="en">Global Evaluation </item>
+    <item tag="gleval" lang="es">Global Evaluation </item>
+    <item tag="gleval" lang="fr">Evaluation globale</item>
+    <item tag="gleval" lang="it">Valutazione Globale</item>
+    <item tag="gpe" lang="de">W/KGV-Verhältnis</item>
+    <item tag="gpe" lang="en">G/PE Ratio</item>
+    <item tag="gpe" lang="es">G/PE Ratio</item>
+    <item tag="gpe" lang="fr">Ratio Croiss./PE</item>
+    <item tag="gpe" lang="it">G/PE Ratio</item>
+    <item tag="inceptiondate" lang="de">Lanciert</item>
+    <item tag="inceptiondate" lang="en">Inception date</item>
+    <item tag="inceptiondate" lang="es">Inception date</item>
+    <item tag="inceptiondate" lang="fr">Date de lancement</item>
+    <item tag="inceptiondate" lang="it">Inception date</item>
+    <item tag="inforatio" lang="de">Informationswert</item>
+    <item tag="inforatio" lang="en">Information Ratio</item>
+    <item tag="inforatio" lang="es">Information Ratio</item>
+    <item tag="inforatio" lang="fr">Ratio d'information</item>
+    <item tag="inforatio" lang="it">Information Ratio</item>
+    <item tag="irst" lang="de">Chance</item>
+    <item tag="irst" lang="en">Interest</item>
+    <item tag="irst" lang="es">Interest</item>
+    <item tag="irst" lang="fr">Intérêt</item>
+    <item tag="irst" lang="it">Interesse</item>
+    <item tag="ltg" lang="de">LF Wachstum</item>
+    <item tag="ltg" lang="en">LT Growth</item>
+    <item tag="ltg" lang="es">LT Growth</item>
+    <item tag="ltg" lang="fr">Croiss. LT</item>
+    <item tag="ltg" lang="it">Previsione degli utili (LT Growth)</item>
+    <item tag="ltpe" lang="de">LF KGV</item>
+    <item tag="ltpe" lang="en">LT P/E</item>
+    <item tag="ltpe" lang="es">LT P/E</item>
+    <item tag="ltpe" lang="fr">PE LT</item>
+    <item tag="ltpe" lang="it">PE stimato (LT PE)</item>
+    <item tag="mc" lang="de">Markt-Kap. ($ Mia.)</item>
+    <item tag="mc" lang="en">Mkt Cap in $bn</item>
+    <item tag="mc" lang="es">Mkt Cap in $bn</item>
+    <item tag="mc" lang="fr">Cap Bours en Mdrs$</item>
+    <item tag="mc" lang="it">Cap di borsa in Mrds$</item>
+    <item tag="mgtfees" lang="de">Mgmt. Gebühren</item>
+    <item tag="mgtfees" lang="en">Management fees</item>
+    <item tag="mgtfees" lang="es">Management fees</item>
+    <item tag="mgtfees" lang="fr">Frais de gestion</item>
+    <item tag="mgtfees" lang="it">Management fees</item>
+    <item tag="nbranl" lang="de">Anzahl Analysten</item>
+    <item tag="nbranl" lang="en">Avg. Nb analysts</item>
+    <item tag="nbranl" lang="es">Avg. Nb analysts</item>
+    <item tag="nbranl" lang="fr">Nombre d'analystes</item>
+    <item tag="nbranl" lang="it">Quantità numerica analisti</item>
+    <item tag="perf3m" lang="de">3-Monats Perfo.</item>
+    <item tag="perf3m" lang="en">3 Months Performance</item>
+    <item tag="perf3m" lang="es">3 Months Performance</item>
+    <item tag="perf3m" lang="fr">Performance 3 mois</item>
+    <item tag="perf3m" lang="it">3 Months Performance</item>
+    <item tag="redemptionfees" lang="de">Rückkauf Gebühr</item>
+    <item tag="redemptionfees" lang="en">Redemption fees</item>
+    <item tag="redemptionfees" lang="es">Redemption fees</item>
+    <item tag="redemptionfees" lang="fr">Frais de rachat</item>
+    <item tag="redemptionfees" lang="it">Redemption fees</item>
+    <item tag="riskzone" lang="de">Risiko</item>
+    <item tag="riskzone" lang="en">Risk Zone</item>
+    <item tag="riskzone" lang="es">Risk Zone</item>
+    <item tag="riskzone" lang="fr">Zone de risque</item>
+    <item tag="riskzone" lang="it">Risk Zone</item>
+    <item tag="rp" lang="de">Rel. Perf.</item>
+    <item tag="rp" lang="en">4wk Rel Perf</item>
+    <item tag="rp" lang="es">4wk Rel Perf</item>
+    <item tag="rp" lang="fr">Perf Rel 4 sem.</item>
+    <item tag="rp" lang="it">4wk Rel Perf</item>
+    <item tag="sharpe" lang="de">Sharpe</item>
+    <item tag="sharpe" lang="en">Sharpe</item>
+    <item tag="sharpe" lang="es">Sharpe</item>
+    <item tag="sharpe" lang="fr">Sharpe</item>
+    <item tag="sharpe" lang="it">Sharpe</item>
+    <item tag="tracking" lang="de">Tracking error</item>
+    <item tag="tracking" lang="en">Tracking error</item>
+    <item tag="tracking" lang="es">Tracking error</item>
+    <item tag="tracking" lang="fr">Tracking error</item>
+    <item tag="tracking" lang="it">Tracking error</item>
+    <item tag="tt" lang="de">MF Tech Trend</item>
+    <item tag="tt" lang="en">MT Tech Trend </item>
+    <item tag="tt" lang="es">MT Tech Trend </item>
+    <item tag="tt" lang="fr">Tend. Tech. MT</item>
+    <item tag="tt" lang="it">MT Tech Trend </item>
+    <item tag="varval" lang="de">Value at Risk</item>
+    <item tag="varval" lang="en">Value at Risk</item>
+    <item tag="varval" lang="es">Value at Risk</item>
+    <item tag="varval" lang="fr">Value at Risk</item>
+    <item tag="varval" lang="it">Value at Risk</item>
+    <item tag="vr" lang="de">Preis</item>
+    <item tag="vr" lang="en">Valuation Rating</item>
+    <item tag="vr" lang="es">Valuation Rating</item>
+    <item tag="vr" lang="fr">Evaluation</item>
+    <item tag="vr" lang="it">Valutazione del rating</item>
+  </items>
+  <groups>
+    <group id="1" lang="de">Automobile &amp; Zubehör</group>
+    <group id="1" lang="en">Automobiles &amp; Parts</group>
+    <group id="1" lang="es">Automovil &amp; Equipamientos</group>
+    <group id="1" lang="fr">Automobile &amp; Equipements</group>
+    <group id="1" lang="it">Automobile &amp; Componenti</group>
+    <group id="2" lang="de">Rohstoffe</group>
+    <group id="2" lang="en">Basic Resources</group>
+    <group id="2" lang="es">Materias Primas</group>
+    <group id="2" lang="fr">Matières Premières</group>
+    <group id="2" lang="it">Materie prime</group>
+    <group id="3" lang="de">Geldinstitute</group>
+    <group id="3" lang="en">Banks</group>
+    <group id="3" lang="es">Banca</group>
+    <group id="3" lang="fr">Banques</group>
+    <group id="3" lang="it">Bancario</group>
+    <group id="4" lang="de">Baugewerbe &amp; Werkstoffe</group>
+    <group id="4" lang="en">Construction &amp; Materials</group>
+    <group id="4" lang="es">Construcción &amp; Materiales</group>
+    <group id="4" lang="fr">Construction &amp; Matériels</group>
+    <group id="4" lang="it">Edilizia &amp; Materiali da Costruzione</group>
+    <group id="5" lang="de">Chemie</group>
+    <group id="5" lang="en">Chemicals</group>
+    <group id="5" lang="es">Quimica</group>
+    <group id="5" lang="fr">Chimie</group>
+    <group id="5" lang="it">Prodotti Chimici</group>
+    <group id="6" lang="de">Privat- &amp; Haushaltswaren</group>
+    <group id="6" lang="en">Personal &amp; Household Goods</group>
+    <group id="6" lang="es">Productos del Hogar &amp; Personales</group>
+    <group id="6" lang="fr">Produits Ménagers &amp; Personnels</group>
+    <group id="6" lang="it">Consumo privato &amp; Economia domestica</group>
+    <group id="7" lang="de">Reisen &amp; Freizeit</group>
+    <group id="7" lang="en">Travel &amp; Leisure</group>
+    <group id="7" lang="es">Turismo &amp; Ocio</group>
+    <group id="7" lang="fr">Voyage &amp; Loisir</group>
+    <group id="7" lang="it">Turismo &amp; Tempo libero</group>
+    <group id="8" lang="de">Öl &amp; Gas</group>
+    <group id="8" lang="en">Oil &amp; Gas</group>
+    <group id="8" lang="es">Petroleo &amp; Gas</group>
+    <group id="8" lang="fr">Pétrole &amp; Gaz</group>
+    <group id="8" lang="it">Petrolio &amp; Gas</group>
+    <group id="9" lang="de">Finanzdienstleistungen</group>
+    <group id="9" lang="en">Financial Services</group>
+    <group id="9" lang="es">Servicios Financieros</group>
+    <group id="9" lang="fr">Services Financiers</group>
+    <group id="9" lang="it">Finanzdienstleistung</group>
+    <group id="10" lang="de">Nahrungsmittel &amp; Getränke</group>
+    <group id="10" lang="en">Food &amp; Beverage</group>
+    <group id="10" lang="es">Alimenticio</group>
+    <group id="10" lang="fr">Alimentaire</group>
+    <group id="10" lang="it">Alimentari</group>
+    <group id="11" lang="de">Gesundheitswesen</group>
+    <group id="11" lang="en">Health Care</group>
+    <group id="11" lang="es">Sanidad</group>
+    <group id="11" lang="fr">Santé</group>
+    <group id="11" lang="it">Salute pubblica</group>
+    <group id="12" lang="de">Industrie</group>
+    <group id="12" lang="en">Industrial Goods &amp; Services</group>
+    <group id="12" lang="es">Productos &amp; Servicios Industriales</group>
+    <group id="12" lang="fr">Produits &amp; Services Industriels</group>
+    <group id="12" lang="it">Prodotti &amp; Servizi Industriali</group>
+    <group id="13" lang="de">Versicherungen</group>
+    <group id="13" lang="en">Insurance</group>
+    <group id="13" lang="es">Seguros</group>
+    <group id="13" lang="fr">Assurances</group>
+    <group id="13" lang="it">Assicurativo</group>
+    <group id="14" lang="de">Medien</group>
+    <group id="14" lang="en">Media</group>
+    <group id="14" lang="es">Medios de Información</group>
+    <group id="14" lang="fr">Médias</group>
+    <group id="14" lang="it">Media</group>
+    <group id="15" lang="de">Einzel- &amp; Grosshandel</group>
+    <group id="15" lang="en">Retail</group>
+    <group id="15" lang="es">Comercio</group>
+    <group id="15" lang="fr">Commerce de détail</group>
+    <group id="15" lang="it">Commerciale</group>
+    <group id="16" lang="de">Technologie</group>
+    <group id="16" lang="en">Technology</group>
+    <group id="16" lang="es">Tecnología</group>
+    <group id="16" lang="fr">Technologie</group>
+    <group id="16" lang="it">Technologico</group>
+    <group id="17" lang="de">Telekommunikation</group>
+    <group id="17" lang="en">Telecommunications</group>
+    <group id="17" lang="es">Telecomunicaciones</group>
+    <group id="17" lang="fr">Télécommunications</group>
+    <group id="17" lang="it">Telecomunicazioni</group>
+    <group id="18" lang="de">Versorger</group>
+    <group id="18" lang="en">Utilities</group>
+    <group id="18" lang="es">Servicios para Colectividades</group>
+    <group id="18" lang="fr">Services aux Collectivités</group>
+    <group id="18" lang="it">Distribuzione</group>
+  </groups>
+  <sectors>
+    <sector id="1" lang="de">Erschliessung &amp; Produktion</sector>
+    <sector id="1" lang="en">Exploration &amp; Production</sector>
+    <sector id="1" lang="es">Exploración &amp; Producción</sector>
+    <sector id="1" lang="fr">Exploration &amp; Production</sector>
+    <sector id="1" lang="it">Esplorazione &amp; Produzione</sector>
+    <sector id="2" lang="de">Öl &amp; Gas Produzenten</sector>
+    <sector id="2" lang="en">Integrated Oil &amp; Gas</sector>
+    <sector id="2" lang="es">Petróleo &amp; Gas Integradas</sector>
+    <sector id="2" lang="fr">Petrole &amp; Gaz Intégrés</sector>
+    <sector id="2" lang="it">Petrolio &amp; Gas integrati</sector>
+    <sector id="3" lang="de">Bohranlagen &amp; Dienstleistungen</sector>
+    <sector id="3" lang="en">Oil Equipment &amp; Services</sector>
+    <sector id="3" lang="es">Petróleo / Equipamiento-Servicio</sector>
+    <sector id="3" lang="fr">Pétrole / Equipement-Services</sector>
+    <sector id="3" lang="it">Petrolio / Apparecchiature &amp; Servizi </sector>
+    <sector id="4" lang="de">Pipelines</sector>
+    <sector id="4" lang="en">Pipelines</sector>
+    <sector id="4" lang="es">Gaseoductos / Oleoductos</sector>
+    <sector id="4" lang="fr">Gazoducs/Oléoducs</sector>
+    <sector id="4" lang="it">Condutture</sector>
+    <sector id="5" lang="de">Grundchemikalien</sector>
+    <sector id="5" lang="en">Commodity Chemicals</sector>
+    <sector id="5" lang="es">Química básica</sector>
+    <sector id="5" lang="fr">Chimie de base</sector>
+    <sector id="5" lang="it">Prodotti chimici di base</sector>
+    <sector id="6" lang="de">Spezialitäten-Chemie</sector>
+    <sector id="6" lang="en">Specialty Chemicals</sector>
+    <sector id="6" lang="es">Química - Especialidades</sector>
+    <sector id="6" lang="fr">Chimie - Spécialités</sector>
+    <sector id="6" lang="it">Chimica speciale</sector>
+    <sector id="7" lang="de">Holzprodukte</sector>
+    <sector id="7" lang="en">Forestry</sector>
+    <sector id="7" lang="es">Productos forestales</sector>
+    <sector id="7" lang="fr">Produits forestiers</sector>
+    <sector id="7" lang="it">Silvicoltura &amp; Prodotti forestali</sector>
+    <sector id="8" lang="de">Papierprodukte</sector>
+    <sector id="8" lang="en">Paper</sector>
+    <sector id="8" lang="es">Papeles</sector>
+    <sector id="8" lang="fr">Papiers</sector>
+    <sector id="8" lang="it">Carta</sector>
+    <sector id="9" lang="de">Aluminium</sector>
+    <sector id="9" lang="en">Aluminium</sector>
+    <sector id="9" lang="es">Aluminio</sector>
+    <sector id="9" lang="fr">Aluminium</sector>
+    <sector id="9" lang="it">Alluminio</sector>
+    <sector id="10" lang="de">Nichteisen-Metalle</sector>
+    <sector id="10" lang="en">Non Ferrous Metals</sector>
+    <sector id="10" lang="es">Metales no ferrosos</sector>
+    <sector id="10" lang="fr">Métaux non ferreux</sector>
+    <sector id="10" lang="it">Metalli non ferrosi</sector>
+    <sector id="11" lang="de">Stahl</sector>
+    <sector id="11" lang="en">Steel</sector>
+    <sector id="11" lang="es">Acero</sector>
+    <sector id="11" lang="fr">Acier</sector>
+    <sector id="11" lang="it">Acciaio</sector>
+    <sector id="12" lang="de">Kohle</sector>
+    <sector id="12" lang="en">Coal</sector>
+    <sector id="12" lang="es">Carbón</sector>
+    <sector id="12" lang="fr">Charbon</sector>
+    <sector id="12" lang="it">Carbone</sector>
+    <sector id="13" lang="de">Diamanten &amp; Edelsteine</sector>
+    <sector id="13" lang="en">Diamonds &amp; Gemstones</sector>
+    <sector id="13" lang="es">Diamantes &amp; Piedras preciosas</sector>
+    <sector id="13" lang="fr">Diamants &amp; Pierres précieuses</sector>
+    <sector id="13" lang="it">Diamanti &amp; Pietre preziose</sector>
+    <sector id="14" lang="de">Minen</sector>
+    <sector id="14" lang="en">General Mining</sector>
+    <sector id="14" lang="es">Minas diversificadas</sector>
+    <sector id="14" lang="fr">Minières diversifiées</sector>
+    <sector id="14" lang="it">Miniere d'estrazione in genere</sector>
+    <sector id="15" lang="de">Goldminen</sector>
+    <sector id="15" lang="en">Gold Mining</sector>
+    <sector id="15" lang="es">Minas diversificadas bien</sector>
+    <sector id="15" lang="fr">Mines d'or</sector>
+    <sector id="15" lang="it">Miniere d'oro</sector>
+    <sector id="16" lang="de">Platin &amp; Edelmetalle</sector>
+    <sector id="16" lang="en">Platinum &amp; Precious Metals</sector>
+    <sector id="16" lang="es">Platino &amp; Metales preciosos</sector>
+    <sector id="16" lang="fr">Platine &amp; Métaux précieux</sector>
+    <sector id="16" lang="it">Platino &amp; Metalli preziosi</sector>
+    <sector id="17" lang="de">Baustoffe &amp; Einbauten</sector>
+    <sector id="17" lang="en">Building Materials &amp; Fixtures</sector>
+    <sector id="17" lang="es">BTP-Matériaux de construcción</sector>
+    <sector id="17" lang="fr">BTP-Matériaux de construction</sector>
+    <sector id="17" lang="it">Materiali da costruzione &amp; Impianti</sector>
+    <sector id="18" lang="de">Anlagenbau</sector>
+    <sector id="18" lang="en">Heavy Construction</sector>
+    <sector id="18" lang="es">BTP-Construction-Infrastructure</sector>
+    <sector id="18" lang="fr">BTP-Construction-Infrastructure</sector>
+    <sector id="18" lang="it">Genio civile / Infrastrutture</sector>
+    <sector id="19" lang="de">Luft- &amp; Raumfahrt</sector>
+    <sector id="19" lang="en">Aerospace</sector>
+    <sector id="19" lang="es">Aéro / Espacio / Armamento</sector>
+    <sector id="19" lang="fr">Aéro/Espace/Armement</sector>
+    <sector id="19" lang="it">Aerospaziale</sector>
+    <sector id="20" lang="de">Rüstungsgüter</sector>
+    <sector id="20" lang="en">Defense</sector>
+    <sector id="20" lang="es">Defensa</sector>
+    <sector id="20" lang="fr">Défense</sector>
+    <sector id="20" lang="it">Difesa </sector>
+    <sector id="21" lang="de">Container &amp; Verpackungen</sector>
+    <sector id="21" lang="en">Containers &amp; Packaging</sector>
+    <sector id="21" lang="es">Embalaje / Acondicionamiento</sector>
+    <sector id="21" lang="fr">Emballage/Conditionnement</sector>
+    <sector id="21" lang="it">Contenitori &amp; Imballaggi</sector>
+    <sector id="22" lang="de">Sonstige Industrieprodukte</sector>
+    <sector id="22" lang="en">Diversified Industrials</sector>
+    <sector id="22" lang="es">Industrias diversificadas</sector>
+    <sector id="22" lang="fr">Industries diversifiées</sector>
+    <sector id="22" lang="it">Prodotti industriali in genere</sector>
+    <sector id="23" lang="de">Elektrische Komponenten</sector>
+    <sector id="23" lang="en">Electrical Components &amp; Equipment</sector>
+    <sector id="23" lang="es">Componentes electrónicos &amp; Equipamientos</sector>
+    <sector id="23" lang="fr">Composants électroniques &amp; Equipements</sector>
+    <sector id="23" lang="it">Elettronica / Impianti &amp; Componenti</sector>
+    <sector id="24" lang="de">Verbraucherelektronik</sector>
+    <sector id="24" lang="en">Electronic Equipment</sector>
+    <sector id="24" lang="es">Equipamientos electrónicos</sector>
+    <sector id="24" lang="fr">Equipements électroniques</sector>
+    <sector id="24" lang="it">Elettronica / Beni di consumo</sector>
+    <sector id="25" lang="de">Gewerbefahrzeuge</sector>
+    <sector id="25" lang="en">Commercial Vehicles &amp; Trucks</sector>
+    <sector id="25" lang="es">Vehículos Comerciales &amp; Camiones</sector>
+    <sector id="25" lang="fr">Véhicules Commerciaux &amp; Camions</sector>
+    <sector id="25" lang="it">Veicoli commerciali e pesanti</sector>
+    <sector id="26" lang="de">Industriemaschinen</sector>
+    <sector id="26" lang="en">Industrial Machinery</sector>
+    <sector id="26" lang="es">Equipamiento Industrial</sector>
+    <sector id="26" lang="fr">Equipement Industriel</sector>
+    <sector id="26" lang="it">Macchinari industriali</sector>
+    <sector id="27" lang="de">Transportdienstleistungen</sector>
+    <sector id="27" lang="en">Delivery Services</sector>
+    <sector id="27" lang="es">Servicios de Entrega</sector>
+    <sector id="27" lang="fr">Services de livraison</sector>
+    <sector id="27" lang="it">Servizi di distribuzione</sector>
+    <sector id="28" lang="de">Transport</sector>
+    <sector id="28" lang="en">Marine Transportation</sector>
+    <sector id="28" lang="es">Transporte marítimo</sector>
+    <sector id="28" lang="fr">Transport maritime</sector>
+    <sector id="28" lang="it">Trasporto marittimo</sector>
+    <sector id="29" lang="de">Eisenbahn</sector>
+    <sector id="29" lang="en">Railroads</sector>
+    <sector id="29" lang="es">Chemin de hierro</sector>
+    <sector id="29" lang="fr">Chemin de fer</sector>
+    <sector id="29" lang="it">Ferrovie</sector>
+    <sector id="30" lang="de">Transportwesen</sector>
+    <sector id="30" lang="en">Transportation Services</sector>
+    <sector id="30" lang="es">Gestión de los transportes</sector>
+    <sector id="30" lang="fr">Gestion des transports</sector>
+    <sector id="30" lang="it">Servizi di trasporto</sector>
+    <sector id="31" lang="de">Lastkraftwagen</sector>
+    <sector id="31" lang="en">Trucking</sector>
+    <sector id="31" lang="es">Camiones</sector>
+    <sector id="31" lang="fr">Camions</sector>
+    <sector id="31" lang="it">Trasporto pesante</sector>
+    <sector id="32" lang="de">Dienstleister für Unternehmen</sector>
+    <sector id="32" lang="en">Business Support Services</sector>
+    <sector id="32" lang="es">Servicios Apoyo Empresas</sector>
+    <sector id="32" lang="fr">Services et Support aux Entreprises</sector>
+    <sector id="32" lang="it">Servizi aziendali</sector>
+    <sector id="33" lang="de">Personalberater</sector>
+    <sector id="33" lang="en">Business Training &amp; Employment Agencies</sector>
+    <sector id="33" lang="es">Agencias Empleo &amp; Formación</sector>
+    <sector id="33" lang="fr">Agences Emploi &amp; Formation</sector>
+    <sector id="33" lang="it">Collocamento &amp; Formazione del personale</sector>
+    <sector id="34" lang="de">Finanzverwaltungen</sector>
+    <sector id="34" lang="en">Financial Administration</sector>
+    <sector id="34" lang="es">Administración financiera</sector>
+    <sector id="34" lang="fr">Administration financière</sector>
+    <sector id="34" lang="it">Amministrazione finanziaria</sector>
+    <sector id="35" lang="de">Industrielieferanten</sector>
+    <sector id="35" lang="en">Industrial Suppliers</sector>
+    <sector id="35" lang="es">Proveedores Industriales</sector>
+    <sector id="35" lang="fr">Fournisseurs Industriels</sector>
+    <sector id="35" lang="it">Fornitori industriali</sector>
+    <sector id="36" lang="de">Abfall &amp; Entsorgung</sector>
+    <sector id="36" lang="en">Waste &amp; Disposal Services</sector>
+    <sector id="36" lang="es">Residuos &amp; Servicios de vías y obras</sector>
+    <sector id="36" lang="fr">Déchets &amp; Services Voirie</sector>
+    <sector id="36" lang="it">Rifiuti / Servizi di gestione e smaltimento</sector>
+    <sector id="37" lang="de">Fahrzeugbau</sector>
+    <sector id="37" lang="en">Automobiles</sector>
+    <sector id="37" lang="es">Fabricantes automóviles</sector>
+    <sector id="37" lang="fr">Constructeurs automobiles</sector>
+    <sector id="37" lang="it">Automobili / Fabbricazione</sector>
+    <sector id="38" lang="de">Automobilteile &amp; Zubehör</sector>
+    <sector id="38" lang="en">Auto Parts</sector>
+    <sector id="38" lang="es">Fabricantes de equipos automóviles</sector>
+    <sector id="38" lang="fr">Equipementiers automobiles</sector>
+    <sector id="38" lang="it">Automobili / Accessori &amp; Parti di ricambio</sector>
+    <sector id="39" lang="de">Reifen</sector>
+    <sector id="39" lang="en">Tires</sector>
+    <sector id="39" lang="es">Neumáticos</sector>
+    <sector id="39" lang="fr">Pneus</sector>
+    <sector id="39" lang="it">Pneumatici</sector>
+    <sector id="40" lang="de">Brauereien</sector>
+    <sector id="40" lang="en">Brewers</sector>
+    <sector id="40" lang="es">Cervecero</sector>
+    <sector id="40" lang="fr">Brasseurs</sector>
+    <sector id="40" lang="it">Birrerie</sector>
+    <sector id="41" lang="de">Wein- &amp; Brantweinhersteller</sector>
+    <sector id="41" lang="en">Distillers &amp; Vintners</sector>
+    <sector id="41" lang="es">Productores Destilados &amp; Vinos</sector>
+    <sector id="41" lang="fr">Vins &amp; Spiritueux</sector>
+    <sector id="41" lang="it">Produttori di distillati &amp; Vini</sector>
+    <sector id="42" lang="de">Erfrischungsgetränke</sector>
+    <sector id="42" lang="en">Soft Drinks</sector>
+    <sector id="42" lang="es">Bebidas-Soda</sector>
+    <sector id="42" lang="fr">Boissons-Sodas</sector>
+    <sector id="42" lang="it">Bevande</sector>
+    <sector id="43" lang="de">Landwirtschaft &amp; Fischerei</sector>
+    <sector id="43" lang="en">Farming &amp; Fishing</sector>
+    <sector id="43" lang="es">Productos Agrícolas y de Mar</sector>
+    <sector id="43" lang="fr">Produits Agricoles et de Mer</sector>
+    <sector id="43" lang="it">Agricoltura &amp; Industria della pesca</sector>
+    <sector id="44" lang="de">Nahrungsmittel</sector>
+    <sector id="44" lang="en">Food Products</sector>
+    <sector id="44" lang="es">Productos Alimentarios</sector>
+    <sector id="44" lang="fr">Produits Alimentaires</sector>
+    <sector id="44" lang="it">Prodotti alimentari</sector>
+    <sector id="45" lang="de">Haushaltsprodukte</sector>
+    <sector id="45" lang="en">Durable Household Products</sector>
+    <sector id="45" lang="es">Bienes d' inversión domésticos</sector>
+    <sector id="45" lang="fr">Biens d'investissement domestiques</sector>
+    <sector id="45" lang="it">Economia domestica / Beni durevoli</sector>
+    <sector id="46" lang="de">Verbrauchsgüter</sector>
+    <sector id="46" lang="en">Nondurable Household Products</sector>
+    <sector id="46" lang="es">Bienes de consumo domésticos</sector>
+    <sector id="46" lang="fr">Biens de consommation domestiques</sector>
+    <sector id="46" lang="it">Economia domestica / Beni di consumo</sector>
+    <sector id="47" lang="de">Möbel</sector>
+    <sector id="47" lang="en">Furnishings</sector>
+    <sector id="47" lang="es">Mobiliario</sector>
+    <sector id="47" lang="fr">Ameublement</sector>
+    <sector id="47" lang="it">Arredamento</sector>
+    <sector id="48" lang="de">Eigenheimbau</sector>
+    <sector id="48" lang="en">Home Construction</sector>
+    <sector id="48" lang="es">Construcción / Alojamiento</sector>
+    <sector id="48" lang="fr">Construction/Logement</sector>
+    <sector id="48" lang="it">Costruzione / Immobiliare</sector>
+    <sector id="49" lang="de">Verbraucherelektronik</sector>
+    <sector id="49" lang="en">Consumer Electronics</sector>
+    <sector id="49" lang="es">Aparatos</sector>
+    <sector id="49" lang="fr">Appareils électroniques</sector>
+    <sector id="49" lang="it">Elettronica / Apparecchi di consumo</sector>
+    <sector id="50" lang="de">Freizeitprodukte </sector>
+    <sector id="50" lang="en">Recreational Products</sector>
+    <sector id="50" lang="es">electrónicos</sector>
+    <sector id="50" lang="fr">Loisirs-Produits</sector>
+    <sector id="50" lang="it">Tempo libero &amp; Ricreazione / Prodotti</sector>
+    <sector id="51" lang="de">Spielzeuge</sector>
+    <sector id="51" lang="en">Toys</sector>
+    <sector id="51" lang="es">Juguetes</sector>
+    <sector id="51" lang="fr">Jouets</sector>
+    <sector id="51" lang="it">Giocattoli</sector>
+    <sector id="52" lang="de">Bekleidung &amp;  Accessoires</sector>
+    <sector id="52" lang="en">Clothing &amp; Accessories</sector>
+    <sector id="52" lang="es">Confección &amp; Accesorios</sector>
+    <sector id="52" lang="fr">Habillement &amp; Accessoires</sector>
+    <sector id="52" lang="it">Abigliamento &amp; Accessori</sector>
+    <sector id="53" lang="de">Sport &amp; Bekleidung</sector>
+    <sector id="53" lang="en">Footwear</sector>
+    <sector id="53" lang="es">Calzado</sector>
+    <sector id="53" lang="fr">Sport &amp; Habillement</sector>
+    <sector id="53" lang="it">Calzatura</sector>
+    <sector id="54" lang="de">Produkte für den privaten Bedarf</sector>
+    <sector id="54" lang="en">Personal Products</sector>
+    <sector id="54" lang="es">Productos Personales</sector>
+    <sector id="54" lang="fr">Produits Personnels</sector>
+    <sector id="54" lang="it">Prodotti per l'utilizzo personale</sector>
+    <sector id="55" lang="de">Tabak</sector>
+    <sector id="55" lang="en">Tobacco</sector>
+    <sector id="55" lang="es">Tabaco</sector>
+    <sector id="55" lang="fr">Tabac</sector>
+    <sector id="55" lang="it">Tabacco</sector>
+    <sector id="56" lang="de">Gesundheitsdienstleister</sector>
+    <sector id="56" lang="en">Health Care Providers</sector>
+    <sector id="56" lang="es">Salud (equipamientos, servicios)</sector>
+    <sector id="56" lang="fr">Santé (équipements, services)</sector>
+    <sector id="56" lang="it">Sanità (Apparecchiature, Servizi)</sector>
+    <sector id="57" lang="de">Medizinische Geräte</sector>
+    <sector id="57" lang="en">Medical Equipment</sector>
+    <sector id="57" lang="es">Equipamientos médicos</sector>
+    <sector id="57" lang="fr">Equipements médicaux</sector>
+    <sector id="57" lang="it">Apparecchiatura medica</sector>
+    <sector id="58" lang="de">Medizinisches Zubehör</sector>
+    <sector id="58" lang="en">Medical Supplies</sector>
+    <sector id="58" lang="es">Suministros médicos</sector>
+    <sector id="58" lang="fr">Fournitures médicaux</sector>
+    <sector id="58" lang="it">Apparecchiature medica (Accessori)</sector>
+    <sector id="59" lang="de">Biotechnologie</sector>
+    <sector id="59" lang="en">Biotechnology</sector>
+    <sector id="59" lang="es">Biotecnología</sector>
+    <sector id="59" lang="fr">Biotechnologie</sector>
+    <sector id="59" lang="it">Biotecnologia</sector>
+    <sector id="60" lang="de">Pharmaka</sector>
+    <sector id="60" lang="en">Pharmaceuticals</sector>
+    <sector id="60" lang="es">Farmacéuticos</sector>
+    <sector id="60" lang="fr">Pharmaceutiques</sector>
+    <sector id="60" lang="it">Prodotti farmaceutici</sector>
+    <sector id="61" lang="de">Apotheken</sector>
+    <sector id="61" lang="en">Drug Retailers</sector>
+    <sector id="61" lang="es">Farmacia</sector>
+    <sector id="61" lang="fr">Pharmacie-détaillants</sector>
+    <sector id="61" lang="it">Farmacia / Distribuzione al dettaglio</sector>
+    <sector id="62" lang="de">Nahrungsmittel</sector>
+    <sector id="62" lang="en">Food Retailers &amp; Wholesalers</sector>
+    <sector id="62" lang="es">Distrib. Alimentario / detalle &amp; Grande</sector>
+    <sector id="62" lang="fr">Distrib. Alimentaire / détail &amp; Gros </sector>
+    <sector id="62" lang="it">Alimentari/Distribuzione al dettaglio e Grossisti</sector>
+    <sector id="63" lang="de">Bekleidung</sector>
+    <sector id="63" lang="en">Apparel Retailers</sector>
+    <sector id="63" lang="es">Distribución - Confección</sector>
+    <sector id="63" lang="fr">Distribution-Habillement</sector>
+    <sector id="63" lang="it">Abigliamento-Accessori/Distribuzione al dettaglio</sector>
+    <sector id="64" lang="de">Warenhäuser &amp; Versand</sector>
+    <sector id="64" lang="en">Broadline Retailers</sector>
+    <sector id="64" lang="es">Gran distribución</sector>
+    <sector id="64" lang="fr">Grande distribution</sector>
+    <sector id="64" lang="it">Commercio &amp; Vendita / Grossisti</sector>
+    <sector id="65" lang="de">Baumärkte &amp; Baufachhandel</sector>
+    <sector id="65" lang="en">Home Improvement Retailers</sector>
+    <sector id="65" lang="es">Distribución Bricolaje</sector>
+    <sector id="65" lang="fr">Distribution Bricolage</sector>
+    <sector id="65" lang="it">Commercio &amp; Vendita / Centri Bricolage</sector>
+    <sector id="66" lang="de">Konsumdienstleistungen</sector>
+    <sector id="66" lang="en">Specialized Consumer Services</sector>
+    <sector id="66" lang="es">Servicios especializados Consumo</sector>
+    <sector id="66" lang="fr">Services spécialisés Consommation</sector>
+    <sector id="66" lang="it">Servizi speciali al consumo</sector>
+    <sector id="67" lang="de">Spezialisierter Detailhandel</sector>
+    <sector id="67" lang="en">Specialty Retailers</sector>
+    <sector id="67" lang="es">Comercio al por menor - Especialidades</sector>
+    <sector id="67" lang="fr">Commerce de détail - Spécialités</sector>
+    <sector id="67" lang="it">Commercio &amp; Vendita / Rivenditori specializzati</sector>
+    <sector id="68" lang="de">Rundfunk, Fernsehen und Unterhaltung</sector>
+    <sector id="68" lang="en">Broadcasting &amp; Entertainment</sector>
+    <sector id="68" lang="es">Sector audiovisual-Producción</sector>
+    <sector id="68" lang="fr">Audiovisuel-Production </sector>
+    <sector id="68" lang="it">Intrattenimento / Prodotti Audiviosivi</sector>
+    <sector id="69" lang="de">Medien-Agenturen</sector>
+    <sector id="69" lang="en">Media Agencies</sector>
+    <sector id="69" lang="es">Agencias Medios de comunicacíon</sector>
+    <sector id="69" lang="fr">Agences Media</sector>
+    <sector id="69" lang="it">Agenzie media</sector>
+    <sector id="70" lang="de">Verlagswesen</sector>
+    <sector id="70" lang="en">Publishing</sector>
+    <sector id="70" lang="es">Imprenta</sector>
+    <sector id="70" lang="fr">Imprimerie, édition</sector>
+    <sector id="70" lang="it">Tipografia, Agenzia di stampa, editoria</sector>
+    <sector id="71" lang="de">Fluggesellschaften</sector>
+    <sector id="71" lang="en">Airlines</sector>
+    <sector id="71" lang="es">Compañías aéreas</sector>
+    <sector id="71" lang="fr">Compagnies aériennes</sector>
+    <sector id="71" lang="it">Linee aeree</sector>
+    <sector id="72" lang="de">Glücksspiel</sector>
+    <sector id="72" lang="en">Gambling</sector>
+    <sector id="72" lang="es">Juego</sector>
+    <sector id="72" lang="fr">Jeu</sector>
+    <sector id="72" lang="it">Giochi d'azzardo</sector>
+    <sector id="73" lang="de">Hotels</sector>
+    <sector id="73" lang="en">Hotels</sector>
+    <sector id="73" lang="es">Hoteles</sector>
+    <sector id="73" lang="fr">Hotels</sector>
+    <sector id="73" lang="it">Alberghi</sector>
+    <sector id="74" lang="de">Freizeit- &amp; Erholungsdienste </sector>
+    <sector id="74" lang="en">Recreational Services</sector>
+    <sector id="74" lang="es">Ocios-servicio</sector>
+    <sector id="74" lang="fr">Loisirs-services</sector>
+    <sector id="74" lang="it">Tempo libero &amp; Ricreazione  (Servizi)</sector>
+    <sector id="75" lang="de">Restaurants &amp; Bars</sector>
+    <sector id="75" lang="en">Restaurants &amp; Bars</sector>
+    <sector id="75" lang="es">Restauración &amp; Bares</sector>
+    <sector id="75" lang="fr">Restauration &amp; Bars</sector>
+    <sector id="75" lang="it">Ristoranti &amp; Bars</sector>
+    <sector id="76" lang="de">Reisen &amp; Tourismus</sector>
+    <sector id="76" lang="en">Travel &amp; Tourism</sector>
+    <sector id="76" lang="es">Viajes &amp; turismo</sector>
+    <sector id="76" lang="fr">Voyages &amp; tourisme</sector>
+    <sector id="76" lang="it">Viaggi &amp; Turismo</sector>
+    <sector id="77" lang="de">Integrale Telekommunikation</sector>
+    <sector id="77" lang="en">Integrated Telecommunications</sector>
+    <sector id="77" lang="es">Telefonía fija</sector>
+    <sector id="77" lang="fr">Opérateurs de télécommunications</sector>
+    <sector id="77" lang="it">Telecomunicazione Integrale</sector>
+    <sector id="78" lang="de">Mobile Kommunikation</sector>
+    <sector id="78" lang="en">Mobile Telecommunications</sector>
+    <sector id="78" lang="es">Telefonía móvil</sector>
+    <sector id="78" lang="fr">Téléphonie mobile</sector>
+    <sector id="78" lang="it">Telefonia mobile</sector>
+    <sector id="79" lang="de">Stromversorger</sector>
+    <sector id="79" lang="en">Electricity</sector>
+    <sector id="79" lang="es">Electricidad</sector>
+    <sector id="79" lang="fr">Electricité</sector>
+    <sector id="79" lang="it">Elettricità / Servizi &amp; Distribuzione</sector>
+    <sector id="80" lang="de">Gasversorger</sector>
+    <sector id="80" lang="en">Gas Distribution</sector>
+    <sector id="80" lang="es">Distribución Gas</sector>
+    <sector id="80" lang="fr">Distribution Gaz</sector>
+    <sector id="80" lang="it">Gas / Servizi &amp; Distribuzione</sector>
+    <sector id="81" lang="de">Multiversorger</sector>
+    <sector id="81" lang="en">Multiutilities</sector>
+    <sector id="81" lang="es">Multi Servicio Público</sector>
+    <sector id="81" lang="fr">Multi Service Public</sector>
+    <sector id="81" lang="it">Multiservizio / Distribuzione diversificata </sector>
+    <sector id="82" lang="de">Wasserversorger</sector>
+    <sector id="82" lang="en">Water</sector>
+    <sector id="82" lang="es">Agua</sector>
+    <sector id="82" lang="fr">Eau</sector>
+    <sector id="82" lang="it">Acqua / Servizi &amp; Distribuzione</sector>
+    <sector id="83" lang="de">Banken</sector>
+    <sector id="83" lang="en">Money Center Banks</sector>
+    <sector id="83" lang="es">Bancos y Otras Instituciones de Crédito </sector>
+    <sector id="83" lang="fr">Banques et Autres Institutions de Crédit</sector>
+    <sector id="83" lang="it">Banche</sector>
+    <sector id="84" lang="de">Universalversicherungen</sector>
+    <sector id="84" lang="en">Full Line Insurance</sector>
+    <sector id="84" lang="es">Seguros Generales</sector>
+    <sector id="84" lang="fr">Assurances Générales</sector>
+    <sector id="84" lang="it">Assicurazioni Generali</sector>
+    <sector id="85" lang="de">Versicherungsmakler</sector>
+    <sector id="85" lang="en">Insurance Brokers</sector>
+    <sector id="85" lang="es">Seguro Agentes</sector>
+    <sector id="85" lang="fr">Assurance Courtiers</sector>
+    <sector id="85" lang="it">Assicurazioni (Brokers)</sector>
+    <sector id="86" lang="de">Sachversicherungen</sector>
+    <sector id="86" lang="en">Property &amp; Casualty Insurance</sector>
+    <sector id="86" lang="es">Seguros-Cosa</sector>
+    <sector id="86" lang="fr">Assurances-Choses</sector>
+    <sector id="86" lang="it">Assicurazioni (Cose)</sector>
+    <sector id="87" lang="de">Rückversicherungen</sector>
+    <sector id="87" lang="en">Reinsurance</sector>
+    <sector id="87" lang="es">Reaseguro</sector>
+    <sector id="87" lang="fr">Réassurance</sector>
+    <sector id="87" lang="it">Riassicurazioni</sector>
+    <sector id="88" lang="de">Lebensversicherungen</sector>
+    <sector id="88" lang="en">Life Insurance</sector>
+    <sector id="88" lang="es">Seguros de vida </sector>
+    <sector id="88" lang="fr">Assurances-Vie</sector>
+    <sector id="88" lang="it">Assicurazioni (Vita)</sector>
+    <sector id="89" lang="de">Immobilienbesitz &amp; Entwicklung</sector>
+    <sector id="89" lang="en">Real Estate Holding &amp; Development</sector>
+    <sector id="89" lang="es">Bienes inmuebles Holding &amp; Desarrollo</sector>
+    <sector id="89" lang="fr">Immobilier Holding &amp; Développement</sector>
+    <sector id="89" lang="it">Immobiliare / Partecipazioni &amp; Sviluppo</sector>
+    <sector id="90" lang="de">Immobilien Investmentgesellschaften</sector>
+    <sector id="90" lang="en">Real Estate Investment Trusts</sector>
+    <sector id="90" lang="es">Sociedad d' inversión inmobiliaria</sector>
+    <sector id="90" lang="fr">Société d'investissement immobilier</sector>
+    <sector id="90" lang="it">Società di Investimenti Immobiliari</sector>
+    <sector id="91" lang="de">Vermögensverwalter</sector>
+    <sector id="91" lang="en">Asset Managers</sector>
+    <sector id="91" lang="es">Gerentes de Fondo</sector>
+    <sector id="91" lang="fr">Gérants de Fonds</sector>
+    <sector id="91" lang="it">Gestori Patrimoniali</sector>
+    <sector id="92" lang="de">Konsumentenkredite</sector>
+    <sector id="92" lang="en">Consumer Finance</sector>
+    <sector id="92" lang="es">Crédito Consumo</sector>
+    <sector id="92" lang="fr">Crédit Consommation</sector>
+    <sector id="92" lang="it">Crediti al Consumo</sector>
+    <sector id="93" lang="de">Spezialfinanz</sector>
+    <sector id="93" lang="en">Specialty Finance</sector>
+    <sector id="93" lang="es">Finanzas - Especialidades</sector>
+    <sector id="93" lang="fr">Finance - Spécialités</sector>
+    <sector id="93" lang="it">Assicurazioni (specializzati)</sector>
+    <sector id="94" lang="de">Anlageberatung</sector>
+    <sector id="94" lang="en">Investment Services</sector>
+    <sector id="94" lang="es">Servicios d' inversión</sector>
+    <sector id="94" lang="fr">Services d'investissement</sector>
+    <sector id="94" lang="it">Consulenti finanziari / Investimenti</sector>
+    <sector id="95" lang="de">Hypothekarkredite</sector>
+    <sector id="95" lang="en">Mortgage Finance</sector>
+    <sector id="95" lang="es">Crédito Hipotecario</sector>
+    <sector id="95" lang="fr">Crédit Hypothécaire</sector>
+    <sector id="95" lang="it">Crediti ipotecari</sector>
+    <sector id="96" lang="de">Aktienanlageinstumente</sector>
+    <sector id="96" lang="en">Equity Investment Instruments</sector>
+    <sector id="96" lang="es">Instrumentos inversión acción</sector>
+    <sector id="96" lang="fr">Instruments investissement action</sector>
+    <sector id="96" lang="it">Prodotti d'investimento azionari</sector>
+    <sector id="97" lang="de">Nicht-Aktienanlage</sector>
+    <sector id="97" lang="en">Nonequity Investment Instruments</sector>
+    <sector id="97" lang="es">Colocaciones Privadas</sector>
+    <sector id="97" lang="fr">Placements Privés</sector>
+    <sector id="97" lang="it">Prodotti d'investimento non-azionari</sector>
+    <sector id="98" lang="de">Computer Dienste</sector>
+    <sector id="98" lang="en">Computer Services</sector>
+    <sector id="98" lang="es">Informática Servicios</sector>
+    <sector id="98" lang="fr">Informatique Services</sector>
+    <sector id="98" lang="it">Servizi informatici</sector>
+    <sector id="100" lang="de">Internet</sector>
+    <sector id="100" lang="en">Internet</sector>
+    <sector id="100" lang="es">Internet</sector>
+    <sector id="100" lang="fr">Internet</sector>
+    <sector id="100" lang="it">Internet</sector>
+    <sector id="101" lang="de">Software</sector>
+    <sector id="101" lang="en">Software</sector>
+    <sector id="101" lang="es">Programas informáticos</sector>
+    <sector id="101" lang="fr">Logiciels</sector>
+    <sector id="101" lang="it">Software / Programmi  </sector>
+    <sector id="102" lang="de">Computer Hardware</sector>
+    <sector id="102" lang="en">Computer Hardware</sector>
+    <sector id="102" lang="es">Informática Quincallería</sector>
+    <sector id="102" lang="fr">Informatique Hardware</sector>
+    <sector id="102" lang="it">Hardware / Computer e periferie </sector>
+    <sector id="103" lang="de">Elektrische Geräte</sector>
+    <sector id="103" lang="en">Electronic Office Equipment</sector>
+    <sector id="103" lang="es">Equipamiento de oficina Electrónico</sector>
+    <sector id="103" lang="fr">Equipement de bureau Electronique </sector>
+    <sector id="103" lang="it">Ufficio / Apparecchiature elettroniche</sector>
+    <sector id="104" lang="de">Halbleiter</sector>
+    <sector id="104" lang="en">Semiconductors</sector>
+    <sector id="104" lang="es">Semiconductores</sector>
+    <sector id="104" lang="fr">Semi-conducteurs</sector>
+    <sector id="104" lang="it">Semiconduttori</sector>
+    <sector id="105" lang="de">Telekommunikationsausrüstung</sector>
+    <sector id="105" lang="en">Telecommunications Equipment</sector>
+    <sector id="105" lang="es">Equipamientos de telecomunicaciones</sector>
+    <sector id="105" lang="fr">Equipements de télécommunications</sector>
+    <sector id="105" lang="it">Telecomunicazione / Apparecchiature</sector>
+  </sectors>
+  <stocks analysisdate="2010-05-28" publishdate="2010-05-29">
+    <stock>
+      <ccy>CHF</ccy>
+      <country>CH</country>
+      <isin>CH0024899483</isin>
+      <group>3</group>
+      <sector>83</sector>
+      <name>UBS AG</name>
+      <ltgyear>2012</ltgyear>
+      <ttdate>2010-05-05</ttdate>
+      <ertdate>2010-04-21</ertdate>
+      <ertprice>17.22</ertprice>
+      <irstdate>2010-05-26</irstdate>
+      <gldate>2010-04-28</gldate>
+      <riskdate>2007-11-16</riskdate>
+      <idx>DJ Stoxx 600</idx>
+      <bmfrisk>-1</bmfrisk>
+      <bnfrisk>1</bnfrisk>
+      <payout>4.53</payout>
+      <tr-min>16.00</tr-min>
+      <tr-max>16.58</tr-max>
+      <premium>87.02</premium>
+      <varpct>17.39</varpct>
+      <pdf>1</pdf>
+      <price>15.43</price>
+      <erev>6.70</erev>
+      <ticker>UBSG</ticker>
+	  <ric>UBSG.VX</ric>
+	  <localcode>V4476758</localcode>
+      <vol1m>53.28</vol1m>
+      <vol12m>43.51</vol12m>
+      <dividend text="34">0.69</dividend>
+      <gpe text="22">6.93</gpe>
+      <ltg text="25">44.67</ltg>
+      <ltpe text="23">6.54</ltpe>
+      <mc text="3">51.07</mc>
+      <nbranl text="31">29</nbranl>
+      <vr text="16" star="1">1</vr>
+      <rp text="49" star="0">-1.82</rp>
+      <tt text="39" star="0">-1</tt>
+      <ert text="6" star="1">1</ert>
+      <irst text="96">2</irst>
+      <bear text="58">126</bear>
+      <badnews text="59">241</badnews>
+      <beta text="62">157</beta>
+      <corr2 text="68">0.7734</corr2>
+      <riskzone text="55">-1</riskzone>
+      <varval text="82">2.68</varval>
+      <gleval text="87">-1</gleval>
+      <firstdate text="83">2002-01-02</firstdate>
+    </stock>
+  </stocks>
+</checklist>

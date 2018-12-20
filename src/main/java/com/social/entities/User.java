@@ -11,11 +11,15 @@ import java.sql.Timestamp;
 import java.util.ArrayList;
 import java.util.Collection;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.OneToOne;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
@@ -39,22 +43,19 @@ import lombok.Setter;
 @Getter
 @Setter
 public class User implements UserDetails, Serializable {
-	public static enum Role {
-		ROLE_USER
-	}
+	
+	private static final long serialVersionUID = -6954867449340634325L;
 
 	@Getter
 	@Id
 	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "userid_generator")
 	@SequenceGenerator(name = "userid_generator", sequenceName = "userid_seq", allocationSize = 50)
-	@Column(name = "id", updatable = false, nullable = false)
+	@Column(name = "USER_ID", updatable = false, nullable = false)
 	private Long id;
 
 	@Column(unique = true)
 	private String username;
 	@JsonProperty(access = Access.WRITE_ONLY)
-	private String password;
-	private String role;
 	private String fullName;
 
 	@Column(name = "mobile_no")
@@ -62,25 +63,28 @@ public class User implements UserDetails, Serializable {
 	
 	@Column(name = "date_created")
 	@CreationTimestamp
-	@Getter
-	@Setter
 	private Timestamp dateCreated;
 
 	@Column(name = "date_updated")
 	@UpdateTimestamp
-	@Getter
-	@Setter
 	private Timestamp dateUpdated;
+	
+	
+	@OneToOne(fetch = FetchType.EAGER)
+	@JoinColumn(name = "STATUS_ID")
+    private Status status;
+	
+	@OneToOne(fetch = FetchType.EAGER)
+	@JoinColumn(name = "Role_ID")
+    private Roles role;
+	
+	
+	@OneToOne(fetch = FetchType.EAGER, cascade = CascadeType.ALL, mappedBy = "user")
+	@JoinColumn(name = "ID")
+    private UserCredentialDetails userCredentialDetails;
 
 	public User() {
 
-	}
-
-	public User(String username, String password, String fullName, String mobile_no) {
-		this.username = username;
-		this.password = password;
-		this.fullName = fullName;
-		this.mobileNumber = mobileNumber;
 	}
 
 	@JsonIgnore
@@ -106,12 +110,19 @@ public class User implements UserDetails, Serializable {
 	public boolean isAccountNonExpired() {
 		return true;
 	}
+	
+	@JsonIgnore
+	@Override
+	public String getPassword(){
+		System.out.println("User:");
+		return this.userCredentialDetails.getPassword();
+	}
 
 	@JsonIgnore
 	@Override
 	public Collection<? extends GrantedAuthority> getAuthorities() {
 		Collection<GrantedAuthority> authorities = new ArrayList<>();
-		authorities.add(new SimpleGrantedAuthority(role));
+		authorities.add(new SimpleGrantedAuthority(role.getDescription()));
 		return authorities;
 	}
 

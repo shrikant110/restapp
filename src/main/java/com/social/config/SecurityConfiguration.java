@@ -200,8 +200,6 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
 	         
 	         .and()
 	         	.logout().logoutUrl(env.getProperty("URL.LOGOUT")).logoutSuccessHandler(applicationLogOutSuccessHandler).permitAll()
-	         
-	        		
 	         .and() 
 	         	//.sessionManagement().sessionCreationPolicy(SessionCreationPolicy.NEVER).and()
 	         	.rememberMe().rememberMeServices(rememberMeServices());
