@@ -25,7 +25,6 @@ import javax.persistence.Table;
 
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
-import org.springframework.context.annotation.Scope;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -37,15 +36,13 @@ import com.fasterxml.jackson.annotation.JsonProperty.Access;
 import lombok.Getter;
 import lombok.Setter;
 
-@Entity
-@Table(name = "USER_INFO")
-@Scope("session")
+
 @Getter
 @Setter
+@Entity
+@Table(name = "USER_INFO")
 public class User implements UserDetails, Serializable {
 	
-	private static final long serialVersionUID = -6954867449340634325L;
-
 	@Getter
 	@Id
 	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "userid_generator")
@@ -79,9 +76,9 @@ public class User implements UserDetails, Serializable {
     private Roles role;
 	
 	
-	@OneToOne(fetch = FetchType.EAGER, cascade = CascadeType.ALL, mappedBy = "user")
-	@JoinColumn(name = "ID")
-    private UserCredentialDetails userCredentialDetails;
+	@OneToOne(fetch = FetchType.EAGER)
+	@JoinColumn(name="PROFILE_ID")
+	private UserProfileDetails userCredentialDetails;
 
 	public User() {
 
