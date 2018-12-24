@@ -3778,7 +3778,7 @@ public class Checklist {
                 @XmlSchemaType(name = "unsignedByte")
                 protected java.lang.Short text;
                 @XmlAttribute(name = "star")
-                protected Boolean star;
+                protected Short star;
 
                 /**
                  * Gets the value of the value property.
@@ -3836,7 +3836,7 @@ public class Checklist {
                  *     {@link Boolean }
                  *     
                  */
-                public Boolean isStar() {
+                public Short getStar() {
                     return star;
                 }
 
@@ -3848,7 +3848,7 @@ public class Checklist {
                  *     {@link Boolean }
                  *     
                  */
-                public void setStar(Boolean value) {
+                public void setStar(Short value) {
                     this.star = value;
                 }
 
@@ -4032,7 +4032,7 @@ public class Checklist {
                 @XmlSchemaType(name = "unsignedByte")
                 protected java.lang.Short text;
                 @XmlAttribute(name = "star")
-                protected Boolean star;
+                protected Short star;
 
                 /**
                  * Gets the value of the value property.
@@ -4090,7 +4090,7 @@ public class Checklist {
                  *     {@link Boolean }
                  *     
                  */
-                public Boolean isStar() {
+                public Short getStar() {
                     return star;
                 }
 
@@ -4102,7 +4102,7 @@ public class Checklist {
                  *     {@link Boolean }
                  *     
                  */
-                public void setStar(Boolean value) {
+                public void setStar(Short value) {
                     this.star = value;
                 }
 
@@ -4139,7 +4139,7 @@ public class Checklist {
                 @XmlSchemaType(name = "unsignedByte")
                 protected java.lang.Short text;
                 @XmlAttribute(name = "star")
-                protected Boolean star;
+                protected Short star;
 
                 /**
                  * Gets the value of the value property.
@@ -4197,7 +4197,7 @@ public class Checklist {
                  *     {@link Boolean }
                  *     
                  */
-                public Boolean isStar() {
+                public Short getStar() {
                     return star;
                 }
 
@@ -4209,7 +4209,7 @@ public class Checklist {
                  *     {@link Boolean }
                  *     
                  */
-                public void setStar(Boolean value) {
+                public void setStar(Short value) {
                     this.star = value;
                 }
 
@@ -4326,7 +4326,7 @@ public class Checklist {
                 @XmlSchemaType(name = "unsignedByte")
                 protected java.lang.Short text;
                 @XmlAttribute(name = "star")
-                protected Boolean star;
+                protected Short star;
 
                 /**
                  * Gets the value of the value property.
@@ -4384,7 +4384,7 @@ public class Checklist {
                  *     {@link Boolean }
                  *     
                  */
-                public Boolean isStar() {
+                public Short getStar() {
                     return star;
                 }
 
@@ -4396,7 +4396,7 @@ public class Checklist {
                  *     {@link Boolean }
                  *     
                  */
-                public void setStar(Boolean value) {
+                public void setStar(Short value) {
                     this.star = value;
                 }
 

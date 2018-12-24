@@ -100,6 +100,20 @@
 		    <artifactId>jaxb-api</artifactId>
 		    <version>2.1</version>
 		</dependency>
+		
+		<!-- https://mvnrepository.com/artifact/commons-net/commons-net -->
+		<dependency>
+		    <groupId>commons-net</groupId>
+		    <artifactId>commons-net</artifactId>
+		    <version>3.3</version>
+		</dependency>
+		
+		<!-- Email Send-->
+		 <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-mail</artifactId>
+        </dependency>
+		
 	</dependencies>
 
 	<build>

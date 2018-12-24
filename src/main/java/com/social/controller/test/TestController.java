@@ -8,6 +8,7 @@ import java.util.List;
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.Unmarshaller;
 
+import org.apache.commons.net.ntp.TimeStamp;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -33,7 +34,8 @@ import com.social.inbound.funds.repository.FundsAssetClassesRepository;
 import com.social.inbound.funds.repository.FundsProfileRepository;
 import com.social.inbound.funds.repository.FundsPromotersRepository;
 import com.social.inbound.funds.repository.FundsRepository;
-import com.social.inbound.stocts.entities.AurItemsMaster;
+import com.social.inbound.stocts.entities.AuroraStockDetails;
+import com.social.inbound.stocts.repository.StockDetailsRepository;
 import com.social.inbound.stocts.repository.StockGroupRepository;
 import com.social.inbound.stocts.repository.StockItemsRepository;
 import com.social.inbound.stocts.repository.StockSectorRepository;
@@ -86,11 +88,14 @@ public class TestController {
 	@Autowired
 	FundTextsRepository fundTextsRepository ;
 	
+	@Autowired
+	StockDetailsRepository stockDetailsRepository;
+	
 	@CrossOrigin
 	@RequestMapping(value = "/test", method = RequestMethod.GET)
 	public ResponseEntity<?> loadData() {
 		try{
-			String fileName = "StocksChecklistSample.xml";
+			String fileName = "Aurora_StocksCheckList.xml";
 	        ClassLoader classLoader = new TestController().getClass().getClassLoader();
 	        File file = new File(classLoader.getResource(fileName).getFile());
 		    //creating the JAXB context
@@ -189,7 +194,7 @@ public class TestController {
 		    System.out.println("------------------------------------------ completed");*/
 		    
 		    
-		    System.out.println("checklist.getGroups >> "+checklist.getStocks().getStock().size());
+		   /* System.out.println("checklist.getGroups >> "+checklist.getStocks().getStock().size());
 		    
 		    List<AurItemsMaster> list=new ArrayList<>();
 		    System.out.println("checklist.getGroups >> "+checklist.getItems().getItem().size());
@@ -205,30 +210,108 @@ public class TestController {
 		    			   dto.setItemName(x.getValue()); // // Code not completed
 		    			   System.out.println("Model:::>>"+dto);
 		    			   list.add(dto);
-		    		 }
+		    		 }*/
 		    //stockItemsRepository.save(list);
 		    System.out.println("------------------------------------------ completed");
 		    
-		   /*  
-		    List<Stock> list=new ArrayList<>();
+		    int i=0; 
+		    List<AuroraStockDetails> stocklist=new ArrayList<>();
 		    System.out.println("checklist.getGroups >> "+checklist.getStocks().getStock().size());
-		    		   for(Checklist.Items.Item x:checklist.getItems().getItem()) {
-		    			  System.out.println("next>>"+x);
+		    		   for(Checklist.Stocks.Stock stockInfo:checklist.getStocks().getStock()) {
+		    			  System.out.println("next>>"+stockInfo);
 		    			   
 		    			   //AurGroupMaster dto = modelMapper.map(x, AurGroupMaster.class);
 		    			   
-		    			   AurItemsMaster dto=new AurItemsMaster();
-		    			   dto.setTag(x.getTag());
+		    			   AuroraStockDetails stockDomain=new AuroraStockDetails();
+		    			   stockDomain.setIsin(stockInfo.getIsin());
+		    			   stockDomain.setBeta(stockInfo.getBeta().getValue());
+		    			   stockDomain.setBadNewRisk(stockInfo.getBnfrisk());
 		    			  
-		    			   dto.setLanguageType(x.getLang().value()); // Code not completed
-		    			   dto.setItemName(x.getValue()); // // Code not completed
-		    			   System.out.println("Model:::>>"+dto);
-		    			   list.add(dto);
-		    		 }
-		    //stockItemsRepository.save(list);
+		    			  
+		    			   stockDomain.setCompanyName(stockInfo.getName());
+		    			   
+		    			   stockDomain.setBetaTxtid(stockInfo.getBeta().getText());
+		    			  // dto.setAnalysisDate(x.get);
+		    			   stockDomain.setBadNewFactor(stockInfo.getBadnews().getValue());
+		    			   stockDomain.setBadNewFactorTxtid(stockInfo.getBadnews().getText());
+		    			   stockDomain.setBadNewRisk(stockInfo.getBnfrisk());
+		    			   stockDomain.setBearMktFactor(stockInfo.getBear().getValue());
+		    			   stockDomain.setBearMktFactorTxtid(stockInfo.getBear().getText());
+		    			   stockDomain.setBearMktRisk(stockInfo.getBmfrisk());
+		    			   stockDomain.setCorrelation(stockInfo.getCorr2().getValue());
+		    			   stockDomain.setCorrelationTxtid(stockInfo.getCorr2().getText());
+		    			   stockDomain.setCurrencycode(stockInfo.getCcy());
+		    			   stockDomain.setCountrycode(stockInfo.getCountry());
+		    			   stockDomain.setCurrencycode(stockInfo.getCcy());
+		    			   stockDomain.setDivend(stockInfo.getDividend().getValue());
+		    			   stockDomain.setDivend_Txtid(stockInfo.getDividend().getText());
+		    			   stockDomain.setEarnings(stockInfo.getErev());
+		    			   stockDomain.setEarRevTrend(stockInfo.getErt().getValue());
+		    			   stockDomain.setEarRevTrendStar(stockInfo.getErt().getStar());
+		    			   stockDomain.setEarRevTrendTxtid(stockInfo.getErt().getText());
+		    			   stockDomain.setErtPriceHist(stockInfo.getErtprice());
+		    			   stockDomain.setErtTrenHistDate(new Timestamp(stockInfo.getErtdate().getMillisecond()));
+		    			   stockDomain.setFirstAnlyDate(new Timestamp(stockInfo.getFirstdate().getValue().getMillisecond()));
+		    			   stockDomain.setFirstAnlyDateTxtid(stockInfo.getFirstdate().getText());
+		    			   stockDomain.setGlbEvaluation(stockInfo.getGleval().getValue());
+		    			   stockDomain.setGlbEvaluationTxtid(stockInfo.getGleval().getText());
+		    			   stockDomain.setGlbHistDate(new Timestamp(stockInfo.getGldate().getMillisecond()));
+		    			   stockDomain.setGroups(stockInfo.getGroup().toString());
+		    			   stockDomain.setInterest(stockInfo.getIrst().getValue());
+		    			   stockDomain.setInterestTxtid(stockInfo.getIrst().getText());
+		    			   stockDomain.setIntHistDate(new Timestamp(stockInfo.getIrstdate().getMillisecond()));
+		    			   stockDomain.setIsPDFReport(stockInfo.getPdf());
+		    			   stockDomain.setLTG(stockInfo.getLtg().getValue());
+		    			   stockDomain.setLTGTxtid(stockInfo.getLtg().getText());
+		    			   stockDomain.setLTPE(stockInfo.getLtpe().getValue());
+		    			   stockDomain.setLTPETxtid(stockInfo.getLtpe().getText());
+		    			   stockDomain.setMarketCapBn(stockInfo.getMc().getValue());
+		    			   stockDomain.setMarketCapBnTxtid(stockInfo.getMc().getText());
+		    			   stockDomain.setMedTermTechTrend(stockInfo.getTt().getValue());
+		    			   stockDomain.setMedTermTechTrendStar(stockInfo.getTt().getStar());
+		    			   stockDomain.setMedTermTechTrendTxtid(stockInfo.getTt().getText());
+		    			   stockDomain.setNumberOfAnalyst(stockInfo.getNbranl().getValue());
+		    			   stockDomain.setNumberOfAnalystTxtid(stockInfo.getNbranl().getText());
+		    			   stockDomain.setPayout(stockInfo.getPayout());
+		    			   stockDomain.setPERatio(stockInfo.getGpe().getValue());
+		    			   stockDomain.setPERatioTxtid(stockInfo.getGleval().getText());
+		    			   stockDomain.setPremium(stockInfo.getPremium());
+		    			   stockDomain.setRefIndexName(stockInfo.getIdx());
+		    			   stockDomain.setRelPer4week(stockInfo.getRp().getValue());
+		    			   stockDomain.setRelPer4weekStar(stockInfo.getRp().getStar());
+		    			   stockDomain.setRelPer4weekTxtid(stockInfo.getRp().getText());
+		    			   stockDomain.setRiskHistDate(new Timestamp(stockInfo.getRiskdate().getMillisecond()));
+		    			   stockDomain.setRiskPercentage(stockInfo.getVarpct());
+		    			   stockDomain.setRiskZone(stockInfo.getRiskzone().getValue());
+		    			   stockDomain.setRiskZoneTxtid(stockInfo.getRiskzone().getText());
+		    			   stockDomain.setSector(stockInfo.getSector());
+		    			   stockDomain.setStockPrice(stockInfo.getPrice());
+		    			   stockDomain.setTechHistDate(new Timestamp(stockInfo.getTtdate().getMillisecond()));
+		    			   stockDomain.setTechRevMax(stockInfo.getTrMax());
+		    			   stockDomain.setTechRevMin(stockInfo.getTrMin());
+		    			   stockDomain.setTicker(stockInfo.getTicker());
+		    			   stockDomain.setValRating(stockInfo.getVr().getValue());
+		    			   stockDomain.setValRatingStar(stockInfo.getVr().getStar());
+		    			   stockDomain.setValRatingTxtid(stockInfo.getVr().getText());
+		    			   stockDomain.setValueRisk(stockInfo.getVarval().getValue());
+		    			   stockDomain.setValueRiskTxtid(stockInfo.getVarval().getText());
+		    			   stockDomain.setVol1month(stockInfo.getVol1M());
+		    			   stockDomain.setVol21month(stockInfo.getVol12M());
+		    			   stockDomain.setYearofanalysis(stockInfo.getLtgyear());
+		    			  
+			    		   System.out.println(i++);
+			    		   stocklist.add(stockDomain);
+							if(i%50==0) {
+								
+								stockDetailsRepository.save(stocklist);
+								stocklist=new ArrayList<>();
+							}
+					 	
+				 	}
+			 stockDetailsRepository.save(stocklist);
 		    System.out.println("------------------------------------------ completed");
 		    
-		    */
+		    
 		    		    
 		   // System.out.println("checklist.getItems >> "+checklist.getItems());
 		    System.out.println("------------------------------------------");
@@ -417,24 +500,34 @@ public class TestController {
 				 	funds.setProfile(f.getProfile());
 				 	funds.setPromotor(f.getPromoter());
 				 	funds.setAlpha(f.getAlpha().getValue());
+				 	funds.setAlphaTextId(f.getAlpha().getText());
 				    funds.setAlphaDate(f.getAlphadate()!=null ?new Timestamp(f.getAlphadate().getMillisecond()):null);
 				 	funds.setArea(f.getArea().longValue()); // short &Text
 				 	funds.setAsset(f.getAsset().getValue());
+				 	funds.setAssetTextId(f.getAsset().getText());
 				 	funds.setAssetDate(f.getAssetdate()!=null ? new Timestamp(f.getAssetdate().getMillisecond()):null);
 				 	funds.setBear(f.getBear().getValue());
+				 	funds.setBearTextId(f.getBear().getText());
 				 	funds.setBednew(f.getBadnews().getValue());
+				 	funds.setBednewTextId(f.getBadnews().getText());
 				 	funds.setBeta(f.getBeta().getValue());
+				 	funds.setBetaTextId(f.getBeta().getText());
 				 	funds.setBmfRisk(f.getBmfrisk());
 				 	funds.setBnfRisk(f.getBnfrisk());
 				 	funds.setCorr2(f.getCorr2().getValue());
-				 
+				 	funds.setCorr2TextId(f.getCorr2().getText());
 				 	funds.setFirstDate(f.getFirstdate()!=null? new Timestamp(f.getFirstdate().getValue().getMillisecond()):null);
+				 	funds.setFirstDateTextId(f.getFirstdate()!=null?f.getFirstdate().getText():null);
 				 	funds.setGlDate(f.getGldate()!=null ?new Timestamp(f.getGldate().getMillisecond()):null);
 				 	funds.setGleval(f.getGleval().getValue());
+				 	funds.setGlevalTextId(f.getGleval().getText());
 				 	funds.setInceptionDate(new Timestamp(f.getInceptiondate().getMillisecond()));
-				 	funds.setInformation(f.getInforatio().getValue());
+				 	funds.setInforatio(f.getInforatio().getValue());
+				 	funds.setInforatioStar(f.getInforatio().getStar());
+				 	funds.setInforatioTextId(f.getInforatio().getText());
 				 	funds.setInformationDate(f.getInforatiodate()!=null ?new Timestamp(f.getInforatiodate().getMillisecond()):null);
 				 	funds.setIrst(f.getIrst().getValue());
+				 	funds.setIrstTextId(f.getIrst().getText());
 				 	funds.setIrstDate(f.getIrstdate()!=null ? new Timestamp(f.getIrstdate().getMillisecond()):null);
 				 	funds.setMgtfees(f.getMgtfees());
 				 	funds.setName(f.getName());
@@ -450,16 +543,25 @@ public class TestController {
 				 	funds.setRefProfile(f.getRefProfile());
 				 	funds.setRiskDate(new Timestamp(f.getRiskdate().getMillisecond()));
 				 	funds.setRiskZone(f.getRiskzone().getValue());
+				 	funds.setRiskzoneTextId(f.getRiskzone().getText());
 				 	funds.setRp6m(f.getRp6M().getValue());
+				 	funds.setRp6mStar(f.getRp6M().getStar());
+				 	funds.setRp6mTextId(f.getRp6M().getText());
 				 	funds.setSharpDate(f.getSharpedate()!=null? new Timestamp(f.getSharpedate().getMillisecond()):null);
 				 	funds.setSharpe(f.getSharpe().getValue());
+				 	funds.setSharpeStar(f.getSharpe().getStar());
+				 	funds.setSharpeTextId(f.getSharpe().getText());
 				 	funds.setTrMax(f.getTrMax());
 				 	funds.setTrMin(f.getTrMin());
 				 	funds.setTracking(f.getTracking().getValue());
+				 	funds.setTrackingTextId(f.getTracking().getText());
 				 	funds.setTt(f.getTt().getValue());
+				 	funds.setTtStar(f.getTt().getStar());
+				 	funds.setTtTextId(f.getTt().getText());
 					funds.setTtDate(f.getTtdate()!=null?new Timestamp(f.getTtdate().getMillisecond()):null);
 					funds.setVarpct(f.getVarpct());
 					funds.setVarval(f.getVarval().getValue());
+					funds.setVarvalTextId(f.getVarval().getText());
 					funds.setVol12M(f.getVol12M());
 					funds.setVol1m(f.getVol1M());
 					System.out.println(i++);

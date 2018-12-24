@@ -244,67 +244,191 @@ public class Funds {
 	@Setter
 	@Column(name = "ALPHA")
 	private BigDecimal alpha;
+	
+	@Getter
+	@Setter
+	@Column(name = "ALPHA_TEXT_ID")
+	private Short alphaTextId;
+	
+	
+	
 	@Getter
 	@Setter
 	@Column(name = "ASSET")
 	private BigDecimal asset;
+	
+	@Getter
+	@Setter
+	@Column(name = "ASSET_TEXT_ID")
+	private Short assetTextId;
+	
 	@Getter
 	@Setter
 	@Column(name = "TRACKING")
 	private BigDecimal tracking;
+	
+	@Getter
+	@Setter
+	@Column(name = "TRACKING_TEXT_ID")
+	private Short trackingTextId;
+	
 	@Getter
 	@Setter
 	@Column(name = "SHARPE")
 	private BigDecimal sharpe;
+	
+	@Getter
+	@Setter
+	@Column(name = "SHARPE_STAR")
+	private Short sharpeStar;
+	
+	
+	@Getter
+	@Setter
+	@Column(name = "SHARPE_TEXT_ID")
+	private Short sharpeTextId;
+	
+	
+	
 	@Getter
 	@Setter
 	@Column(name = "RP6M")
 	private BigDecimal rp6m;
+	
+	
+	@Getter
+	@Setter
+	@Column(name = "RP6M_STAR")
+	private Short rp6mStar;
+	
+	
+	@Getter
+	@Setter
+	@Column(name = "RP6M_TEXT_ID")
+	private Short rp6mTextId;
+	
 	@Getter
 	@Setter
 	@Column(name = "TT")
 	private BigDecimal tt;
+	
+	@Getter
+	@Setter
+	@Column(name = "TT_STAR")
+	private Short ttStar;
+	
+	
+	@Getter
+	@Setter
+	@Column(name = "TT_TEXT_ID")
+	private Short ttTextId;
 
 	@Getter
 	@Setter
-	@Column(name = "INFORMATION")
-	private BigDecimal information;
+	@Column(name = "INFORATIO")
+	private BigDecimal inforatio;
+	
+	@Getter
+	@Setter
+	@Column(name = "INFORATIO_STAR")
+	private Short inforatioStar;
+	
+	
+	@Getter
+	@Setter
+	@Column(name = "INFORATIO_TEXT_ID")
+	private Short inforatioTextId;
+	
+	
 	@Getter
 	@Setter
 	@Column(name = "IRST")
 	private int irst;
+	
+	@Getter
+	@Setter
+	@Column(name = "IRST_TEXT_ID")
+	private Short irstTextId;
+	
 	@Getter
 	@Setter
 	@Column(name = "BEAR")
 	private int bear;
+	
+	@Getter
+	@Setter
+	@Column(name = "BEAR_TEXT_ID")
+	private Short bearTextId;
+	
 	@Getter
 	@Setter
 	@Column(name = "BADNEW")
 	private short bednew;
+	
+	@Getter
+	@Setter
+	@Column(name = "BADNEW_TEXT_ID")
+	private Short bednewTextId;
+	
 	@Getter
 	@Setter
 	@Column(name = "BETA")
 	private int beta;
 	@Getter
 	@Setter
+	@Column(name = "BETA_TEXT_ID")
+	private Short betaTextId;
+	
+	@Getter
+	@Setter
 	@Column(name = "CORR2")
 	private BigDecimal corr2;
+	
+	@Getter
+	@Setter
+	@Column(name = "CORR2_TEXT_ID")
+	private Short corr2TextId;
+	
 	@Getter
 	@Setter
 	@Column(name = "RISKZONE")
 	private int riskZone;
 	@Getter
 	@Setter
+	@Column(name = "RISKZONE_TEXT_ID")
+	private Short riskzoneTextId;
+	
+	@Getter
+	@Setter
 	@Column(name = "VARVAL")
 	private BigDecimal varval;
+	
+	@Getter
+	@Setter
+	@Column(name = "VARVAL_TEXT_ID")
+	private Short varvalTextId;
+	
+	
 	@Getter
 	@Setter
 	@Column(name = "GLEVAL")
 	private int gleval;
+	
+	@Getter
+	@Setter
+	@Column(name = "GLEVAL_TEXT_ID")
+	private Short glevalTextId;
+	
 	@Getter
 	@Setter
 	@Column(name = "FIRSTDATE")
 	private Timestamp firstDate;
+	
+	@Getter
+	@Setter
+	@Column(name = "FIRSTDATE_TEXT_ID")
+	private Short firstDateTextId;
+	
 	
 	
 	@Getter
