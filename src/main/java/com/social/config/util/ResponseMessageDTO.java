@@ -35,10 +35,6 @@ public class ResponseMessageDTO {
 	@JsonProperty(value = "ResponseCode")
 	private String responseCode;
 	
-	@XmlElement(name = "IsError")
-	@JsonProperty(value = "IsError")
-	private boolean isError;
-	
 	@XmlElement(name = "ResponseMessage")
 	@JsonProperty(value = "ResponseMessage")
 	private String responseMessage;

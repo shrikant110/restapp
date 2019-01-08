@@ -11,7 +11,6 @@ import java.sql.Timestamp;
 import java.util.ArrayList;
 import java.util.Collection;
 
-import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
@@ -22,6 +21,7 @@ import javax.persistence.JoinColumn;
 import javax.persistence.OneToOne;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
+import javax.persistence.Transient;
 
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
@@ -52,17 +52,22 @@ public class User implements UserDetails, Serializable {
 
 	@Column(unique = true)
 	private String username;
+	
 	@JsonProperty(access = Access.WRITE_ONLY)
-	private String fullName;
+	@Column(name = "FIRST_NAME")
+	private String firstName;
+	
+	@Column(name = "LAST_NAME")
+	private String lastName;
 
-	@Column(name = "mobile_no")
+	@Column(name = "MOBILE_NO")
 	private String mobileNumber;
 	
-	@Column(name = "date_created")
+	@Column(name = "DATE_CREATED")
 	@CreationTimestamp
 	private Timestamp dateCreated;
 
-	@Column(name = "date_updated")
+	@Column(name = "DATE_UPDATED")
 	@UpdateTimestamp
 	private Timestamp dateUpdated;
 	
@@ -74,6 +79,9 @@ public class User implements UserDetails, Serializable {
 	@OneToOne(fetch = FetchType.EAGER)
 	@JoinColumn(name = "Role_ID")
     private Roles role;
+	
+	@Column(name = "ACCOUNT_ACTIVATION_TOKEN")
+	private String accActivationToken;
 	
 	
 	@OneToOne(fetch = FetchType.EAGER)
@@ -114,6 +122,9 @@ public class User implements UserDetails, Serializable {
 		System.out.println("User:");
 		return this.userCredentialDetails.getPassword();
 	}
+	
+	@Transient
+	private String pass;
 
 	@JsonIgnore
 	@Override

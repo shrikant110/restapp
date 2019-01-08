@@ -36,14 +36,15 @@ public class ApplicationAuthenticationSuccessHandler extends SimpleUrlAuthentica
 	public void onAuthenticationSuccess(HttpServletRequest request, HttpServletResponse response, Authentication authentication) throws IOException, ServletException {
 		System.out.println("==login successfully"+authentication.getPrincipal());
 		User user = userService.find(authentication.getName());
-		response.setHeader("Cache-Control", "no-cache, no-store, must-revalidate");
-		response.setHeader("Pragma", "no-cache");
-		response.setDateHeader("Expires", 0);
-		CommonUtils.prepareSuccessResponse(request, response, HttpStatusCodes.LOGINSUCCESSWITHPWDEXPIRE.getCode(), "Login Successful.", false,user);
-		
-		
+		if(user.getStatus().getStatusId()==1) {
+			response.setHeader("Cache-Control", "no-cache, no-store, must-revalidate");
+			response.setHeader("Pragma", "no-cache");
+			response.setDateHeader("Expires", 0);
+			CommonUtils.prepareSuccessResponse(request, response, HttpStatusCodes.LOGINSUCCESS.getCode(), "Login Successful.", false,user);
+		}else {
+			CommonUtils.prepareSuccessResponse(request, response, HttpStatusCodes.ACCOUNTINACTIVE.getCode(), "Account Inactive.", false,null);
+		}
 		clearAuthenticationAttributes(request);
-		
 	}
 
 	public void setRequestCache(RequestCache requestCache) {

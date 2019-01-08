@@ -1,6 +1,8 @@
 package com.social.util;
-/** 
- * @author kamal berriga
+/**
+ * 
+ * @author shrikant.kushwaha
+ * This class is used for handle the error message & send back for the client
  *
  */
 public class CustomErrorType {

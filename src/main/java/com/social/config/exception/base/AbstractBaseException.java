@@ -2,19 +2,30 @@ package com.social.config.exception.base;
 
 import javax.servlet.http.HttpServletRequest;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.PropertySource;
+import org.springframework.context.annotation.PropertySources;
+import org.springframework.core.env.Environment;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 
 import com.social.config.util.PropertyUtility;
 import com.social.config.util.ResponseMessageDTO;
-import com.social.config.util.constant.ApplicationConstants;
 
 /**
- * Sub class of this class need to be annotated with @ControllerAdvice so that framework can map the handler for the Exception class. 
- * @author Saurabh.Agarwal
+ * Sub class of this class need to be annotated with @ControllerAdvice so that framework can map the handler for the Exception class.
+ * @author shrikant.kushwaha
  *
  */
+
+@PropertySources({
+    @PropertySource("classpath:application_exception.properties")
+})
 public abstract class AbstractBaseException extends Exception implements IErrorCode{
+	
+	@Autowired
+	Environment env;
+	
 	private static final String DATAVARIABLE = "DATAVARIABLE";
 	private static final long serialVersionUID = -4393780960680486163L;
 	public AbstractBaseException() {
@@ -27,12 +38,11 @@ public abstract class AbstractBaseException extends Exception implements IErrorC
 	
 	@Override
 	public final String getErrorCode() {
-		return PropertyUtility.getValueString(ApplicationConstants.EXCEPTIONBUNDLE.getValue(), this.getClass().getName(),"00");
+		return env.getProperty(this.getClass().getName());
 	}
 	
 	public final ResponseEntity<ResponseMessageDTO> getHTTPResponse(HttpServletRequest req, Exception e){
 		ResponseMessageDTO message = new ResponseMessageDTO();
-		message.setError(true);
 		message.setResponseCode(getErrorCode());
 		message.setResponseMessage(e.getMessage());
 		message.setData(req.getAttribute(DATAVARIABLE));

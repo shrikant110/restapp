@@ -14,6 +14,7 @@ import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
 import org.springframework.context.annotation.Scope;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 import lombok.Getter;
@@ -38,31 +39,38 @@ public class AurGroupMaster {
 	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "aur_sector_master_id_seq")
 	@SequenceGenerator(name = "aur_sector_master_id_seq", sequenceName = "aur_sector_master_id_seq", allocationSize = 50)
 	@Column(name = "ID")
-	@JsonProperty
+	@JsonIgnore
 	private Long id;
 
 	@Column(name = "GROUP_ID")
 	private int groupId;
+	
 	@Column(name = "GROUP_NAME")
 	private String groupName;
 	
 	@Column(name = "LANGUAGE_TYPE")
 	private String languageType;
+	
+	@JsonIgnore
 	@Column(name = "USER_CREATED")
 	private String userCreated;
 	
 	@CreationTimestamp
+	@JsonIgnore
 	@Column(name = "DATE_CREATED")
 	private Timestamp dateCreated;
 	
 	@Column(name = "USER_MODIFIED")
+	@JsonIgnore
 	private String userModified;
 	
 	@UpdateTimestamp
 	@Column(name = "DATE_MODIFIED")
+	@JsonIgnore
 	private Timestamp dateModifiled;
 	
 	@Column(name = "STATUS")
+	@JsonIgnore
 	private String status;
 
 	@Override

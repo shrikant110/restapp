@@ -11,13 +11,20 @@ import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.social.config.exception.ProcessFailedException;
 import com.social.entities.User;
 import com.social.services.UserService;
 import com.social.util.CustomErrorType;
 
-
+/**
+ * @author shrikant.kushwaha
+ * This class is responsible for handle the user authentication and maintain the user login 
+ * logout, change password, reset password and activate the user account
+ *
+ */
 @RestController
 @RequestMapping("account")
 public class AccountController {
@@ -27,16 +34,15 @@ public class AccountController {
 	@Autowired
 	private UserService userService;
 
-	// request method to create a new account by a guest
+	@SuppressWarnings({ "unchecked", "rawtypes" })
 	@CrossOrigin
 	@RequestMapping(value = "/register", method = RequestMethod.POST)
-	public ResponseEntity<?> createUser(@RequestBody User newUser) {
-		if (userService.find(newUser.getUsername()) != null) {
+	public ResponseEntity<?> createUser(@RequestBody User newUser) throws ProcessFailedException {
+	    if (userService.find(newUser.getUsername()) != null) { 
 			logger.error("username Already exist " + newUser.getUsername());
-			return new ResponseEntity(
-					new CustomErrorType("user with username " + newUser.getUsername() + "already exist "),
-					HttpStatus.CONFLICT);
+			return new ResponseEntity(new CustomErrorType("user with username " + newUser.getUsername() + "already exist"),	HttpStatus.CONFLICT);
 		}
+	    logger.info("username is successfully registered " + newUser.getUsername());
 		return new ResponseEntity<User>(userService.save(newUser), HttpStatus.CREATED);
 	}
 
@@ -50,21 +56,30 @@ public class AccountController {
 		return principal;
 	}
 	*/
+	
+	
 	@CrossOrigin
-	@RequestMapping(value = "/username", method = RequestMethod.GET)
-	public ResponseEntity<?> currentUserName() {
+	@RequestMapping(value = "/activateUser", method = RequestMethod.GET)
+	public ResponseEntity<?> activateUser(@RequestParam(required = true) String emailId,@RequestParam(required = true) String token) throws ProcessFailedException{
+		userService.activateUser(emailId,token);
+		return new ResponseEntity<>(SecurityContextHolder.getContext().getAuthentication(), HttpStatus.OK);
+	}
+	
+	@CrossOrigin
+	@RequestMapping(value = "/changePassord", method = RequestMethod.GET)
+	public ResponseEntity<?> changePassword(@RequestBody User newUser) {
+		userService.changePassword(newUser);
 		return new ResponseEntity<>(SecurityContextHolder.getContext().getAuthentication(), HttpStatus.OK);
 	}
 	
 	
 	@CrossOrigin
-	@RequestMapping(value = "/cusername", method = RequestMethod.GET)
-	public ResponseEntity<?> currentUserName(Authentication authentication) {
-		return new ResponseEntity<>(authentication.getName(), HttpStatus.OK);
-    }
+	@RequestMapping(value = "/resetPassword", method = RequestMethod.GET)
+	public ResponseEntity<?> resetPassword(@RequestParam(required = true) String emailId) {
+		userService.resetPassword(emailId);
+		return new ResponseEntity<>(SecurityContextHolder.getContext().getAuthentication(), HttpStatus.OK);
+	}
 	
-	
-
-	
+		
 	
 }

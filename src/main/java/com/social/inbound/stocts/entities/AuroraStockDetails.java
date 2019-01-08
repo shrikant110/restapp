@@ -37,6 +37,15 @@ public class AuroraStockDetails {
 	@SequenceGenerator(name = "aur_stock_detail_generator", sequenceName = "aur_stock_detail_id_seq", allocationSize = 1)
 	@Column(name = "id", updatable = false, nullable = false)
 	private Long id;
+	
+
+
+
+	@Column(name = "PUBLISH_DATE")
+	@Getter
+	@Setter
+	private Timestamp publishDate;
+	
 
 	@Column(name = "ANALYSIS_DATE")
 	private Timestamp analysisDate;

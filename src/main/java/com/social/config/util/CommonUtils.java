@@ -126,7 +126,6 @@ public class CommonUtils {
 	
 	public static void prepareErrorResponse(HttpServletRequest request,HttpServletResponse response,String code,String description,boolean isError) throws IOException{
 		ResponseMessageDTO responseDto = new ResponseMessageDTO();
-		responseDto.setError(isError);
 		responseDto.setResponseCode(code);
 		if(isError){
 			responseDto.setErrorDiscription(description);
@@ -158,7 +157,6 @@ public class CommonUtils {
 	
 	public static void prepareSuccessResponse(HttpServletRequest request,HttpServletResponse response,String code,String description,boolean isError,Object data) throws IOException{
 		ResponseMessageDTO responseDto = new ResponseMessageDTO();
-		responseDto.setError(isError);
 		responseDto.setResponseCode(code);
 		responseDto.setData(data);
 		if(isError){

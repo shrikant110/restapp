@@ -6,6 +6,7 @@ import java.util.Date;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.EntityListeners;
 import javax.persistence.EnumType;
 import javax.persistence.Enumerated;
 import javax.persistence.GeneratedValue;
@@ -18,21 +19,23 @@ import javax.persistence.TemporalType;
 import javax.validation.constraints.Size;
 
 import org.hibernate.annotations.UpdateTimestamp;
+import org.springframework.data.annotation.CreatedDate;
+import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
 import com.social.entities.model.Gender;
 
 import lombok.Getter;
 import lombok.Setter;
 
-@Entity
-@Table(name = "USER_CREDENTIAL_DETAILS")
 @Getter
 @Setter
+@Entity
+@Table(name = "USER_CREDENTIAL_DETAILS")
+@EntityListeners(AuditingEntityListener.class)
 public class UserProfileDetails implements Serializable {
 	@Id
 	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "credentials_id_seq")
 	@SequenceGenerator(name = "credentials_id_seq", sequenceName = "credentials_id_seq", allocationSize = 1)
-	//@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "ID")
 	private Long id;
 	
@@ -76,6 +79,15 @@ public class UserProfileDetails implements Serializable {
     @Column(name = "DATE_MODIFIED")
 	@UpdateTimestamp
 	private Timestamp dateModifiled;
+    
+    
+    @Column(name = "created_date", nullable = false, updatable = false)
+    @CreatedDate
+    private long createdDate;
+ 
+ /*   @Column(name = "modified_date")
+    @LastModifiedDate
+    private long modifiedDate;*/
 
    
    /* @OneToOne

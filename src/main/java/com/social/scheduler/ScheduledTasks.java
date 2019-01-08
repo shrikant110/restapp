@@ -1,9 +1,11 @@
 package com.social.scheduler;
 
+import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
 
 @Component
@@ -36,10 +38,34 @@ public class ScheduledTasks {
 			logger.info("Fixed Rate Task with Initial Delay :: Execution Time - {}", dateTimeFormatter.format(LocalDateTime.now()));
 		}*/
 		
-		/*@Scheduled(cron = "10 * * * * ?")
+		/*@Scheduled(cron = "0 4 18 * * ?")
 	    public void scheduleTaskWithCronExpression() {
-			logger.info("Current Thread : {}", Thread.currentThread().getName());
+			System.out.println("Fund Schedule Thread : {}"+ Thread.currentThread().getName()+"Cron Task :: Execution Time - {}"+ dateTimeFormatter.format(LocalDateTime.now()));
+			logger.info("Fund Schedule Thread : {}", Thread.currentThread().getName());
 		    logger.info("Cron Task :: Execution Time - {}", dateTimeFormatter.format(LocalDateTime.now()));
-
+		}
+		
+		@Scheduled(cron = "0 4 * * * ?")
+	    public void x() {
+			System.out.println("@Scheduled(cron = \"0 4 18 * * ?\")");
+			System.out.println( dateTimeFormatter.format(LocalDateTime.now()));
+		}
+		
+		@Scheduled(cron = "0 0 * * * ?")
+	    public void y() {
+			System.out.println("@Scheduled(cron = \"0 0 * * * ?\")");
+			System.out.println( dateTimeFormatter.format(LocalDateTime.now()));
 		}*/
+		
+		@Scheduled(cron = "0 0 22 * * SUN,MON")
+	    public void stockDataPush() {
+			System.out.println("@Scheduled(cron = \"0 0 * * * SUN\")");
+			System.out.println( dateTimeFormatter.format(LocalDateTime.now()));
+		}
+		
+		@Scheduled(cron = "0 0 21 * * SUN,MON")
+	    public void fundDataPush() {
+			System.out.println("@Scheduled(cron = \"0 0 * * * SUN\")");
+			System.out.println( dateTimeFormatter.format(LocalDateTime.now()));
+		}
 }

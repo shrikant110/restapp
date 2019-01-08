@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.social.dashboard.entities.Module;
 import com.social.dashboard.services.DashBoardService;
+import com.social.inbound.stocts.entities.CurrencyMaster;
 
 @RestController
 @RequestMapping("dashboard")
@@ -26,6 +27,8 @@ public class DashBoardController {
 		System.out.println("inside -->getmodules");
 		return new ResponseEntity<List<Module>>(dashBoardService.getModules(),HttpStatus.CREATED);
 	}
+	
+	
 	
 	
 

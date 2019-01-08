@@ -51,8 +51,7 @@ public class FTPDownloader {
 
     public static void main(String[] args) {
         try {
-            FTPDownloader ftpDownloader =
-                new FTPDownloader("54.254.162.151", "aurora_ftpclient1", "Nov2018$");
+            FTPDownloader ftpDownloader =  new FTPDownloader("54.254.162.151", "aurora_ftpclient1", "Nov2018$");
             ftpDownloader.downloadFile( "/aurora/inbound/funds/TSC_Aurora_Funds.zip","D://x.zip");
             System.out.println("FTP File downloaded successfully");
             ftpDownloader.disconnect();
