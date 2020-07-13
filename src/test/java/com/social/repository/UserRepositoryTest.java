@@ -12,8 +12,8 @@ import org.springframework.boot.test.autoconfigure.orm.jpa.TestEntityManager;
 import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.context.junit4.SpringRunner;
 
-import com.social.dao.UserRepository;
-import com.social.entities.User;
+import com.cardreader.dao.UserRepository;
+import com.cardreader.entities.User;
 
 @ActiveProfiles("test")
 @RunWith(SpringRunner.class)

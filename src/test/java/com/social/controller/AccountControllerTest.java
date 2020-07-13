@@ -17,8 +17,9 @@ import org.springframework.test.web.servlet.MvcResult;
 import org.springframework.test.web.servlet.RequestBuilder;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 
-import com.social.entities.User;
-import com.social.services.UserService;
+import com.cardreader.controller.AccountController;
+import com.cardreader.entities.User;
+import com.cardreader.services.UserService;
 
 @RunWith(SpringRunner.class)
 @WebMvcTest(value = AccountController.class,secure=false)
