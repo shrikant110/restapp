@@ -7,6 +7,15 @@ import lombok.Setter;
 @Setter
 public class MappingObject {
 	
+	
+	
+	public MappingObject(String stageField, String targetField, String value) {
+		super();
+		this.stageField = stageField;
+		this.targetField = targetField;
+		this.value = value;
+	}
+
 	String stageField;
 	
 	String targetField;
