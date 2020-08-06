@@ -2,7 +2,7 @@ package com.sbs.vc.datapro.auth.constant;
 /**
  * 
  * @author shrikant.kushwaha
- * Use to snyn with the Database status
+ * 
  *
  */
 public enum UserStatus {

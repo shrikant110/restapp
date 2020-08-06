@@ -1,5 +1,7 @@
 package com.sbs.vc.scan.domain;
 
+import java.sql.Timestamp;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
@@ -11,6 +13,8 @@ import javax.persistence.OneToOne;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
+import org.hibernate.annotations.CreationTimestamp;
+import org.hibernate.annotations.UpdateTimestamp;
 import org.springframework.context.annotation.Scope;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
@@ -30,8 +34,12 @@ public class ScanDetailMaster {
 	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "SEQ_DET_ID")
 	@SequenceGenerator(name = "SEQ_DET_ID", sequenceName = "SEQ_DET_ID", allocationSize = 1)
 	@Column(name = "SCAN_DET_ID")
-	@JsonIgnore
 	private Long id;
+	
+	@Column(name = "CATEGORY")
+	@JsonProperty("CATEGORY")
+	private String category;
+	
 	
 	@Column(name = "DESIGNATION")
 	@JsonProperty("DESIGNATION")
@@ -78,9 +86,61 @@ public class ScanDetailMaster {
 	@JsonProperty("OTH_4")
 	private String other4;
 	
+	@Column(name = "STATE")
+	@JsonProperty("STATE")
+	private String state;
+	
+	@Column(name = "CITY")
+	@JsonProperty("CITY")
+	private String city;
+	
+	@Column(name = "WEBSITE")
+	@JsonProperty("WEBSITE")
+	private String website;
+	
+	@Column(name = "CipharText")
+	@JsonProperty("CipharText")
+	private String cipharText;
+	
+	@Column(name = "STATUS")
+	@JsonProperty("Status")
+	private String status;
+	
+	
 
 	@OneToOne(fetch = FetchType.EAGER)
 	@JoinColumn(name = "SCAN_MST_ID")
 	ScanMaster scanMaster;
+	
+	
+
+	@CreationTimestamp
+	@Column(name = "created_at")
+	private Timestamp createdAt;
+	
+	@Column(name = "updated_at")
+	@UpdateTimestamp
+	private Timestamp updatedAt;
+	
+	
+	@Column(name = "created_by")
+	private String createdBy;
+	
+	@Column(name = "updated_by")
+	private String updatedBy;
+
+
+
+	@Override
+	public String toString() {
+		return  + id + "|" + category + "|" + designation + "|"
+				+ name + "|" + mobileNO + "|" + emailId + "|" + country +  "|"
+				+ address + "|" + comments + "|" + other1 + "|" + other2 + "|"
+				+ other3 + "|" + other4 + "|" + state + "|"+ city + "|"+ website
+				+ "|" + status ;
+	}
+	
+	
+	
 
 }

@@ -34,7 +34,8 @@ public class ImageUploadController {
 			throw new FileNotSelectedException("Select Not Selected");
 		}
 		try {
-			String userName=currentUser.getUsername();
+			//String userName=currentUser.getUsername();
+			String userName="shrikant110@gmail.com";
 			System.out.println();
 			UserMaintenenceService.saveUploadedFiles(userName,Arrays.asList(uploadfile));
 		} catch (IOException e) {

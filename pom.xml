@@ -39,6 +39,8 @@
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
 		
+		
+		
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-devtools</artifactId>
@@ -83,26 +85,12 @@
 		
 		<!-- Addiotional -->
 		
-		<!-- https://mvnrepository.com/artifact/org.modelmapper/modelmapper -->
-		<dependency>
-		  <groupId>org.modelmapper</groupId>
-		  <artifactId>modelmapper</artifactId>
-		  <version>2.3.0</version>
-		</dependency>
 		
 		<dependency>
 	        <groupId>org.postgresql</groupId>
 	        <artifactId>postgresql</artifactId>
 	        <version>9.4-1200-jdbc41</version>
 	    </dependency>
-	    
-	    <!-- https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-core -->
-		<dependency>
-		    <groupId>org.apache.logging.log4j</groupId>
-		    <artifactId>log4j-core</artifactId>
-		    <version>2.10.0</version>
-		</dependency>
-	    
 	    
 	    <!-- Lambok -->
 		<!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
@@ -198,6 +186,23 @@
 		    <artifactId>modelmapper</artifactId>
 		    <version>2.3.2</version>
 		</dependency>
+		
+		<dependency>
+		    <groupId>org.python</groupId>
+		    <artifactId>jython</artifactId>
+		    <version>2.7.2</version>
+		</dependency>
+		
+		
+		<!--  
+		<dependency>
+			    <groupId>net.sourceforge.tess4j</groupId>
+			    <artifactId>tess4j</artifactId>
+			    <version>3.2.1</version>
+		</dependency>
+		
+		-->
+
 		<!--  
 		<dependency>
 		  <groupId>com.braintreepayments.gateway</groupId>
@@ -215,6 +220,7 @@
 				<configuration>
                 	<jvmArguments>-Xmx4g</jvmArguments>
             </configuration>
+           
 			</plugin>
 		</plugins>
 	</build>

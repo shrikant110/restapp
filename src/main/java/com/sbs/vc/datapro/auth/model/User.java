@@ -34,7 +34,7 @@ import lombok.Setter;
 @Entity
 @Table(name = "user_info", uniqueConstraints = {
         @UniqueConstraint(columnNames = {
-            "username"
+            "userId"
         })
 })
 @Getter
@@ -59,8 +59,8 @@ public class User  {
 
     @NotBlank
     @Size(max = 100)
-    @JsonProperty("UserName")
-    private String username;
+    @JsonProperty("UserId")
+    private String userId;
 
     @Size(max = 40)
     @JsonIgnore
@@ -128,7 +128,7 @@ public class User  {
 
 	@Override
 	public String toString() {
-		return "User [username=" + username + ", createdAt=" + createdAt + "]";
+		return "User [userId=" + userId + ", createdAt=" + createdAt + "]";
 	}
 	
 	   

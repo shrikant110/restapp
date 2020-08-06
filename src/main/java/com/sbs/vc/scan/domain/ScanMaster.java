@@ -85,5 +85,10 @@ public class ScanMaster {
 	@JoinColumn(name = "SCAN_IMAGE_ID")
 	ScanImageDomain scanImage;
 	
+	
+	@Column(name = "CipharText")
+	@JsonProperty("CipharText")
+	private String cipharText;
+	
 
 }

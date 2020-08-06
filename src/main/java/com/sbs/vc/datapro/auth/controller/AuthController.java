@@ -5,7 +5,6 @@ import java.io.UnsupportedEncodingException;
 import java.net.URLDecoder;
 
 import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
 import javax.validation.Valid;
 
 import org.slf4j.Logger;
@@ -14,11 +13,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.PropertySource;
 import org.springframework.context.annotation.PropertySources;
 import org.springframework.core.env.Environment;
-import org.springframework.core.io.Resource;
-import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
-import org.springframework.http.MediaType;
-import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
@@ -36,7 +31,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.maxmind.geoip2.exception.GeoIp2Exception;
 import com.sbs.vc.config.util.CommonUtils;
-import com.sbs.vc.config.util.GetLocation;
 import com.sbs.vc.config.util.HttpStatusCodes;
 import com.sbs.vc.config.util.ResponseMessageDTO;
 import com.sbs.vc.datapro.auth.model.User;
@@ -103,7 +97,7 @@ public class AuthController {
 	}
 
 	@PostMapping("/login")
-	public ResponseMessageDTO authenticateUser(@Valid @RequestBody LoginRequest loginRequest,HttpServletRequest request) throws ProcessFailedException, IOException, GeoIp2Exception {
+	public ResponseMessageDTO authenticateUser(@Valid @RequestBody LoginRequest loginRequest,HttpServletRequest request) throws ProcessFailedException, IOException {
 
 		Authentication authentication = authenticationManager.authenticate(
 				new UsernamePasswordAuthenticationToken(loginRequest.getUsernameOrEmail(), loginRequest.getPassword()));
@@ -114,11 +108,7 @@ public class AuthController {
 		Long tokenExpiration = tokenProvider.getTokenEpiration(loginRequest.getRememberMe());
 		User user = userMaintenenceService.find(authentication.getName());
 		JwtAuthenticationResponse jwtAuth = new JwtAuthenticationResponse(jwt, user, tokenExpiration);
-
-		
-
-		userMaintenenceService.userActivity("Login", user.getUsername(), request);
-
+		userMaintenenceService.userActivity("Login", user.getUserId(), request);
 		if (user.getStatus().getStatusId() == 1) {
 			return CommonUtils.getSuccessMessage(HttpStatusCodes.LOGINSUCCESS.getCode(), "Login Successful.", jwtAuth);
 		} else {
@@ -127,66 +117,25 @@ public class AuthController {
 
 	}
 	
-	/*
-	@PostMapping("/register") //Can use for email confirmation registration
-	public ResponseMessageDTO registerUser(@Valid @RequestBody UserRegistration signUpRequest,
-			HttpServletRequest request) throws ProcessFailedException, IOException, GeoIp2Exception {
-		if (userRepository.existsByUsername(signUpRequest.getUsername())) {
-			logger.error("username Already exist " + signUpRequest.getUsername());
+	@PostMapping("/createUser")
+	public ResponseMessageDTO registerUser(@Valid @RequestBody UserRegistration signUpRequest,HttpServletRequest request) throws ProcessFailedException, IOException {
+		if (userRepository.existsByUserId(signUpRequest.getUserId())) {
+			logger.error("username Already exist " + signUpRequest.getUserId());
 			return CommonUtils.getSuccessMessage(HttpStatus.CONFLICT.value(),
-					"user with username " + signUpRequest.getUsername() + " already exist", null);
+					"User Id  " + signUpRequest.getUserId() + " already exist", null);
 		}
-		//String password = signUpRequest.getPassCode();
-		signUpRequest = userMaintenenceService.userRegistration(signUpRequest,GetLocation.getCountry(request.getRemoteHost()));
-		return CommonUtils.getSuccessMessage(HttpStatusCodes.SUCCESS.getCode(), "Mail has been sent to email verification.", null);
-	}
-	*/
-	@PostMapping("/register")
-	public ResponseMessageDTO registerUser(@Valid @RequestBody UserRegistration signUpRequest,
-			HttpServletRequest request) throws ProcessFailedException, IOException, GeoIp2Exception {
-		if (userRepository.existsByUsername(signUpRequest.getUsername())) {
-			logger.error("username Already exist " + signUpRequest.getUsername());
-			return CommonUtils.getSuccessMessage(HttpStatus.CONFLICT.value(),
-					"user with username " + signUpRequest.getUsername() + " already exist", null);
-		}
-		String password = signUpRequest.getPassCode();
-		signUpRequest = userMaintenenceService.register(signUpRequest,GetLocation.getCountry(request.getRemoteHost()));
-		LoginRequest loginRequest = new LoginRequest();
-		loginRequest.setUsernameOrEmail(signUpRequest.getUsername());
-		loginRequest.setPassword(password);
-		loginRequest.setRememberMe(false);
-		logger.info("Login after registration" + loginRequest + "/" + password);
-
-		Authentication authentication = authenticationManager.authenticate(
-				new UsernamePasswordAuthenticationToken(loginRequest.getUsernameOrEmail(), loginRequest.getPassword()));
-
-		SecurityContextHolder.getContext().setAuthentication(authentication);
-		String jwt = tokenProvider.generateToken(authentication, loginRequest.getRememberMe());
-
-		Long tokenExpiration = tokenProvider.getTokenEpiration(loginRequest.getRememberMe());
-		User user = userMaintenenceService.find(authentication.getName());
-		JwtAuthenticationResponse jwtAuth = new JwtAuthenticationResponse(jwt, user, tokenExpiration);
-
-		
-		userMaintenenceService.userActivity("Login", user.getUsername(), request);
-
-		if (user.getStatus().getStatusId() == 1) {
-			return CommonUtils.getSuccessMessage(HttpStatusCodes.LOGINSUCCESS.getCode(), "Login Successful.", jwtAuth);
-		} else {
-			return CommonUtils.getSuccessMessage(HttpStatusCodes.ACCOUNTINACTIVE.getCode(), "Account Inactive.", null);
-		}
+		User user=userMaintenenceService.accountCreated(signUpRequest);
+		return CommonUtils.getSuccessMessage(HttpStatus.OK.value(), "User Created Successfully", user);
 	}
 
 	@CrossOrigin
-	@RequestMapping(value = "/loginUser", method = RequestMethod.GET)
-	public ResponseMessageDTO loginUser(@CurrentUser UserPrincipal currentUser)
-			throws AnonymousUserException, ProcessFailedException {
-
+	@RequestMapping(value = "/getloginUser", method = RequestMethod.GET)
+	public ResponseMessageDTO loginUser(@CurrentUser UserPrincipal currentUser)	throws AnonymousUserException, ProcessFailedException {
 		if (currentUser == null) {
 			throw new AnonymousUserException("Anonymous User");
 		} else {
 			String userName = currentUser.getUsername();
-			User user = userRepository.findByUsername(userName).get();
+			User user = userRepository.findByUserId(userName).get();
 			return CommonUtils.getSuccessMessage(HttpStatus.OK.value(), "fetch successfully of active user", user);
 
 		}
@@ -202,8 +151,7 @@ public class AuthController {
 	 */
 	@CrossOrigin
 	@RequestMapping(value = "/isValidToken", method = RequestMethod.GET)
-	public ResponseMessageDTO isValidToken(@CurrentUser UserPrincipal currentUser)
-			throws AnonymousUserException, ProcessFailedException {
+	public ResponseMessageDTO isValidToken(@CurrentUser UserPrincipal currentUser)throws AnonymousUserException, ProcessFailedException {
 		if (currentUser == null) {
 			throw new AnonymousUserException("Anonymous User");
 		}
@@ -219,38 +167,11 @@ public class AuthController {
 	 */
 	@CrossOrigin
 	@RequestMapping(value = "/logout", method = RequestMethod.GET)
-	public ResponseMessageDTO logout(@CurrentUser UserPrincipal currentUser)
-			throws AnonymousUserException, ProcessFailedException {
+	public ResponseMessageDTO logout(@CurrentUser UserPrincipal currentUser)throws AnonymousUserException, ProcessFailedException {
 		return CommonUtils.getSuccessMessage(HttpStatus.OK.value(), "Logged out successfully.", null);
 	}
 
-	/**
-	 * This rest call will used for the activate the user account
-	 * 
-	 * @param emailId
-	 * @param Id
-	 * @param token
-	 * @param request
-	 * @param response
-	 * @throws IOException
-	 * @throws GeoIp2Exception 
-	 */
-	@CrossOrigin
-	@RequestMapping(value = "/activateUser", method = RequestMethod.GET)
-	public void activateUser(@RequestParam(required = true) String emailId, @RequestParam(required = true) long Id,
-			@RequestParam(required = true) String token, HttpServletRequest request, HttpServletResponse response)
-			throws IOException, GeoIp2Exception {
-		try {
-			String responseMessage = userMaintenenceService.activateUser(emailId, Id, token,GetLocation.getCountry(request.getRemoteHost()));
-			response.sendRedirect(environment.getProperty("CLIENT_LOGIN_URL"));
-			// response.sendRedirect(environment.getProperty("CLIENT_LOGIN_URL") +
-			// responseMessage);
-		} catch (ProcessFailedException | IOException e) {
-			response.sendRedirect(environment.getProperty("CLIENT_LOGIN_URL"));
-			// response.sendRedirect(environment.getProperty("CLIENT_LOGIN_URL") + "error");
-		}
-
-	}
+	
 
 	/**
 	 * This method used to change the password
@@ -265,27 +186,12 @@ public class AuthController {
 	public ResponseMessageDTO changePassword(@RequestBody User newUser, @CurrentUser UserPrincipal currentUser)
 			throws ProcessFailedException, AnonymousUserException {
 		String username = currentUser.getUsername();
-		newUser.setUsername(username);
+		newUser.setUserId(username);
 		userMaintenenceService.changePassword(newUser);
 		return CommonUtils.getSuccessMessage(HttpStatus.OK.value(), "Password has been changed successfully", null);
 	}
 
-	@CrossOrigin
-	@RequestMapping(value = "/changepasswordReq", method = RequestMethod.GET)
-	public void changepasswordReq(@RequestParam(required = true) long Id, @RequestParam(required = true) String token,
-			HttpServletRequest request, HttpServletResponse response)
-			throws IOException, ProcessFailedException, InvalidTokenException {
-		boolean requestValidate = userMaintenenceService.changePasswordReq(Id, token);
-		if (requestValidate) {
-			User user = userMaintenenceService.find(Id);
-			response.setHeader("username", user.getUsername());
-			response.setHeader("token", token);
-			response.sendRedirect(environment.getProperty("CLIENT_CHANGE_PASSWORD_URL") + "validate&token=" + token
-					+ "&username=" + user.getUsername());
-		} else {
-			response.sendRedirect(environment.getProperty("CLIENT_CHANGE_PASSWORD_URL") + "notvalidated");
-		}
-	}
+	
 
 	/**
 	 * Change password without login
@@ -361,7 +267,7 @@ public class AuthController {
 	 */
 	@CrossOrigin
 	@RequestMapping(value = "/deleteProfile", method = RequestMethod.POST)
-	public ResponseMessageDTO deleteAccount(@CurrentUser UserPrincipal currentUser, HttpServletRequest request) throws ProcessFailedException, IOException, GeoIp2Exception {
+	public ResponseMessageDTO deleteAccount(@CurrentUser UserPrincipal currentUser, HttpServletRequest request) throws ProcessFailedException, IOException {
 		String username = currentUser.getUsername();
 		userMaintenenceService.accountDeleted(username);
 		return CommonUtils.getSuccessMessage(HttpStatus.OK.value(), "Account has been successfully deleted", null);
@@ -375,6 +281,21 @@ public class AuthController {
 		userMaintenenceService.accountDeleted(username);
 		return CommonUtils.getSuccessMessage(HttpStatus.OK.value(), "Registration Visitor", "");
 	}
+	
+	@CrossOrigin
+	@RequestMapping(value = "/activeuser", method = RequestMethod.GET)
+	public ResponseMessageDTO getLogginUser(@CurrentUser UserPrincipal currentUser, HttpServletRequest request) throws ProcessFailedException, IOException {
+		String username=null;
+		try {
+			username = currentUser.getUsername();
+			return CommonUtils.getSuccessMessage(HttpStatus.OK.value(), "Active Session", username);
+		} catch (Exception e) {
+			return CommonUtils.getSuccessMessage(HttpStatus.FORBIDDEN.value(), "Inactive Session", username);
+		}
+		
 
-
+	}
+	
+	
+	
 }

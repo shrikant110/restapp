@@ -1,23 +1,26 @@
 package com.sbs.vc.datapro.auth.security;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.sbs.vc.datapro.auth.model.User;
+import java.util.Collection;
+import java.util.List;
+import java.util.Objects;
+import java.util.stream.Collectors;
 
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
-import java.util.Collection;
-import java.util.List;
-import java.util.Objects;
-import java.util.stream.Collectors;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.sbs.vc.datapro.auth.model.User;
 /**
  * 
  * @author Shrikant.Kushwaha
  *
  */
 public class UserPrincipal implements UserDetails {
-    private Long id;
+   
+	private static final long serialVersionUID = 1L;
+
+	private Long id;
 
     private String name;
 
@@ -48,7 +51,7 @@ public class UserPrincipal implements UserDetails {
         return new UserPrincipal(
                 user.getId(),
                 user.getFirstName()+user.getLastName(),
-                user.getUsername(),
+                user.getUserId(),
                 user.getEmail(),
                 user.getPassword(),
                 authorities

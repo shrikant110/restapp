@@ -11,11 +11,10 @@ import org.springframework.context.annotation.PropertySources;
 import org.springframework.core.env.Environment;
 import org.springframework.stereotype.Service;
 
+import com.sbs.vc.config.util.BIOSEncryption;
 import com.sbs.vc.datapro.auth.model.User;
-import com.sbs.vc.datapro.auth.model.UserRegistration;
 import com.sbs.vc.datapro.email.model.MailDomain;
 import com.sbs.vc.datapro.email.repository.MailDomainRepository;
-import com.sbs.vc.datapro.exceptions.ProcessFailedException;
 
 @PropertySources({ @PropertySource("classpath:application_env.properties") })
 @Service
@@ -30,46 +29,31 @@ public class ClientEmails {
 	@Autowired
 	Environment environment;
 
-	public String registrationMail(UserRegistration user, String activationtoken, String country) throws ProcessFailedException {
-		MailDomain email = emailDomainRepository.findById(1L).get();
-		email.setTo(user.getUsername());
-		Map<String, Object> message = new HashMap<>();
-		message.put("1", user.getFirstName());
-		message.put("2", environment.getProperty("BASE_URL") + "/account/activateUser?emailId=" + user.getUsername()
-				+ "&Id=" + user.getId() + "&token=" + activationtoken);
-		mailTemplateService.prepareAndSend(email, message);
-		return activationtoken;
-	}
-
-	public void activationMail(User user,String country) {
-		/*MailDomain email = emailDomainRepository.findById(2L).get();
-		email.setTo(user.getUsername());
-		Map<String, Object> message = new HashMap<>();
-		message.put("1", user.getFirstName());
-		message.put("2", user.getPassword());
-		mailTemplateService.prepareAndSend(email, message); */
-		
-		if(country.equalsIgnoreCase("Israel")) {
-    		sendStaticContent(12L, user.getUsername());
-    	}else {
-    		sendStaticContent(11L, user.getUsername());
-    	}
-
-	}
+	
 
 	public void changePasswordMail(User userDommain) {
 		MailDomain email = emailDomainRepository.findById(3L).get();
-		email.setTo(userDommain.getUsername());
+		email.setTo(userDommain.getEmail());
 		Map<String, Object> message = new HashMap<>();
 		message.put("1", userDommain.getFirstName());
 		// message.put("2", BIOSEncryption.dncrypt(userDommain.getPassword()));
 		mailTemplateService.prepareAndSend(email, message);
 
 	}
+	
+	public void createUser(User userDommain) {
+		MailDomain email = emailDomainRepository.findById(1L).get();
+		email.setTo(userDommain.getEmail());
+		Map<String, Object> message = new HashMap<>();
+		message.put("1", userDommain.getFirstName());
+		message.put("2", BIOSEncryption.dncrypt(userDommain.getPassword()));
+		mailTemplateService.prepareAndSend(email, message);
+
+	}
 
 	public void resetPasswordMail(User userDommain) {
 		MailDomain email = emailDomainRepository.findById(4L).get();
-		email.setTo(userDommain.getUsername());
+		email.setTo(userDommain.getEmail());
 		Map<String, Object> message = new HashMap<>();
 		message.put("1", userDommain.getFirstName());
 		message.put("2", environment.getProperty("BASE_URL") + "/account/changepasswordReq?Id=" + userDommain.getId()

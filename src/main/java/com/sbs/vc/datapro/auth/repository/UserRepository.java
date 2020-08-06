@@ -1,7 +1,6 @@
 package com.sbs.vc.datapro.auth.repository;
 
 import java.sql.Timestamp;
-import java.util.Date;
 import java.util.List;
 import java.util.Optional;
 
@@ -17,15 +16,15 @@ import com.sbs.vc.datapro.auth.model.User;
 public interface UserRepository extends JpaRepository<User, Long> {
     Optional<User> findByEmail(String email);
 
-    Optional<User> findByUsernameOrEmail(String username, String email);
+    Optional<User> findByUserIdOrEmail(String userId, String email);
     
     List<User> findByIdIn(List<Long> userIds);
 
-    Optional<User> findByUsername(String username);
+    Optional<User> findByUserId(String userId);
     
-    Optional<User> findOneByUsernameIgnoreCase(String username);
+    Optional<User> findOneByUserIdIgnoreCase(String userId);
 
-    Boolean existsByUsername(String username);
+    Boolean existsByUserId(String userId);
     
     Boolean existsByEmail(String email);
     
